@@ -1,0 +1,53 @@
+name: Generate Catalyst Picks
+
+on:
+  schedule:
+    # 21:20 UTC on weekdays = 5:20 PM ET, ~50 minutes after the closing bell.
+    #
+    # Running AFTER the close, not before the open, is the whole design. Grading
+    # needs the session's official closing price, and that does not exist until
+    # the market has shut. Publishing tomorrow's board at the same time means one
+    # run does both jobs: grade what closed today, then post what's next.
+    #
+    # GitHub does not honour these times. Measured on the sibling edgeai-picks
+    # repo over Aug 29 - Sep 4 2026, cron-to-commit delay ran 2h24m to 4h47m.
+    # The board therefore lands late evening ET — fine, because it is read the
+    # next morning. NEVER quote the cron time in UI copy.
+    #
+    # :20 rather than :00 — GitHub deprioritises schedules on the hour.
+    - cron: '20 21 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  picks:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate and grade
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Unset until a commercial licence is in place, which leaves the
+          # provider on its dev default. Set PRICE_PROVIDER plus the matching
+          # token secret the moment a quote is accepted.
+          PRICE_PROVIDER: ${{ secrets.PRICE_PROVIDER }}
+          MARKETDATA_TOKEN: ${{ secrets.MARKETDATA_TOKEN }}
+          FINNHUB_TOKEN: ${{ secrets.FINNHUB_TOKEN }}
+          TIINGO_TOKEN: ${{ secrets.TIINGO_TOKEN }}
+        run: node generate-picks.mjs
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git reset --soft origin/main
+          git add picks.json picks-archive.json
+          git diff --staged --quiet || (git commit -m "chore: picks $(date -u +%Y-%m-%d) [skip ci]" && git push)

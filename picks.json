@@ -1,0 +1,96 @@
+{
+  "daily": {
+    "horizon": "daily",
+    "date": "2026-09-10",
+    "generatedAt": "2026-09-10T19:26:56.889Z",
+    "picks": [
+      {
+        "ticker": "XOM",
+        "direction": "long",
+        "conviction": "high",
+        "catalyst": "Brent crude oil prices surged above $105 per barrel due to escalating U.S.-Iran tensions and supply disruption fears.",
+        "rationale": "The significant rise in global oil prices directly benefits integrated oil and gas companies like ExxonMobil, boosting their revenue and profitability. The company also presented an upbeat outlook at a recent energy conference.",
+        "risk": "A de-escalation of geopolitical tensions or a global economic slowdown could lead to a rapid decline in oil prices."
+      },
+      {
+        "ticker": "AMD",
+        "direction": "long",
+        "conviction": "high",
+        "catalyst": "Piper Sandler initiated coverage with an Overweight rating and a $600 price target, and the company announced major AI GPU deployment deals with Meta, OpenAI, and Anthropic.",
+        "rationale": "Multiple analyst upgrades and significant commitments for its AI GPUs signal strong future revenue growth and increasing market share in the booming AI infrastructure sector.",
+        "risk": "High valuation and potential execution risks related to large-scale customer deployments or a broader slowdown in AI capital expenditure could pressure the stock."
+      },
+      {
+        "ticker": "TSLA",
+        "direction": "long",
+        "conviction": "high",
+        "catalyst": "Tesla's Cybercab is being highlighted for its cost-efficiency in production and has received strong positive reception following its launch in Austin, with the robotaxi app topping charts.",
+        "rationale": "The successful rollout and perceived cost advantage of the Cybercab could significantly expand Tesla's addressable market in autonomous ride-sharing, driving future revenue and market sentiment.",
+        "risk": "Increased regulatory scrutiny over its Full Self-Driving system or if the actual market adoption and profitability of Cybercab fall short of high expectations could negatively impact the stock."
+      },
+      {
+        "ticker": "MSFT",
+        "direction": "long",
+        "conviction": "high",
+        "catalyst": "Microsoft's Xbox division renewed its partnership with Kojima Productions for an ambitious new 'PHYSINT' project, and the company launched an AI-powered tool for Salesforce to Dynamics 365 migrations.",
+        "rationale": "The renewed gaming partnership strengthens Microsoft's position in the entertainment sector, while the new AI migration tool enhances its competitive edge in enterprise software, potentially driving Dynamics 365 adoption.",
+        "risk": "Underperformance of new gaming titles or slower-than-expected adoption of the Dynamics 365 migration tool could temper investor enthusiasm."
+      },
+      {
+        "ticker": "ORCL",
+        "direction": "short",
+        "conviction": "high",
+        "catalyst": "Oracle is scheduled to report earnings today, September 10, 2026.",
+        "rationale": "Earnings reports are binary events that can lead to significant volatility. Given broader market concerns about inflation and potential interest rate hikes, a cautious market reaction to earnings, especially if guidance is weak or results miss expectations, could lead to a sell-off.",
+        "risk": "Oracle could report stronger-than-expected earnings or provide very positive guidance, leading to a significant rally."
+      }
+    ]
+  },
+  "weekly": {
+    "horizon": "weekly",
+    "date": "2026-09-10",
+    "generatedAt": "2026-09-10T19:27:23.835Z",
+    "picks": [
+      {
+        "ticker": "ORCL",
+        "direction": "long",
+        "conviction": "high",
+        "catalyst": "Post-earnings analysis and guidance from Q1 2027 report released after market close on September 10, 2026.",
+        "rationale": "Oracle delivered strong Q4 2026 results, beating EPS and revenue estimates, and its Q1 2027 earnings were reported on September 10, 2026. Positive post-earnings drift is anticipated if the details of the report, particularly regarding cloud growth and forward guidance, are favorably received by analysts and investors in the upcoming trading days.",
+        "risk": "Weaker-than-expected guidance for future quarters or concerns over cloud growth momentum could invalidate a positive move."
+      },
+      {
+        "ticker": "AAPL",
+        "direction": "long",
+        "conviction": "high",
+        "catalyst": "Market digestion of new iPhone Duo and AI features launched on September 10, 2026, and subsequent analyst commentary.",
+        "rationale": "Apple's recent product launch, including the foldable iPhone Duo and enhanced Siri AI features, is expected to drive robust iPhone revenue growth, according to initial analyst commentary. The market will be evaluating initial demand signals and potential analyst upgrades or price target adjustments throughout the coming week.",
+        "risk": "Weak initial sales figures for the new products or negative analyst sentiment regarding pricing and innovation could lead to underperformance."
+      },
+      {
+        "ticker": "NVDA",
+        "direction": "long",
+        "conviction": "high",
+        "catalyst": "Strategic acquisition of Hugging Face on September 3, 2026, and continued expansion of AI infrastructure, reinforcing its leadership in AI.",
+        "rationale": "NVIDIA's acquisition of Hugging Face for over $12 billion significantly strengthens its position in the open AI ecosystem. This, coupled with new collaborations to expand AI infrastructure capacity in Australia, underscores persistent demand for its advanced AI technology. These strategic moves are expected to fuel continued growth in the burgeoning AI market.",
+        "risk": "Increased competition in the AI chip and platform space, or a slowdown in enterprise AI spending, could temper growth expectations."
+      },
+      {
+        "ticker": "LLY",
+        "direction": "long",
+        "conviction": "high",
+        "catalyst": "Recent FDA approvals for Mounjaro and telpotetide for cardiovascular risk reduction (September 8, 2026) and upcoming participation in a major healthcare conference (September 14, 2026).",
+        "rationale": "The expanded FDA approvals for Mounjaro and telpotetide to reduce cardiovascular risk in type 2 diabetes patients significantly broaden Eli Lilly's addressable market within the cardiometabolic space, driving potential revenue growth. The upcoming fireside chat at the Morgan Stanley Global Healthcare Conference on September 14, 2026, could provide further positive updates or reaffirm the company's strong pipeline and market position.",
+        "risk": "Unexpected negative commentary from the conference, or increased scrutiny on drug pricing, could negatively impact sentiment."
+      },
+      {
+        "ticker": "XOM",
+        "direction": "long",
+        "conviction": "high",
+        "catalyst": "Escalating geopolitical tensions in the Middle East driving crude oil prices higher (Brent over $100/barrel, WTI over $96/barrel on September 10, 2026).",
+        "rationale": "Heightened geopolitical risk in the Middle East has directly led to a surge in crude oil prices, with Brent and WTI benchmarks reaching multi-month highs. As a major integrated oil and gas company, Exxon Mobil is well-positioned to benefit from sustained higher commodity prices and favorable forecasts for increased U.S. crude oil and natural gas production in 2026.",
+        "risk": "A de-escalation of Middle East tensions or a significant increase in global oil supply could lead to a rapid decline in crude oil prices."
+      }
+    ]
+  }
+}

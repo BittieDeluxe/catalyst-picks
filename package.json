@@ -1,0 +1,7 @@
+{
+  "name": "catalyst-picks",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Scheduled AI stock picks for Catalyst, graded against closing prices."
+}
