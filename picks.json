@@ -14,9 +14,9 @@
         "rationale": "The upcoming Robinhood Crypto integration is expected to significantly expand retail access to Pendle's yield markets, while the recent RWA launch diversifies its offerings, both potentially driving increased demand and protocol usage. These developments could lead to outperformance relative to Bitcoin.",
         "risk": "A broader market downturn or lower-than-expected adoption of the new Robinhood or RWA features could invalidate this outlook.",
         "entryPrice": 2.34,
-        "livePrice": 2.34,
-        "liveChangePct": 0,
-        "livePct": -0.18
+        "livePrice": 2.59,
+        "liveChangePct": 10.68,
+        "livePct": 4.72
       },
       {
         "id": "ethereum",
@@ -27,9 +27,9 @@
         "rationale": "Consistent institutional demand through ETFs provides a strong fundamental tailwind, while the imminent Sepolia testnet fork signals continued progress on a major protocol upgrade, enhancing Ethereum's scalability and long-term viability. This combination could lead to ETH outperforming BTC.",
         "risk": "A reversal in ETF flows or unexpected delays/issues with the Glamsterdam testnet fork could negatively impact sentiment.",
         "entryPrice": 2439.34,
-        "livePrice": 2444.45,
-        "liveChangePct": 0.21,
-        "livePct": 0.03
+        "livePrice": 2594.76,
+        "liveChangePct": 6.37,
+        "livePct": 0.41
       },
       {
         "id": "arbitrum",
@@ -40,9 +40,9 @@
         "rationale": "Large token unlocks, particularly those allocated to early investors and the team, typically introduce increased selling pressure as recipients may realize profits or rebalance portfolios, potentially causing ARB to underperform Bitcoin.",
         "risk": "Strong market demand or unexpected positive news could absorb the increased supply from the unlock, mitigating selling pressure.",
         "entryPrice": 0.178938,
-        "livePrice": 0.181519,
-        "liveChangePct": 1.44,
-        "livePct": -1.26
+        "livePrice": 0.214028,
+        "liveChangePct": 19.61,
+        "livePct": -13.65
       },
       {
         "id": "near",
@@ -53,9 +53,9 @@
         "rationale": "The introduction of Chain Signatures significantly enhances NEAR's interoperability and utility by allowing direct transactions across multiple chains, potentially attracting new users and liquidity to the ecosystem, leading to outperformance.",
         "risk": "Broader negative market sentiment or slower-than-anticipated adoption of the new Chain Signatures feature could temper positive price action.",
         "entryPrice": 3.1,
-        "livePrice": 3.14,
-        "liveChangePct": 1.29,
-        "livePct": 1.11
+        "livePrice": 3.62,
+        "liveChangePct": 16.77,
+        "livePct": 10.81
       },
       {
         "id": "solana",
@@ -66,17 +66,17 @@
         "rationale": "Improved transaction finality and overall network efficiency stemming from reduced slot times make Solana more attractive for decentralized applications and users, which could drive increased demand for SOL and lead to outperformance.",
         "risk": "Technical challenges during the slot time reduction process or a failure to meet the targeted performance improvements could negatively affect sentiment.",
         "entryPrice": 101.12,
-        "livePrice": 101.38,
-        "liveChangePct": 0.26,
-        "livePct": 0.08
+        "livePrice": 111.41,
+        "liveChangePct": 10.18,
+        "livePct": 4.22
       }
     ],
     "liveAsOf": "2026-09-18",
-    "liveBenchmarkPct": 0.18,
+    "liveBenchmarkPct": 5.96,
     "liveRecord": {
-      "ahead": 3,
-      "behind": 2,
-      "avgPct": -0.04,
+      "ahead": 4,
+      "behind": 1,
+      "avgPct": 1.3,
       "daysOpen": 0
     }
   },
@@ -95,9 +95,9 @@
         "rationale": "Historically, Worldcoin (WLD) token unlocks have resulted in an average price decline of 17.7% within 10 days, indicating significant selling pressure as new supply enters the market. This substantial unlock is likely to exert downward pressure on WLD's price relative to Bitcoin in the coming week.",
         "risk": "Strong underlying demand for AI-related cryptocurrencies could absorb the selling pressure from the unlock, mitigating the expected negative price impact.",
         "entryPrice": 0.387252,
-        "livePrice": 0.387252,
-        "liveChangePct": 0,
-        "livePct": 0
+        "livePrice": 0.435789,
+        "liveChangePct": 12.53,
+        "livePct": -6.76
       },
       {
         "id": "aptos",
@@ -108,9 +108,9 @@
         "rationale": "The association of Aptos with state-sponsored malware activity introduces negative sentiment and reputational risk, potentially deterring legitimate users and developers. Concerns over security and potential regulatory scrutiny from this news could lead to APT underperforming Bitcoin.",
         "risk": "The market may view this as an isolated incident with no lasting impact on Aptos's fundamental value, or a broader bullish market trend could overshadow the negative news.",
         "entryPrice": 0.604319,
-        "livePrice": 0.604319,
-        "liveChangePct": 0,
-        "livePct": 0
+        "livePrice": 0.677327,
+        "liveChangePct": 12.08,
+        "livePct": -6.31
       },
       {
         "id": "binancecoin",
@@ -121,9 +121,9 @@
         "rationale": "Similar to Aptos, the reported use of BNB Smart Chain for state-linked malware distribution could generate negative sentiment and raise concerns regarding the network's security and potential regulatory implications. This negative association may cause BNB to underperform Bitcoin.",
         "risk": "Binance's extensive ecosystem and large user base might help to absorb or mitigate the impact of this news, or the market could perceive it as a minor, non-systemic issue.",
         "entryPrice": 736.82,
-        "livePrice": 736.82,
-        "liveChangePct": 0,
-        "livePct": 0
+        "livePrice": 759.9,
+        "liveChangePct": 3.13,
+        "livePct": 2.64
       },
       {
         "id": "pendle",
@@ -134,9 +134,9 @@
         "rationale": "This initiative significantly expands Pendle's offerings into the Real World Asset sector, allowing users to fix, trade, and speculate on yields associated with private infrastructure assets. This enhancement in platform utility is expected to attract new investors and liquidity, driving positive price action for PENDLE relative to Bitcoin.",
         "risk": "A broader market downturn or slower-than-anticipated adoption of the new RWA offerings could temper the positive sentiment and limit PENDLE's outperformance.",
         "entryPrice": 2.34,
-        "livePrice": 2.34,
-        "liveChangePct": 0,
-        "livePct": 0
+        "livePrice": 2.59,
+        "liveChangePct": 10.68,
+        "livePct": 4.91
       },
       {
         "id": "uniswap",
@@ -147,17 +147,17 @@
         "rationale": "While Uniswap V4 launched in January 2025, continuous development, integration, and the introduction of new features like permissioned pools demonstrate a strong commitment to innovation and expanding the protocol's capabilities. This sustained effort is likely to drive increased adoption and positive sentiment, positioning UNI to outperform Bitcoin.",
         "risk": "Intensified competition from other decentralized exchanges or a general slowdown in DeFi sector activity could limit UNI's potential upside.",
         "entryPrice": 7.73,
-        "livePrice": 7.73,
-        "liveChangePct": 0,
-        "livePct": 0
+        "livePrice": 8.76,
+        "liveChangePct": 13.32,
+        "livePct": 7.55
       }
     ],
     "liveAsOf": "2026-09-18",
-    "liveBenchmarkPct": 0,
+    "liveBenchmarkPct": 5.77,
     "liveRecord": {
-      "ahead": 0,
-      "behind": 0,
-      "avgPct": 0,
+      "ahead": 3,
+      "behind": 2,
+      "avgPct": 0.41,
       "daysOpen": 0
     }
   },
@@ -176,9 +176,9 @@
         "rationale": "The conclusion of this major vesting period for Aptos removes a significant structural overhang of selling pressure, which has historically diluted price action. This reduction in new supply entering the market creates a strong tailwind for APT to outperform BTC in the coming month, assuming consistent network activity.",
         "risk": "A significant decline in overall market sentiment or a lack of sustained network usage could invalidate this thesis.",
         "entryPrice": 0.604319,
-        "livePrice": 0.604319,
-        "liveChangePct": 0,
-        "livePct": 0
+        "livePrice": 0.677327,
+        "liveChangePct": 12.08,
+        "livePct": 6.31
       },
       {
         "id": "pendle",
@@ -189,9 +189,9 @@
         "rationale": "These multiple expansion initiatives, particularly the integration with Robinhood Chain and its retail platform, significantly broaden Pendle's reach and utility for tokenized yield products. Increased accessibility and new yield opportunities on Monad are expected to drive adoption and demand for PENDLE, enabling it to outperform BTC.",
         "risk": "Lower-than-expected user adoption on new platforms or a broader downturn in DeFi yield markets would invalidate this pick.",
         "entryPrice": 2.34,
-        "livePrice": 2.34,
-        "liveChangePct": 0,
-        "livePct": 0
+        "livePrice": 2.59,
+        "liveChangePct": 10.68,
+        "livePct": 4.91
       },
       {
         "id": "aave",
@@ -202,9 +202,9 @@
         "rationale": "This strategic move into institutional DeFi and Real-World Assets (RWAs) through a formal governance proposal on Aave V4 has the potential to attract substantial, sticky capital from regulated entities. This expansion of Aave's addressable market and utility could drive significant demand for AAVE, leading to outperformance relative to BTC.",
         "risk": "Slow institutional adoption or regulatory hurdles for RWA integration could temper the positive impact.",
         "entryPrice": 128.34,
-        "livePrice": 128.34,
-        "liveChangePct": 0,
-        "livePct": 0
+        "livePrice": 139.21,
+        "liveChangePct": 8.47,
+        "livePct": 2.7
       },
       {
         "id": "starknet",
@@ -215,9 +215,9 @@
         "rationale": "This significant technical upgrade enhances Starknet's capabilities, allowing for more complex and computationally intensive applications on the network. This could attract new developer activity and users, increasing demand for STRK to cover transaction fees and potentially leading to outperformance against BTC.",
         "risk": "A lack of immediate developer or user adoption of the new capabilities, or continued selling pressure from scheduled token unlocks, could offset the positive impact.",
         "entryPrice": 0.02902057,
-        "livePrice": 0.02902057,
-        "liveChangePct": 0,
-        "livePct": 0
+        "livePrice": 0.03738979,
+        "liveChangePct": 28.84,
+        "livePct": 23.07
       },
       {
         "id": "arbitrum",
@@ -228,17 +228,17 @@
         "rationale": "This substantial token unlock, occurring within the coming week, represents a significant increase in the circulating supply of ARB, particularly as a percentage of its current market capitalization. Given Arbitrum's cliff vesting schedule, such events can lead to increased selling pressure as early investors and contributors realize gains, potentially causing ARB to underperform BTC.",
         "risk": "Strong underlying market demand or unexpected positive news could absorb the unlocked supply, mitigating the expected selling pressure.",
         "entryPrice": 0.181519,
-        "livePrice": 0.181519,
-        "liveChangePct": 0,
-        "livePct": 0
+        "livePrice": 0.214028,
+        "liveChangePct": 17.91,
+        "livePct": -12.14
       }
     ],
     "liveAsOf": "2026-09-18",
-    "liveBenchmarkPct": 0,
+    "liveBenchmarkPct": 5.77,
     "liveRecord": {
-      "ahead": 0,
-      "behind": 0,
-      "avgPct": 0,
+      "ahead": 4,
+      "behind": 1,
+      "avgPct": 4.97,
       "daysOpen": 0
     }
   }
