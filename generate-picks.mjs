@@ -352,19 +352,48 @@ async function main() {
   const current = await readJson(PICKS_FILE, {});
   const archive = await readJson(ARCHIVE_FILE, { boards: [] });
 
-  const due = process.env.PICKS_ONLY_HORIZON
-    ? process.env.PICKS_ONLY_HORIZON.split(',').map((s) => s.trim())
-    : boardsDue(now, current);
+  /**
+   * Close a board out without publishing a replacement.
+   *
+   * A board's identity is horizon+date, in the archive and in the app's tail
+   * IDs alike. Forcing a normal run twice in one UTC day therefore produces two
+   * boards that are indistinguishable to both: the archive drops one as a
+   * duplicate, and a tail on the first settles against the second's result.
+   *
+   * Grade-only avoids that entirely — it grades what is live, archives it, and
+   * leaves the slot showing final results until the next scheduled run
+   * publishes a genuinely new board the following day.
+   */
+  const gradeOnly = process.env.PICKS_GRADE_ONLY
+    ? process.env.PICKS_GRADE_ONLY.split(',').map((s) => s.trim())
+    : [];
+
+  const due = gradeOnly.length
+    ? []
+    : process.env.PICKS_ONLY_HORIZON
+      ? process.env.PICKS_ONLY_HORIZON.split(',').map((s) => s.trim())
+      : boardsDue(now, current);
 
   console.log(`Catalyst crypto picks — ${dateStr}`);
   console.log(`  price provider: ${providerName()}`);
-  console.log(`  boards due: ${due.join(', ')}`);
+  if (gradeOnly.length) console.log(`  GRADE ONLY: ${gradeOnly.join(', ')} — no new boards`);
+  console.log(`  boards due: ${due.join(', ') || 'none'}`);
 
   const universe = universeFor(CATEGORY_KEYS);
   console.log(`  universe: ${universe.length} coins`);
   const markets = await getMarkets(universe.map(([id]) => id));
   console.log(`  market data for ${Object.keys(markets).length} coins`);
   if (!Object.keys(markets).length) throw new Error('No market data — aborting rather than publishing a blind board');
+
+  for (const horizon of gradeOnly) {
+    const board = current[horizon];
+    if (!board?.picks?.length) { console.log(`\nNo ${horizon} board to grade`); continue; }
+    console.log(`\nGrading ${horizon} board (${board.date})…`);
+    const graded = await gradeBoard(board, dateStr, markets);
+    const already = archive.boards.some((b) => b.horizon === graded.horizon && b.date === graded.date);
+    if (graded.gradedAt && !already) archive.boards.push(graded);
+    else if (already) console.log(`  already archived — not pushing a duplicate`);
+  }
 
   for (const horizon of due) {
     // Generate BEFORE grading. Grading is what closes a board out, and
@@ -406,7 +435,12 @@ async function main() {
   // instead of sitting blank until the day they are replaced.
   console.log('\nUpdating live performance…');
   for (const horizon of ['daily', 'weekly', 'monthly']) {
-    if (current[horizon]?.picks?.length) markToMarket(current[horizon], markets, dateStr);
+    const board = current[horizon];
+    if (!board?.picks?.length) continue;
+    // A graded board is closed. Continuing to move its "so far" numbers would
+    // contradict the final result printed next to them.
+    if (board.gradedAt) { console.log(`  ${horizon}: graded ${board.date} — final, not marking`); continue; }
+    markToMarket(board, markets, dateStr);
   }
 
   // Keep the archive complete. A track record with losers removed is worse than
