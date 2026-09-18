@@ -367,19 +367,32 @@ async function main() {
   if (!Object.keys(markets).length) throw new Error('No market data — aborting rather than publishing a blind board');
 
   for (const horizon of due) {
+    // Generate BEFORE grading. Grading is what closes a board out, and
+    // gradeBoard mutates the board in place — `prev` is the same object as
+    // `current[horizon]`. Grading first meant a failed Gemini call left a board
+    // that had been stamped with results and pushed to the archive still
+    // sitting live, and every later run would push it again, because
+    // `gradedAt` persists and the per-pick `if (pick.result) continue` guard
+    // makes the regrade a no-op. Generation is the step that fails, so nothing
+    // is closed out until it has succeeded.
+    console.log(`\nGenerating ${horizon} board…`);
+    const picks = await generateBoard(horizon, CATEGORY_KEYS, BOARD_SIZE[horizon], dateStr, markets);
+    if (!picks.length) {
+      console.log(`  no ${horizon} picks generated — previous board left live and ungraded`);
+      continue;
+    }
+
     const prev = current[horizon];
     if (prev?.picks?.length) {
       console.log(`\nGrading previous ${horizon} board (${prev.date})…`);
       const graded = await gradeBoard(prev, dateStr, markets);
-      if (graded.gradedAt) archive.boards.push(graded);
+      // horizon+date identifies a board. Belt-and-braces against a double push
+      // if the file and the archive ever disagree.
+      const already = archive.boards.some((b) => b.horizon === graded.horizon && b.date === graded.date);
+      if (graded.gradedAt && !already) archive.boards.push(graded);
+      else if (already) console.log(`  already archived — not pushing a duplicate`);
     }
 
-    console.log(`\nGenerating ${horizon} board…`);
-    const picks = await generateBoard(horizon, CATEGORY_KEYS, BOARD_SIZE[horizon], dateStr, markets);
-    if (!picks.length) {
-      console.log(`  no ${horizon} picks generated — leaving previous board in place`);
-      continue;
-    }
     current[horizon] = {
       horizon, date: dateStr, generatedAt: new Date().toISOString(),
       benchmarkEntry: markets[BENCHMARK_ID]?.price ?? null,
