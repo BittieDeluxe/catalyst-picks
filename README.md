@@ -10,6 +10,14 @@ Scheduled AI **crypto** picks for Catalyst, graded against real prices — relat
 
 Each run grades the outgoing board first, then publishes the next.
 
+**All three boards are marked to market every day.** Grading only happens when a board
+is replaced — once a month for the monthly board — so without this a user opening the
+app on the 12th would see a monthly board with no idea how it was doing. Every run
+updates `livePct` per pick and `liveRecord` per board against current prices.
+
+`livePct` is provisional and changes daily. `result` is the final, archived grade and is
+written once. Never conflate them: the track record is built from `result` alone.
+
 ## Why crypto and not stocks
 
 This started as a stock picker. Every US equities vendor forbids showing price-derived

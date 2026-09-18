@@ -13,7 +13,10 @@
         "catalyst": "Pendle-powered yield markets are scheduled to go live on Robinhood Crypto on September 24, 2026, following the recent launch of tradeable RWA private infrastructure on September 17, 2026.",
         "rationale": "The upcoming Robinhood Crypto integration is expected to significantly expand retail access to Pendle's yield markets, while the recent RWA launch diversifies its offerings, both potentially driving increased demand and protocol usage. These developments could lead to outperformance relative to Bitcoin.",
         "risk": "A broader market downturn or lower-than-expected adoption of the new Robinhood or RWA features could invalidate this outlook.",
-        "entryPrice": 2.34
+        "entryPrice": 2.34,
+        "livePrice": 2.34,
+        "liveChangePct": 0,
+        "livePct": -0.18
       },
       {
         "id": "ethereum",
@@ -23,7 +26,10 @@
         "catalyst": "Ethereum ETFs continue to attract significant institutional inflows, with $197.11 million recorded for the fourth consecutive week between September 8-11, 2026, and the Sepolia testnet fork for the Glamsterdam upgrade is planned around September 21, 2026.",
         "rationale": "Consistent institutional demand through ETFs provides a strong fundamental tailwind, while the imminent Sepolia testnet fork signals continued progress on a major protocol upgrade, enhancing Ethereum's scalability and long-term viability. This combination could lead to ETH outperforming BTC.",
         "risk": "A reversal in ETF flows or unexpected delays/issues with the Glamsterdam testnet fork could negatively impact sentiment.",
-        "entryPrice": 2439.34
+        "entryPrice": 2439.34,
+        "livePrice": 2444.45,
+        "liveChangePct": 0.21,
+        "livePct": 0.03
       },
       {
         "id": "arbitrum",
@@ -33,7 +39,10 @@
         "catalyst": "A significant Arbitrum token unlock is scheduled for September 23, 2026, releasing 139.15 million ARB tokens, which represents 2% of its current market capitalization.",
         "rationale": "Large token unlocks, particularly those allocated to early investors and the team, typically introduce increased selling pressure as recipients may realize profits or rebalance portfolios, potentially causing ARB to underperform Bitcoin.",
         "risk": "Strong market demand or unexpected positive news could absorb the increased supply from the unlock, mitigating selling pressure.",
-        "entryPrice": 0.178938
+        "entryPrice": 0.178938,
+        "livePrice": 0.181519,
+        "liveChangePct": 1.44,
+        "livePct": -1.26
       },
       {
         "id": "near",
@@ -43,7 +52,10 @@
         "catalyst": "NEAR Protocol recently launched Chain Signatures on September 16, 2026, which enables seamless cross-chain transactions across more than 30 blockchains.",
         "rationale": "The introduction of Chain Signatures significantly enhances NEAR's interoperability and utility by allowing direct transactions across multiple chains, potentially attracting new users and liquidity to the ecosystem, leading to outperformance.",
         "risk": "Broader negative market sentiment or slower-than-anticipated adoption of the new Chain Signatures feature could temper positive price action.",
-        "entryPrice": 3.1
+        "entryPrice": 3.1,
+        "livePrice": 3.14,
+        "liveChangePct": 1.29,
+        "livePct": 1.11
       },
       {
         "id": "solana",
@@ -53,8 +65,181 @@
         "catalyst": "Solana is in the final stretch of an ongoing upgrade to reduce its slot times from 400ms to 200ms, with a key September date ahead for achieving 24-hour epochs, aiming to enhance network speed and efficiency.",
         "rationale": "Improved transaction finality and overall network efficiency stemming from reduced slot times make Solana more attractive for decentralized applications and users, which could drive increased demand for SOL and lead to outperformance.",
         "risk": "Technical challenges during the slot time reduction process or a failure to meet the targeted performance improvements could negatively affect sentiment.",
-        "entryPrice": 101.12
+        "entryPrice": 101.12,
+        "livePrice": 101.38,
+        "liveChangePct": 0.26,
+        "livePct": 0.08
       }
-    ]
+    ],
+    "liveAsOf": "2026-09-18",
+    "liveBenchmarkPct": 0.18,
+    "liveRecord": {
+      "ahead": 3,
+      "behind": 2,
+      "avgPct": -0.04,
+      "daysOpen": 0
+    }
+  },
+  "weekly": {
+    "horizon": "weekly",
+    "date": "2026-09-18",
+    "generatedAt": "2026-09-18T00:58:37.474Z",
+    "benchmarkEntry": 76489,
+    "picks": [
+      {
+        "id": "worldcoin-wld",
+        "symbol": "WLD",
+        "direction": "short",
+        "conviction": "high",
+        "catalyst": "A major token unlock is scheduled for September 24, 2026, releasing approximately 100.1 million WLD tokens.",
+        "rationale": "Historically, Worldcoin (WLD) token unlocks have resulted in an average price decline of 17.7% within 10 days, indicating significant selling pressure as new supply enters the market. This substantial unlock is likely to exert downward pressure on WLD's price relative to Bitcoin in the coming week.",
+        "risk": "Strong underlying demand for AI-related cryptocurrencies could absorb the selling pressure from the unlock, mitigating the expected negative price impact.",
+        "entryPrice": 0.387252,
+        "livePrice": 0.387252,
+        "liveChangePct": 0,
+        "livePct": 0
+      },
+      {
+        "id": "aptos",
+        "symbol": "APT",
+        "direction": "short",
+        "conviction": "medium",
+        "catalyst": "A report on September 17, 2026, revealed North Korea's use of Aptos for 'blockchain dead drops' to issue malware commands.",
+        "rationale": "The association of Aptos with state-sponsored malware activity introduces negative sentiment and reputational risk, potentially deterring legitimate users and developers. Concerns over security and potential regulatory scrutiny from this news could lead to APT underperforming Bitcoin.",
+        "risk": "The market may view this as an isolated incident with no lasting impact on Aptos's fundamental value, or a broader bullish market trend could overshadow the negative news.",
+        "entryPrice": 0.604319,
+        "livePrice": 0.604319,
+        "liveChangePct": 0,
+        "livePct": 0
+      },
+      {
+        "id": "binancecoin",
+        "symbol": "BNB",
+        "direction": "short",
+        "conviction": "medium",
+        "catalyst": "A report on September 17, 2026, detailed North Korea's use of BNB Smart Chain for 'blockchain dead drops' to control malware.",
+        "rationale": "Similar to Aptos, the reported use of BNB Smart Chain for state-linked malware distribution could generate negative sentiment and raise concerns regarding the network's security and potential regulatory implications. This negative association may cause BNB to underperform Bitcoin.",
+        "risk": "Binance's extensive ecosystem and large user base might help to absorb or mitigate the impact of this news, or the market could perceive it as a minor, non-systemic issue.",
+        "entryPrice": 736.82,
+        "livePrice": 736.82,
+        "liveChangePct": 0,
+        "livePct": 0
+      },
+      {
+        "id": "pendle",
+        "symbol": "PENDLE",
+        "direction": "long",
+        "conviction": "high",
+        "catalyst": "Pendle announced on September 17, 2026, the launch of tradeable RWA (Real World Asset) private infrastructure on its platform.",
+        "rationale": "This initiative significantly expands Pendle's offerings into the Real World Asset sector, allowing users to fix, trade, and speculate on yields associated with private infrastructure assets. This enhancement in platform utility is expected to attract new investors and liquidity, driving positive price action for PENDLE relative to Bitcoin.",
+        "risk": "A broader market downturn or slower-than-anticipated adoption of the new RWA offerings could temper the positive sentiment and limit PENDLE's outperformance.",
+        "entryPrice": 2.34,
+        "livePrice": 2.34,
+        "liveChangePct": 0,
+        "livePct": 0
+      },
+      {
+        "id": "uniswap",
+        "symbol": "UNI",
+        "direction": "long",
+        "conviction": "medium",
+        "catalyst": "Ongoing development and integration of Uniswap V4, including support for permissioned pools and rollout into Uniswap's web app and wallet, as highlighted in August 2026.",
+        "rationale": "While Uniswap V4 launched in January 2025, continuous development, integration, and the introduction of new features like permissioned pools demonstrate a strong commitment to innovation and expanding the protocol's capabilities. This sustained effort is likely to drive increased adoption and positive sentiment, positioning UNI to outperform Bitcoin.",
+        "risk": "Intensified competition from other decentralized exchanges or a general slowdown in DeFi sector activity could limit UNI's potential upside.",
+        "entryPrice": 7.73,
+        "livePrice": 7.73,
+        "liveChangePct": 0,
+        "livePct": 0
+      }
+    ],
+    "liveAsOf": "2026-09-18",
+    "liveBenchmarkPct": 0,
+    "liveRecord": {
+      "ahead": 0,
+      "behind": 0,
+      "avgPct": 0,
+      "daysOpen": 0
+    }
+  },
+  "monthly": {
+    "horizon": "monthly",
+    "date": "2026-09-18",
+    "generatedAt": "2026-09-18T00:59:09.441Z",
+    "benchmarkEntry": 76489,
+    "picks": [
+      {
+        "id": "aptos",
+        "symbol": "APT",
+        "direction": "long",
+        "conviction": "high",
+        "catalyst": "The four-year vesting cycle for initial investors and core contributors concludes in October 2026, reducing annualized supply unlocks by 60%.",
+        "rationale": "The conclusion of this major vesting period for Aptos removes a significant structural overhang of selling pressure, which has historically diluted price action. This reduction in new supply entering the market creates a strong tailwind for APT to outperform BTC in the coming month, assuming consistent network activity.",
+        "risk": "A significant decline in overall market sentiment or a lack of sustained network usage could invalidate this thesis.",
+        "entryPrice": 0.604319,
+        "livePrice": 0.604319,
+        "liveChangePct": 0,
+        "livePct": 0
+      },
+      {
+        "id": "pendle",
+        "symbol": "PENDLE",
+        "direction": "long",
+        "conviction": "high",
+        "catalyst": "Pendle is expanding to the Monad blockchain on October 8, 2026, and selected yield markets are going live on Robinhood Crypto on September 24, 2026.",
+        "rationale": "These multiple expansion initiatives, particularly the integration with Robinhood Chain and its retail platform, significantly broaden Pendle's reach and utility for tokenized yield products. Increased accessibility and new yield opportunities on Monad are expected to drive adoption and demand for PENDLE, enabling it to outperform BTC.",
+        "risk": "Lower-than-expected user adoption on new platforms or a broader downturn in DeFi yield markets would invalidate this pick.",
+        "entryPrice": 2.34,
+        "livePrice": 2.34,
+        "liveChangePct": 0,
+        "livePct": 0
+      },
+      {
+        "id": "aave",
+        "symbol": "AAVE",
+        "direction": "long",
+        "conviction": "medium",
+        "catalyst": "A formal governance proposal for Custodied Collateral Lending for Aave V4 was introduced on September 15, 2026, targeting regulated institutions via Anchorage and Chainlink.",
+        "rationale": "This strategic move into institutional DeFi and Real-World Assets (RWAs) through a formal governance proposal on Aave V4 has the potential to attract substantial, sticky capital from regulated entities. This expansion of Aave's addressable market and utility could drive significant demand for AAVE, leading to outperformance relative to BTC.",
+        "risk": "Slow institutional adoption or regulatory hurdles for RWA integration could temper the positive impact.",
+        "entryPrice": 128.34,
+        "livePrice": 128.34,
+        "liveChangePct": 0,
+        "livePct": 0
+      },
+      {
+        "id": "starknet",
+        "symbol": "STRK",
+        "direction": "long",
+        "conviction": "medium",
+        "catalyst": "The Starknet v0.14.4 mainnet upgrade on October 5, 2026, enables compute-heavy applications with block-sized proofs up to 1.1 billion L2 gas.",
+        "rationale": "This significant technical upgrade enhances Starknet's capabilities, allowing for more complex and computationally intensive applications on the network. This could attract new developer activity and users, increasing demand for STRK to cover transaction fees and potentially leading to outperformance against BTC.",
+        "risk": "A lack of immediate developer or user adoption of the new capabilities, or continued selling pressure from scheduled token unlocks, could offset the positive impact.",
+        "entryPrice": 0.02902057,
+        "livePrice": 0.02902057,
+        "liveChangePct": 0,
+        "livePct": 0
+      },
+      {
+        "id": "arbitrum",
+        "symbol": "ARB",
+        "direction": "short",
+        "conviction": "high",
+        "catalyst": "A significant token unlock is scheduled for September 23, 2026, releasing 139.15 million ARB tokens (1.4% of total supply, 2% of market cap) to private investors, insiders, and the foundation.",
+        "rationale": "This substantial token unlock, occurring within the coming week, represents a significant increase in the circulating supply of ARB, particularly as a percentage of its current market capitalization. Given Arbitrum's cliff vesting schedule, such events can lead to increased selling pressure as early investors and contributors realize gains, potentially causing ARB to underperform BTC.",
+        "risk": "Strong underlying market demand or unexpected positive news could absorb the unlocked supply, mitigating the expected selling pressure.",
+        "entryPrice": 0.181519,
+        "livePrice": 0.181519,
+        "liveChangePct": 0,
+        "livePct": 0
+      }
+    ],
+    "liveAsOf": "2026-09-18",
+    "liveBenchmarkPct": 0,
+    "liveRecord": {
+      "ahead": 0,
+      "behind": 0,
+      "avgPct": 0,
+      "daysOpen": 0
+    }
   }
 }

@@ -248,6 +248,54 @@ async function gradeBoard(board, exitDay, markets) {
   return board;
 }
 
+/**
+ * Update the running performance of a board that is still open.
+ *
+ * Grading only happens when a board is replaced, which for the monthly board is
+ * once every ~30 days. Without this, a user opening the app on the 12th sees a
+ * monthly board with no indication of how it is doing — the record would be
+ * blank for four weeks at a time. This marks every open board to market on every
+ * run, so performance is current daily across all three horizons.
+ *
+ * Deliberately writes `livePct` / `liveRecord` and NOT `result`. The final grade
+ * is what gets archived and what the track record is built from; a running
+ * number is provisional and must never be mistaken for it. gradeBoard also skips
+ * picks that already have `result`, so writing it here would silently prevent
+ * the real grade from ever being computed.
+ */
+function markToMarket(board, markets, today) {
+  if (!board?.picks?.length) return board;
+
+  const benchNow = markets[BENCHMARK_ID]?.price ?? null;
+  const benchMove = pctChange(board.benchmarkEntry, benchNow);
+  if (benchMove === null) return board;
+
+  let marked = 0;
+  for (const pick of board.picks) {
+    const now = markets[pick.id]?.price ?? null;
+    const move = pctChange(pick.entryPrice, now);
+    if (move === null) continue;
+    const rel = Number((move - benchMove).toFixed(2));
+    pick.livePrice = now;
+    pick.liveChangePct = move;
+    pick.livePct = Number((pick.direction === 'short' ? -rel : rel).toFixed(2));
+    marked++;
+  }
+  if (!marked) return board;
+
+  const scored = board.picks.filter((p) => typeof p.livePct === 'number');
+  board.liveAsOf = today;
+  board.liveBenchmarkPct = benchMove;
+  board.liveRecord = {
+    ahead: scored.filter((p) => p.livePct > 0).length,
+    behind: scored.filter((p) => p.livePct < 0).length,
+    avgPct: Number((scored.reduce((s, p) => s + p.livePct, 0) / scored.length).toFixed(2)),
+    daysOpen: Math.max(0, Math.round((Date.parse(today) - Date.parse(board.date)) / 86400000)),
+  };
+  console.log(`  ${board.horizon}: live ${board.liveRecord.ahead}↑/${board.liveRecord.behind}↓  avg ${board.liveRecord.avgPct > 0 ? '+' : ''}${board.liveRecord.avgPct}% vs ${BENCHMARK_SYMBOL}  (day ${board.liveRecord.daysOpen})`);
+  return board;
+}
+
 // ---------------------------------------------------------------------------
 // Schedule
 // ---------------------------------------------------------------------------
@@ -338,6 +386,14 @@ async function main() {
       picks,
     };
     console.log(`  ✓ ${picks.length}: ${picks.map((p) => `${p.symbol} ${p.direction}`).join(', ')}`);
+  }
+
+  // Mark every open board to market, including the ones not regenerated today.
+  // This is what keeps the weekly and monthly boards showing current performance
+  // instead of sitting blank until the day they are replaced.
+  console.log('\nUpdating live performance…');
+  for (const horizon of ['daily', 'weekly', 'monthly']) {
+    if (current[horizon]?.picks?.length) markToMarket(current[horizon], markets, dateStr);
   }
 
   // Keep the archive complete. A track record with losers removed is worse than
