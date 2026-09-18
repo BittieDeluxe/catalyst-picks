@@ -1,0 +1,60 @@
+{
+  "daily": {
+    "horizon": "daily",
+    "date": "2026-09-18",
+    "generatedAt": "2026-09-18T00:51:01.269Z",
+    "benchmarkEntry": 76352,
+    "picks": [
+      {
+        "id": "pendle",
+        "symbol": "PENDLE",
+        "direction": "long",
+        "conviction": "high",
+        "catalyst": "Pendle-powered yield markets are scheduled to go live on Robinhood Crypto on September 24, 2026, following the recent launch of tradeable RWA private infrastructure on September 17, 2026.",
+        "rationale": "The upcoming Robinhood Crypto integration is expected to significantly expand retail access to Pendle's yield markets, while the recent RWA launch diversifies its offerings, both potentially driving increased demand and protocol usage. These developments could lead to outperformance relative to Bitcoin.",
+        "risk": "A broader market downturn or lower-than-expected adoption of the new Robinhood or RWA features could invalidate this outlook.",
+        "entryPrice": 2.34
+      },
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "direction": "long",
+        "conviction": "medium",
+        "catalyst": "Ethereum ETFs continue to attract significant institutional inflows, with $197.11 million recorded for the fourth consecutive week between September 8-11, 2026, and the Sepolia testnet fork for the Glamsterdam upgrade is planned around September 21, 2026.",
+        "rationale": "Consistent institutional demand through ETFs provides a strong fundamental tailwind, while the imminent Sepolia testnet fork signals continued progress on a major protocol upgrade, enhancing Ethereum's scalability and long-term viability. This combination could lead to ETH outperforming BTC.",
+        "risk": "A reversal in ETF flows or unexpected delays/issues with the Glamsterdam testnet fork could negatively impact sentiment.",
+        "entryPrice": 2439.34
+      },
+      {
+        "id": "arbitrum",
+        "symbol": "ARB",
+        "direction": "short",
+        "conviction": "high",
+        "catalyst": "A significant Arbitrum token unlock is scheduled for September 23, 2026, releasing 139.15 million ARB tokens, which represents 2% of its current market capitalization.",
+        "rationale": "Large token unlocks, particularly those allocated to early investors and the team, typically introduce increased selling pressure as recipients may realize profits or rebalance portfolios, potentially causing ARB to underperform Bitcoin.",
+        "risk": "Strong market demand or unexpected positive news could absorb the increased supply from the unlock, mitigating selling pressure.",
+        "entryPrice": 0.178938
+      },
+      {
+        "id": "near",
+        "symbol": "NEAR",
+        "direction": "long",
+        "conviction": "medium",
+        "catalyst": "NEAR Protocol recently launched Chain Signatures on September 16, 2026, which enables seamless cross-chain transactions across more than 30 blockchains.",
+        "rationale": "The introduction of Chain Signatures significantly enhances NEAR's interoperability and utility by allowing direct transactions across multiple chains, potentially attracting new users and liquidity to the ecosystem, leading to outperformance.",
+        "risk": "Broader negative market sentiment or slower-than-anticipated adoption of the new Chain Signatures feature could temper positive price action.",
+        "entryPrice": 3.1
+      },
+      {
+        "id": "solana",
+        "symbol": "SOL",
+        "direction": "long",
+        "conviction": "medium",
+        "catalyst": "Solana is in the final stretch of an ongoing upgrade to reduce its slot times from 400ms to 200ms, with a key September date ahead for achieving 24-hour epochs, aiming to enhance network speed and efficiency.",
+        "rationale": "Improved transaction finality and overall network efficiency stemming from reduced slot times make Solana more attractive for decentralized applications and users, which could drive increased demand for SOL and lead to outperformance.",
+        "risk": "Technical challenges during the slot time reduction process or a failure to meet the targeted performance improvements could negatively affect sentiment.",
+        "entryPrice": 101.12
+      }
+    ]
+  }
+}
