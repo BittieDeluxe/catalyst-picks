@@ -1,8 +1,14 @@
 /**
  * Catalyst's scheduled crypto picks.
  *
- * Three boards on a fixed schedule — daily, weekly (Monday) and monthly (1st) —
- * each run grading the outgoing board before publishing the next.
+ * Three boards, each on its own cycle:
+ *   daily   — published every day, graded the next day, then replaced
+ *   weekly  — published Monday, held all week, graded the following Monday
+ *   monthly — published on the 1st, held all month, graded on the next 1st
+ *
+ * A board is NEVER touched between publication and grading. Each run grades the
+ * outgoing board of any horizon that is due, then publishes its replacement, so
+ * the graded record and the live board always agree.
  *
  * Crypto trades 24/7, so unlike the equities version there is no closing bell to
  * work around and no weekend gap. Boards are cut at a fixed UTC hour and graded
@@ -231,6 +237,7 @@ async function gradeBoard(board, exitDay, markets) {
   if (graded) {
     const done = board.picks.filter((p) => p.result);
     board.gradedAt = new Date().toISOString();
+    board.heldDays = Math.max(1, Math.round((Date.parse(exitDay) - Date.parse(board.date)) / 86400000));
     board.benchmark = { symbol: BENCHMARK_SYMBOL, pct: benchMove };
     board.record = {
       wins: done.filter((p) => p.result === 'W').length,
@@ -245,11 +252,41 @@ async function gradeBoard(board, exitDay, markets) {
 // Schedule
 // ---------------------------------------------------------------------------
 
-/** Crypto never closes, so every day is a trading day. */
-function boardsDue(now) {
-  const due = ['daily'];
-  if (now.getUTCDay() === 1) due.push('weekly');
-  if (now.getUTCDate() === 1) due.push('monthly');
+/**
+ * Which boards are due, based on the AGE of the board currently published —
+ * not on today's calendar date.
+ *
+ * The obvious version ("weekly on Monday, monthly on the 1st") silently skips a
+ * whole period whenever a run fails. Miss one Monday and the weekly board sits
+ * stale and ungraded for a fortnight; miss the 1st and the monthly board is
+ * frozen for two months. GitHub's scheduler is unreliable enough — measured
+ * 2h24m to 4h47m late on the sibling repo — that assuming a run happens on an
+ * exact date is not safe.
+ *
+ * Age-based is self-healing: a missed Monday regenerates on Tuesday, and the
+ * holding period is recorded on the board itself so grading stays honest about
+ * how long each pick actually ran.
+ *
+ * Crypto never closes, so every day is a trading day.
+ */
+function boardsDue(now, current) {
+  const today = now.toISOString().slice(0, 10);
+  const daysBetween = (a, b) => Math.floor((Date.parse(b) - Date.parse(a)) / 86400000);
+  const due = [];
+
+  // Daily: any day the published board isn't from today.
+  if (current.daily?.date !== today) due.push('daily');
+
+  // Weekly: prefer Monday, but regenerate regardless once 7 days have elapsed.
+  const w = current.weekly;
+  if (!w?.date) due.push('weekly');
+  else if (w.date !== today && (now.getUTCDay() === 1 || daysBetween(w.date, today) >= 7)) due.push('weekly');
+
+  // Monthly: prefer the 1st, but regenerate on any day in a later month.
+  const m = current.monthly;
+  if (!m?.date) due.push('monthly');
+  else if (m.date.slice(0, 7) !== today.slice(0, 7)) due.push('monthly');
+
   return due;
 }
 
@@ -264,16 +301,16 @@ async function main() {
 
   const now = new Date();
   const dateStr = now.toISOString().slice(0, 10);
+  const current = await readJson(PICKS_FILE, {});
+  const archive = await readJson(ARCHIVE_FILE, { boards: [] });
+
   const due = process.env.PICKS_ONLY_HORIZON
     ? process.env.PICKS_ONLY_HORIZON.split(',').map((s) => s.trim())
-    : boardsDue(now);
+    : boardsDue(now, current);
 
   console.log(`Catalyst crypto picks — ${dateStr}`);
   console.log(`  price provider: ${providerName()}`);
   console.log(`  boards due: ${due.join(', ')}`);
-
-  const current = await readJson(PICKS_FILE, {});
-  const archive = await readJson(ARCHIVE_FILE, { boards: [] });
 
   const universe = universeFor(CATEGORY_KEYS);
   console.log(`  universe: ${universe.length} coins`);
