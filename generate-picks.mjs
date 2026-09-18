@@ -307,7 +307,7 @@ async function main() {
   // no track record — users can verify every one of these against any chart.
   archive.boards = archive.boards.slice(-500);
   archive.updatedAt = new Date().toISOString();
-  archive.attribution = 'Price data provided by CoinGecko';
+  archive.attribution = 'Powered by CoinGecko';
 
   await writeFile(PICKS_FILE, JSON.stringify(current, null, 2));
   await writeFile(ARCHIVE_FILE, JSON.stringify(archive, null, 2));

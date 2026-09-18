@@ -9,12 +9,17 @@
  * showing derived values to end users without a redistribution licence
  * ($150-1500/month, or Databento's $1500 + exchange fees).
  *
- * Free "Demo" tier: 10,000 calls/month, attribution REQUIRED. Grading a few
- * dozen coins a day is nowhere near that ceiling. Basic is $35/month
- * ($29 annual) if volume ever justifies it.
+ * COMMERCIAL USE IS PERMITTED ON THE FREE TIER. Verified against the API terms
+ * (not the pricing page summary): section 4.1.6 — "You are entitled to charge
+ * for your services and products that incorporate or integrates our CoinGecko
+ * API" — applies across tiers. The difference between Demo and Basic is rate
+ * limits and monthly call caps, a technical constraint, not a licence one.
+ * Free "Demo": 10,000 calls/month. Basic is $35/month ($29 annual) if volume
+ * ever justifies it; one markets call per run is nowhere near the ceiling.
  *
- * ATTRIBUTION: the app must display "Data provided by CoinGecko" with a link.
- * That is a condition of the licence, not a nicety — do not remove it.
+ * ATTRIBUTION: section 4.4 requires displaying prominently the exact message
+ * "Powered by CoinGecko". That is a condition of the licence on every tier,
+ * free included — not a nicety. Do not remove it or reword it.
  *
  * Never grade with an LLM. Measured 2026-09-10 against Nasdaq's own closes,
  * Gemini with search grounding returned two false prices out of fifteen, off by
@@ -93,12 +98,12 @@ export async function getMarkets(ids) {
 }
 
 /**
- * Price for one coin on a specific past date (UTC).
+ * Price for one coin on a specific past date (UTC). NOT USED FOR GRADING.
  *
- * CoinGecko's /history endpoint is the snapshot at 00:00 UTC on that date.
- * Crypto trades 24/7 so there is no "close" — 00:00 UTC is the convention this
- * project uses on both ends of a grade, which keeps the comparison consistent
- * even though it is arbitrary. Do not mix it with spot prices.
+ * /history only covers COMPLETED UTC days — asked for today it returns null,
+ * which silently left every board ungraded when grading was built on it.
+ * Grading now uses the entry price captured at publish time against live spot.
+ * Kept for ad-hoc backfill only; do not wire it back into gradeBoard.
  */
 export async function getPriceOn(id, day) {
   const data = await getJson(`${BASE}/coins/${encodeURIComponent(id)}/history?date=${toCgDate(day)}&localization=false`);

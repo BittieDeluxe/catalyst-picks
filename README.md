@@ -23,7 +23,7 @@ products that incorporate or integrate data from CoinGecko API."* What is forbid
 reselling **access to the API**, not displaying data in a paid app. Free tier is 10,000
 calls/month; this pipeline uses roughly one call per run.
 
-**Attribution is a licence condition** — the app must show "Data provided by CoinGecko"
+**Attribution is a licence condition** — the app must show "Powered by CoinGecko"
 with a link. Do not remove it.
 
 ## Grading is relative to BTC
