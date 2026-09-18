@@ -1,19 +1,21 @@
 /**
- * Catalyst's scheduled stock picks.
+ * Catalyst's scheduled crypto picks.
  *
- * Publishes three boards on a fixed schedule — daily, weekly (Mondays) and
- * monthly (first trading day) — and grades the previous board of each horizon
- * against real closing prices before publishing the next one.
+ * Three boards on a fixed schedule — daily, weekly (Monday) and monthly (1st) —
+ * each run grading the outgoing board before publishing the next.
  *
- * The fixed schedule is deliberate and not just operational tidiness. The
- * publisher's exclusion that lets newsletters give securities opinions without
- * registering turns on the publication being bona fide, impersonal, and
- * REGULARLY circulated. Every subscriber gets the identical board; nothing here
- * is tailored to anyone's finances. Keep it that way.
+ * Crypto trades 24/7, so unlike the equities version there is no closing bell to
+ * work around and no weekend gap. Boards are cut at a fixed UTC hour and graded
+ * against the price at the same hour, which keeps every comparison like-for-like.
+ *
+ * The fixed schedule is also deliberate for the same reason it was in the stock
+ * version: a bona fide, impersonal, regularly circulated publication is what
+ * keeps this commentary rather than personalised advice. Every subscriber gets
+ * the identical board. Nothing is tailored to anyone's finances.
  */
 
-import { SECTORS, SECTOR_KEYS, universeFor, labelFor } from './sectors.mjs';
-import { getCloses, pctChange, providerName, providerIsDevOnly } from './price-provider.mjs';
+import { CATEGORY_KEYS, universeFor, labelFor, symbolFor, resolveId, BENCHMARK_ID, BENCHMARK_SYMBOL } from './categories.mjs';
+import { getMarkets, pctChange, providerName } from './price-provider.mjs';
 import { readFile, writeFile } from 'node:fs/promises';
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
@@ -22,7 +24,6 @@ const MODEL = 'gemini-2.5-flash';
 const PICKS_FILE = 'picks.json';
 const ARCHIVE_FILE = 'picks-archive.json';
 
-/** Picks published per horizon on the scheduled board. */
 const BOARD_SIZE = { daily: 5, weekly: 5, monthly: 5 };
 
 // ---------------------------------------------------------------------------
@@ -30,15 +31,15 @@ const BOARD_SIZE = { daily: 5, weekly: 5, monthly: 5 };
 // ---------------------------------------------------------------------------
 
 /**
- * Grounded call. googleSearch cannot be combined with responseMimeType or
- * responseSchema — the API rejects the pairing — so the JSON contract lives in
- * the prompt and is recovered by tryParseJson below.
+ * googleSearch cannot be combined with responseMimeType or responseSchema — the
+ * API rejects the pairing — so the JSON contract lives in the prompt and is
+ * recovered by tryParseJson.
  */
-async function gemini(prompt, { grounded = true } = {}) {
+async function gemini(prompt) {
   const body = {
     contents: [{ parts: [{ text: prompt }] }],
-    ...(grounded ? { tools: [{ googleSearch: {} }] } : {}),
-    generationConfig: { temperature: 0.7, maxOutputTokens: 8192 },
+    tools: [{ googleSearch: {} }],
+    generationConfig: { temperature: 0.6, maxOutputTokens: 8192 },
   };
   const res = await fetch(
     `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${GEMINI_API_KEY}`,
@@ -46,19 +47,17 @@ async function gemini(prompt, { grounded = true } = {}) {
   );
   if (!res.ok) throw new Error(`Gemini ${res.status}: ${(await res.text()).slice(0, 300)}`);
   const data = await res.json();
-  return data?.candidates?.[0]?.content?.parts?.map((p) => p.text ?? '').join('') ?? '';
+  const sources = data?.candidates?.[0]?.groundingMetadata?.groundingChunks?.length ?? 0;
+  const text = data?.candidates?.[0]?.content?.parts?.map((p) => p.text ?? '').join('') ?? '';
+  return { text, sources };
 }
 
-/** Pull a JSON object out of model text that may carry a reasoning preamble. */
 function tryParseJson(raw) {
   try { return JSON.parse(raw); } catch { /* fall through */ }
   const fenced = raw.match(/```(?:json)?\s*([\s\S]*?)```/);
   if (fenced) { try { return JSON.parse(fenced[1]); } catch { /* fall through */ } }
-  const start = raw.indexOf('{');
-  const end = raw.lastIndexOf('}');
-  if (start !== -1 && end > start) {
-    try { return JSON.parse(raw.slice(start, end + 1)); } catch { /* fall through */ }
-  }
+  const a = raw.indexOf('{'), b = raw.lastIndexOf('}');
+  if (a !== -1 && b > a) { try { return JSON.parse(raw.slice(a, b + 1)); } catch { /* fall through */ } }
   return null;
 }
 
@@ -67,45 +66,61 @@ function tryParseJson(raw) {
 // ---------------------------------------------------------------------------
 
 const HORIZON_BRIEF = {
-  daily: 'a single trading session (today\'s open to today\'s close)',
-  weekly: 'the coming week (this Monday through Friday\'s close)',
+  daily: 'the next 24 hours',
+  weekly: 'the coming week',
   monthly: 'the coming month',
 };
 
-function buildPrompt(horizon, sectorKeys, count, dateStr) {
-  const universe = universeFor(sectorKeys);
-  const sectorNames = sectorKeys.map(labelFor).join(', ');
-  return `You are an equity analyst writing a scheduled market note. Today is ${dateStr}.
+function marketTable(universe, markets) {
+  const lines = [];
+  for (const [id, sym] of universe) {
+    const m = markets[id];
+    if (!m) continue;
+    const c24 = m.change24h == null ? '?' : `${m.change24h > 0 ? '+' : ''}${m.change24h.toFixed(2)}%`;
+    const c7 = m.change7d == null ? '?' : `${m.change7d > 0 ? '+' : ''}${m.change7d.toFixed(2)}%`;
+    lines.push(`${sym} (${id}) $${m.price}  24h ${c24}  7d ${c7}  mcap $${(m.marketCap / 1e9).toFixed(2)}B  vol $${(m.volume / 1e6).toFixed(0)}M`);
+  }
+  return lines.join('\n');
+}
 
-Search the web for what is moving these companies right now:
-- Earnings dates, guidance changes, and post-earnings drift
-- Analyst upgrades/downgrades and price-target changes
-- Product launches, regulatory decisions, legal outcomes
-- Sector-level catalysts (rates, commodity prices, policy)
-- Unusual volume or momentum, and where it came from
+function buildPrompt(horizon, categoryKeys, count, dateStr, universe, markets) {
+  const names = categoryKeys.map(labelFor).join(', ');
+  return `You are a crypto analyst writing a scheduled market note. Today is ${dateStr} (UTC).
+
+Search the web for what is actually moving these assets right now:
+- Token unlocks and vesting cliffs (these are scheduled and public — check them)
+- Exchange listings and delistings
+- Protocol upgrades, mainnet launches, hard forks
+- ETF flows, regulatory decisions, enforcement actions
+- Hacks, exploits, depegs
+- Funding rates, open interest, and notable on-chain flows
 
 Then select the ${count} most compelling ideas for ${HORIZON_BRIEF[horizon]} from
-this universe of ${sectorNames} names ONLY:
+this ${names} universe ONLY. Live market data:
 
-${universe.join(', ')}
+${marketTable(universe, markets)}
 
 RULES
-1. Pick ONLY from the tickers listed above. Never invent a ticker.
-2. Every pick needs a concrete, checkable catalyst — a named event, filing,
-   report or announcement. "Momentum looks good" is not a catalyst.
+1. Pick ONLY from the coins listed above, and use the exact id in parentheses.
+2. Every pick needs a concrete, checkable catalyst — a named unlock, listing,
+   upgrade, filing or flow. "Momentum is strong" is not a catalyst.
 3. Direction must be "long" or "short".
-4. Do NOT state a target price or a stop. This note is impersonal commentary,
-   not instructions for any individual.
-5. Do NOT reference portfolio size, allocation, position sizing, or what any
+4. IMPORTANT — picks are graded RELATIVE TO ${BENCHMARK_SYMBOL}. A coin that rises
+   less than ${BENCHMARK_SYMBOL} is a LOSING long. Do not pick something purely
+   because you expect the whole market to rise; pick what you expect to
+   OUTPERFORM ${BENCHMARK_SYMBOL}. If you are bullish on beta alone, say so in the
+   risk field.
+5. Do NOT state a target price or a stop. This is impersonal commentary, not
+   instructions for any individual.
+6. Do NOT reference portfolio size, allocation, position sizing, or what any
    reader should do with their money.
-6. If you cannot find ${count} ideas with a real catalyst, return fewer. An
-   honest short list beats padding.
+7. If you cannot find ${count} ideas with a real catalyst, return fewer.
 
 Return ONLY this JSON, no prose:
 {
   "picks": [
     {
-      "ticker": "NVDA",
+      "id": "solana",
       "direction": "long",
       "conviction": "high",
       "catalyst": "one sentence naming the specific event",
@@ -116,33 +131,35 @@ Return ONLY this JSON, no prose:
 }`;
 }
 
-async function generateBoard(horizon, sectorKeys, count, dateStr) {
-  const prompt = buildPrompt(horizon, sectorKeys, count, dateStr);
-  const universe = new Set(universeFor(sectorKeys));
+async function generateBoard(horizon, categoryKeys, count, dateStr, markets) {
+  const universe = universeFor(categoryKeys);
+  const allowed = new Set(universe.map(([id]) => id));
+  const prompt = buildPrompt(horizon, categoryKeys, count, dateStr, universe, markets);
 
   for (let attempt = 1; attempt <= 3; attempt++) {
     try {
-      const raw = await gemini(prompt);
-      const parsed = tryParseJson(raw);
-      const picks = parsed?.picks;
-      if (!Array.isArray(picks) || picks.length === 0) {
-        console.log(`  attempt ${attempt}: no picks parsed`);
-        continue;
-      }
-      // Drop anything outside the universe — the model occasionally reaches for
-      // a name it likes better than the ones it was given.
-      const clean = picks.filter((p) => {
-        const ok = p?.ticker && universe.has(String(p.ticker).toUpperCase());
-        if (!ok) console.log(`  dropped off-universe ticker: ${p?.ticker}`);
-        return ok;
-      }).map((p) => ({
-        ticker: String(p.ticker).toUpperCase(),
-        direction: p.direction === 'short' ? 'short' : 'long',
-        conviction: ['high', 'medium', 'low'].includes(p.conviction) ? p.conviction : 'medium',
-        catalyst: p.catalyst ?? '',
-        rationale: p.rationale ?? '',
-        risk: p.risk ?? '',
-      }));
+      const { text, sources } = await gemini(prompt);
+      console.log(`  attempt ${attempt} — search sources: ${sources}`);
+      const picks = tryParseJson(text)?.picks;
+      if (!Array.isArray(picks) || picks.length === 0) continue;
+      const clean = picks
+        .map((p) => ({ ...p, _id: resolveId(p?.id ?? p?.symbol ?? p?.ticker, allowed) }))
+        .filter((p) => {
+          if (!p._id) console.log(`  dropped off-universe id: ${p?.id ?? p?.symbol}`);
+          return Boolean(p._id);
+        })
+        .map((p) => ({
+          id: p._id,
+          symbol: symbolFor(p._id),
+          direction: p.direction === 'short' ? 'short' : 'long',
+          conviction: ['high', 'medium', 'low'].includes(p.conviction) ? p.conviction : 'medium',
+          catalyst: p.catalyst ?? '',
+          rationale: p.rationale ?? '',
+          risk: p.risk ?? '',
+          // Entry is captured from the SAME snapshot the model reasoned over, so
+          // the price a user sees on the board is the price it is graded from.
+          entryPrice: markets[p._id]?.price ?? null,
+        }));
       if (clean.length) return clean.slice(0, count);
     } catch (e) {
       console.log(`  attempt ${attempt} failed: ${e.message}`);
@@ -156,59 +173,69 @@ async function generateBoard(horizon, sectorKeys, count, dateStr) {
 // ---------------------------------------------------------------------------
 
 /**
- * Grade a board against real closes.
+ * Grade a board against real prices, RELATIVE TO BITCOIN.
  *
- * METHODOLOGY, stated once here and it must match whatever the app tells users:
- * entry is the close on the day the board was published, exit is the close on
- * the day it is graded. Close-to-close.
+ * Uses the entry price captured when the board was published and the live spot
+ * price now — NOT CoinGecko's /history endpoint. /history only covers completed
+ * UTC days, so grading anything against "today" returned null and silently left
+ * every board ungraded. Spot-to-spot is available at any hour and, crucially,
+ * grades from exactly the price shown on the board when it was published.
  *
- * This is measurable and checkable, but it is not exactly what a reader could
- * have achieved — the board is published after the bell, so the earliest real
- * entry is the next open. Close-to-close is the convention published track
- * records use, and being consistent and disclosed matters more than being
- * flattering. Do not quietly switch to open-to-close later; that would rewrite
- * history.
+ * This is the central methodology decision and the honest one. Most alts are
+ * high-beta bets on BTC: on a day BTC rises 4%, a coin up 3% has cost you money
+ * versus simply holding BTC. Grading against zero would credit the model for
+ * market beta it did not produce and would make the record look far better than
+ * it is. Relative scoring isolates whatever selection skill actually exists.
  *
- * A long is graded on the move from entry to exit; a short is the inverse.
- * Picks whose prices cannot be resolved stay UNGRADED rather than guessed — an
- * ungraded pick is honest, a wrongly graded one destroys the only thing the
+ * resultPct = (coin move - BTC move), sign-flipped for shorts.
+ *
+ * Prices that cannot be resolved leave the pick UNGRADED rather than guessed.
+ * An ungraded pick is honest; a wrongly graded one destroys the only thing the
  * product sells.
  */
-async function gradeBoard(board, exitDay) {
+async function gradeBoard(board, exitDay, markets) {
   if (!board?.picks?.length) return board;
-  const entryDay = board.date;
-  let graded = 0;
 
+  const benchEntry = board.benchmarkEntry ?? null;
+  const benchExit = markets[BENCHMARK_ID]?.price ?? null;
+  const benchMove = pctChange(benchEntry, benchExit);
+  if (benchMove === null) {
+    console.log(`  cannot price ${BENCHMARK_SYMBOL} (entry=${benchEntry} exit=${benchExit}); board left ungraded`);
+    return board;
+  }
+  console.log(`  ${BENCHMARK_SYMBOL} benchmark ${board.date} -> ${exitDay}: ${benchMove > 0 ? '+' : ''}${benchMove}%`);
+
+  let graded = 0;
   for (const pick of board.picks) {
     if (pick.result) continue;
-    const closes = await getCloses(pick.ticker, entryDay, exitDay);
-    const entry = closes[entryDay] ?? null;
-    const exit = closes[exitDay] ?? null;
-    const move = pctChange(entry, exit);
+    const exit = markets[pick.id]?.price ?? null;
+    const move = pctChange(pick.entryPrice, exit);
     if (move === null) {
-      console.log(`  ${pick.ticker}: no price data for ${entryDay} -> ${exitDay}, left ungraded`);
+      console.log(`  ${pick.symbol}: no price (entry=${pick.entryPrice} exit=${exit}), left ungraded`);
       continue;
     }
-    const signed = pick.direction === 'short' ? -move : move;
-    pick.entryClose = entry;
-    pick.exitClose = exit;
-    pick.exitDate = exitDay;
-    pick.changePct = move;
-    pick.resultPct = Number(signed.toFixed(2));
-    pick.result = signed > 0 ? 'W' : signed < 0 ? 'L' : 'push';
+    const rel = Number((move - benchMove).toFixed(2));
+    const signed = pick.direction === 'short' ? -rel : rel;
+    Object.assign(pick, {
+      exitPrice: exit,
+      exitDate: exitDay,
+      changePct: move,
+      benchmarkPct: benchMove,
+      resultPct: Number(signed.toFixed(2)),
+      result: signed > 0 ? 'W' : signed < 0 ? 'L' : 'push',
+    });
     graded++;
-    console.log(`  ${pick.ticker} ${pick.direction}: ${entry} -> ${exit} = ${signed > 0 ? '+' : ''}${signed.toFixed(2)}% ${pick.result}`);
+    console.log(`  ${pick.symbol} ${pick.direction}: ${move > 0 ? '+' : ''}${move}% vs BTC ${benchMove > 0 ? '+' : ''}${benchMove}% = ${signed > 0 ? '+' : ''}${signed.toFixed(2)}% ${pick.result}`);
   }
 
   if (graded) {
     const done = board.picks.filter((p) => p.result);
     board.gradedAt = new Date().toISOString();
+    board.benchmark = { symbol: BENCHMARK_SYMBOL, pct: benchMove };
     board.record = {
       wins: done.filter((p) => p.result === 'W').length,
       losses: done.filter((p) => p.result === 'L').length,
-      avgPct: done.length
-        ? Number((done.reduce((s, p) => s + p.resultPct, 0) / done.length).toFixed(2))
-        : null,
+      avgPct: done.length ? Number((done.reduce((s, p) => s + p.resultPct, 0) / done.length).toFixed(2)) : null,
     };
   }
   return board;
@@ -218,37 +245,12 @@ async function gradeBoard(board, exitDay) {
 // Schedule
 // ---------------------------------------------------------------------------
 
-/**
- * Which boards are cut today.
- *
- * The job runs AFTER the closing bell, because grading needs the session's
- * official close and that does not exist until the market shuts. So each run
- * grades what just closed, then publishes the board for the period ahead.
- *
- * That makes Friday, not Monday, the right day to cut the weekly board — a
- * "week ahead" board published Monday evening has already missed Monday. Same
- * logic puts the monthly board on the last weekday of the month rather than the
- * first.
- */
+/** Crypto never closes, so every day is a trading day. */
 function boardsDue(now) {
-  const dow = now.getUTCDay();      // 0 Sun .. 6 Sat
-  const due = [];
-  if (dow >= 1 && dow <= 5) due.push('daily');
-  if (dow === 5) due.push('weekly');
-  if (dow >= 1 && dow <= 5 && isLastWeekdayOfMonth(now)) due.push('monthly');
+  const due = ['daily'];
+  if (now.getUTCDay() === 1) due.push('weekly');
+  if (now.getUTCDate() === 1) due.push('monthly');
   return due;
-}
-
-/** True when no later weekday remains in this month. */
-function isLastWeekdayOfMonth(now) {
-  const probe = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
-  const month = probe.getUTCMonth();
-  for (;;) {
-    probe.setUTCDate(probe.getUTCDate() + 1);
-    if (probe.getUTCMonth() !== month) return true;
-    const d = probe.getUTCDay();
-    if (d >= 1 && d <= 5) return false;
-  }
 }
 
 async function readJson(path, fallback) {
@@ -266,38 +268,46 @@ async function main() {
     ? process.env.PICKS_ONLY_HORIZON.split(',').map((s) => s.trim())
     : boardsDue(now);
 
-  console.log(`Catalyst picks — ${dateStr}`);
-  console.log(`  price provider: ${providerName()}${providerIsDevOnly() ? '  [DEV ONLY — not licensed for end users]' : ''}`);
-  console.log(`  boards due: ${due.join(', ') || '(none — weekend)'}`);
-  if (!due.length) return;
+  console.log(`Catalyst crypto picks — ${dateStr}`);
+  console.log(`  price provider: ${providerName()}`);
+  console.log(`  boards due: ${due.join(', ')}`);
 
   const current = await readJson(PICKS_FILE, {});
   const archive = await readJson(ARCHIVE_FILE, { boards: [] });
 
+  const universe = universeFor(CATEGORY_KEYS);
+  console.log(`  universe: ${universe.length} coins`);
+  const markets = await getMarkets(universe.map(([id]) => id));
+  console.log(`  market data for ${Object.keys(markets).length} coins`);
+  if (!Object.keys(markets).length) throw new Error('No market data — aborting rather than publishing a blind board');
+
   for (const horizon of due) {
-    // Grade the outgoing board of this horizon before replacing it.
     const prev = current[horizon];
     if (prev?.picks?.length) {
       console.log(`\nGrading previous ${horizon} board (${prev.date})…`);
-      const graded = await gradeBoard(prev, dateStr);
+      const graded = await gradeBoard(prev, dateStr, markets);
       if (graded.gradedAt) archive.boards.push(graded);
     }
 
     console.log(`\nGenerating ${horizon} board…`);
-    const picks = await generateBoard(horizon, SECTOR_KEYS, BOARD_SIZE[horizon], dateStr);
+    const picks = await generateBoard(horizon, CATEGORY_KEYS, BOARD_SIZE[horizon], dateStr, markets);
     if (!picks.length) {
       console.log(`  no ${horizon} picks generated — leaving previous board in place`);
       continue;
     }
-    current[horizon] = { horizon, date: dateStr, generatedAt: new Date().toISOString(), picks };
-    console.log(`  ✓ ${picks.length} picks: ${picks.map((p) => `${p.ticker} ${p.direction}`).join(', ')}`);
+    current[horizon] = {
+      horizon, date: dateStr, generatedAt: new Date().toISOString(),
+      benchmarkEntry: markets[BENCHMARK_ID]?.price ?? null,
+      picks,
+    };
+    console.log(`  ✓ ${picks.length}: ${picks.map((p) => `${p.symbol} ${p.direction}`).join(', ')}`);
   }
 
   // Keep the archive complete. A track record with losers removed is worse than
-  // no track record — it is the thing regulators look at, and the thing users
-  // can check against the market themselves.
+  // no track record — users can verify every one of these against any chart.
   archive.boards = archive.boards.slice(-500);
   archive.updatedAt = new Date().toISOString();
+  archive.attribution = 'Price data provided by CoinGecko';
 
   await writeFile(PICKS_FILE, JSON.stringify(current, null, 2));
   await writeFile(ARCHIVE_FILE, JSON.stringify(archive, null, 2));

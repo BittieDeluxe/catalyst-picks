@@ -1,205 +1,117 @@
 /**
- * Closing-price lookup, isolated behind one interface.
+ * Crypto price lookup.
  *
- * This file exists because the licensing question is unresolved, not because the
- * code needs an abstraction for its own sake. Every vendor's self-serve tier
- * forbids showing data to end users; commercial quotes are out with
- * marketdata.app, Finnhub and Tiingo. Whichever answers cheapest, swapping to it
- * should mean writing one function below and changing PRICE_PROVIDER — nothing
- * else in the pipeline touches a vendor API.
+ * CoinGecko, and the licensing is the reason this app exists in crypto rather
+ * than equities. Their terms say plainly: "You're entitled to charge for your
+ * services and products that incorporate or integrate data from CoinGecko API."
+ * What is forbidden is reselling ACCESS to the API — not displaying the data in
+ * a paid app. That is the opposite of every US equities vendor, all of whom bar
+ * showing derived values to end users without a redistribution licence
+ * ($150-1500/month, or Databento's $1500 + exchange fees).
  *
- * Grading MUST use a real feed. Gemini cannot do this job — measured 2026-09-10
- * against Nasdaq's own closes for 2026-09-09, asking three times with search
- * grounding on:
+ * Free "Demo" tier: 10,000 calls/month, attribution REQUIRED. Grading a few
+ * dozen coins a day is nowhere near that ceiling. Basic is $35/month
+ * ($29 annual) if volume ever justifies it.
  *
- *     AAPL  315.34   correct x3
- *     MSFT  491.65   correct, correct, WRONG (493.95 — off $2.30 / 0.47%)
- *     NVDA  223.67   correct, WRONG (224.17 — off $0.50 / 0.22%), correct
- *     AMD   521.095  correct x3
- *     TSLA  367.81   correct x3
+ * ATTRIBUTION: the app must display "Data provided by CoinGecko" with a link.
+ * That is a condition of the licence, not a nicety — do not remove it.
  *
- * Two of fifteen answers were simply false, and nothing in the response
- * distinguishes them from the true ones. A day-trade moves 1-3%, so a 0.47%
- * error is a third of the signal — enough to report a loser as a winner.
+ * Never grade with an LLM. Measured 2026-09-10 against Nasdaq's own closes,
+ * Gemini with search grounding returned two false prices out of fifteen, off by
+ * up to 0.47%, with nothing marking the wrong ones.
  */
 
-const PROVIDER = process.env.PRICE_PROVIDER ?? 'nasdaq';
+const BASE = 'https://api.coingecko.com/api/v3';
+const KEY = process.env.COINGECKO_API_KEY ?? null;
 
-const UA = { 'User-Agent': 'curl/8.7.1', Accept: '*/*' };
-
-/** ISO date (YYYY-MM-DD) -> unix seconds at UTC midnight. */
-function toEpoch(day) {
-  return Math.floor(new Date(`${day}T00:00:00Z`).getTime() / 1000);
+function headers() {
+  return {
+    Accept: 'application/json',
+    'User-Agent': 'catalyst-picks',
+    ...(KEY ? { 'x-cg-demo-api-key': KEY } : {}),
+  };
 }
 
-// ---------------------------------------------------------------------------
-// Providers. Each returns { [YYYY-MM-DD]: close } for the requested range, or
-// null if the lookup failed. Never throw — a failed grade is recoverable, a
-// crashed pipeline is not.
-// ---------------------------------------------------------------------------
+/** CoinGecko's history endpoint wants DD-MM-YYYY, not ISO. */
+function toCgDate(day) {
+  const [y, m, d] = day.split('-');
+  return `${d}-${m}-${y}`;
+}
 
-/**
- * DEVELOPMENT ONLY — Nasdaq's public website endpoint.
- *
- * Chosen over Yahoo because Yahoo hard-429s this machine within a few requests,
- * which is exactly the fragility we should not ship on. Still unlicensed for
- * end-user display: replace before anyone can subscribe.
- */
-async function nasdaqCloses(ticker, fromDay, toDay) {
-  const us = (d) => `${d.slice(5, 7)}/${d.slice(8, 10)}/${d.slice(0, 4)}`;
-  const url = `https://api.nasdaq.com/api/quote/${encodeURIComponent(ticker)}/historical`
-    + `?assetclass=stocks&fromdate=${fromDay}&todate=${toDay}&limit=200`;
-  try {
-    const res = await fetch(url, {
-      headers: { 'User-Agent': 'Mozilla/5.0', Accept: 'application/json' },
-      signal: AbortSignal.timeout(20000),
-    });
-    if (!res.ok) return null;
-    const rows = (await res.json())?.data?.tradesTable?.rows;
-    if (!Array.isArray(rows)) return null;
-    const out = {};
-    for (const r of rows) {
-      const close = Number(String(r.close ?? '').replace(/[$,]/g, ''));
-      const [mm, dd, yyyy] = String(r.date ?? '').split('/');
-      if (!yyyy || !Number.isFinite(close)) continue;
-      out[`${yyyy}-${mm}-${dd}`] = close;
+/** Free tier is rate limited; space calls out rather than burst and get 429'd. */
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function getJson(url, { retries = 3 } = {}) {
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    try {
+      const res = await fetch(url, { headers: headers(), signal: AbortSignal.timeout(20000) });
+      if (res.status === 429) {
+        // Demo tier throttles hard. Back off rather than lose the run.
+        await sleep(attempt * 8000);
+        continue;
+      }
+      if (!res.ok) return null;
+      return await res.json();
+    } catch {
+      if (attempt === retries) return null;
+      await sleep(attempt * 2000);
     }
-    return out;
-  } catch {
-    return null;
   }
+  return null;
 }
 
 /**
- * DEVELOPMENT ONLY. Unofficial, unlicensed, and aggressively rate-limited —
- * kept only as a second option if Nasdaq's endpoint changes shape.
+ * Current market snapshot for a set of CoinGecko ids.
+ * One call covers the whole universe, which matters on a 10k/month budget.
+ * Returns { id: { symbol, name, price, change24h, change7d, marketCap, volume } }.
  */
-async function yahooCloses(ticker, fromDay, toDay) {
-  const p1 = toEpoch(fromDay);
-  const p2 = toEpoch(toDay) + 86400;
-  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}`
-    + `?period1=${p1}&period2=${p2}&interval=1d`;
-  try {
-    const res = await fetch(url, { headers: UA, signal: AbortSignal.timeout(15000) });
-    if (!res.ok) return null;
-    const r = (await res.json())?.chart?.result?.[0];
-    const stamps = r?.timestamp;
-    const closes = r?.indicators?.quote?.[0]?.close;
-    if (!Array.isArray(stamps) || !Array.isArray(closes)) return null;
-    const out = {};
-    for (let i = 0; i < stamps.length; i++) {
-      if (closes[i] == null) continue;
-      out[new Date(stamps[i] * 1000).toISOString().slice(0, 10)] = Number(closes[i].toFixed(4));
+export async function getMarkets(ids) {
+  const out = {};
+  // CoinGecko caps ids per request; chunk defensively.
+  const CHUNK = 100;
+  for (let i = 0; i < ids.length; i += CHUNK) {
+    const slice = ids.slice(i, i + CHUNK);
+    const url = `${BASE}/coins/markets?vs_currency=usd&ids=${slice.join(',')}`
+      + `&order=market_cap_desc&per_page=${CHUNK}&page=1`
+      + `&price_change_percentage=24h,7d`;
+    const data = await getJson(url);
+    if (!Array.isArray(data)) continue;
+    for (const c of data) {
+      out[c.id] = {
+        symbol: String(c.symbol ?? '').toUpperCase(),
+        name: c.name,
+        price: c.current_price,
+        change24h: c.price_change_percentage_24h,
+        change7d: c.price_change_percentage_7d_in_currency,
+        marketCap: c.market_cap,
+        volume: c.total_volume,
+      };
     }
-    return out;
-  } catch {
-    return null;
+    if (i + CHUNK < ids.length) await sleep(2000);
   }
-}
-
-/** marketdata.app — Commercial tier is the one that permits end-user display. */
-async function marketdataCloses(ticker, fromDay, toDay) {
-  const key = process.env.MARKETDATA_TOKEN;
-  if (!key) return null;
-  const url = `https://api.marketdata.app/v1/stocks/candles/D/${encodeURIComponent(ticker)}`
-    + `?from=${fromDay}&to=${toDay}&token=${key}`;
-  try {
-    const res = await fetch(url, { headers: UA, signal: AbortSignal.timeout(15000) });
-    if (!res.ok) return null;
-    const d = await res.json();
-    if (!Array.isArray(d?.t) || !Array.isArray(d?.c)) return null;
-    const out = {};
-    for (let i = 0; i < d.t.length; i++) {
-      out[new Date(d.t[i] * 1000).toISOString().slice(0, 10)] = Number(d.c[i]);
-    }
-    return out;
-  } catch {
-    return null;
-  }
-}
-
-/** Finnhub — cheapest vendor with a published commercial range. */
-async function finnhubCloses(ticker, fromDay, toDay) {
-  const key = process.env.FINNHUB_TOKEN;
-  if (!key) return null;
-  const url = `https://finnhub.io/api/v1/stock/candle?symbol=${encodeURIComponent(ticker)}`
-    + `&resolution=D&from=${toEpoch(fromDay)}&to=${toEpoch(toDay) + 86400}&token=${key}`;
-  try {
-    const res = await fetch(url, { headers: UA, signal: AbortSignal.timeout(15000) });
-    if (!res.ok) return null;
-    const d = await res.json();
-    if (d?.s !== 'ok' || !Array.isArray(d.t) || !Array.isArray(d.c)) return null;
-    const out = {};
-    for (let i = 0; i < d.t.length; i++) {
-      out[new Date(d.t[i] * 1000).toISOString().slice(0, 10)] = Number(d.c[i]);
-    }
-    return out;
-  } catch {
-    return null;
-  }
-}
-
-/** Tiingo — flat-rate redistribution licence rather than per-user. */
-async function tiingoCloses(ticker, fromDay, toDay) {
-  const key = process.env.TIINGO_TOKEN;
-  if (!key) return null;
-  const url = `https://api.tiingo.com/tiingo/daily/${encodeURIComponent(ticker)}/prices`
-    + `?startDate=${fromDay}&endDate=${toDay}&token=${key}`;
-  try {
-    const res = await fetch(url, { headers: { ...UA, 'Content-Type': 'application/json' }, signal: AbortSignal.timeout(15000) });
-    if (!res.ok) return null;
-    const rows = await res.json();
-    if (!Array.isArray(rows)) return null;
-    const out = {};
-    for (const r of rows) {
-      if (r?.date && r?.close != null) out[String(r.date).slice(0, 10)] = Number(r.close);
-    }
-    return out;
-  } catch {
-    return null;
-  }
-}
-
-const PROVIDERS = {
-  nasdaq: nasdaqCloses,
-  yahoo: yahooCloses,
-  marketdata: marketdataCloses,
-  finnhub: finnhubCloses,
-  tiingo: tiingoCloses,
-};
-
-/** True when the configured provider is not licensed for end-user display. */
-export function providerIsDevOnly() {
-  return PROVIDER === 'nasdaq' || PROVIDER === 'yahoo';
-}
-
-export function providerName() {
-  return PROVIDER;
+  return out;
 }
 
 /**
- * Daily closes for one ticker across a date range, inclusive.
- * Returns {} rather than null on failure so callers can treat "no data" and
- * "lookup failed" the same way — both mean "cannot grade this pick yet".
+ * Price for one coin on a specific past date (UTC).
+ *
+ * CoinGecko's /history endpoint is the snapshot at 00:00 UTC on that date.
+ * Crypto trades 24/7 so there is no "close" — 00:00 UTC is the convention this
+ * project uses on both ends of a grade, which keeps the comparison consistent
+ * even though it is arbitrary. Do not mix it with spot prices.
  */
-export async function getCloses(ticker, fromDay, toDay) {
-  const fn = PROVIDERS[PROVIDER];
-  if (!fn) throw new Error(`Unknown PRICE_PROVIDER: ${PROVIDER}`);
-  return (await fn(ticker, fromDay, toDay)) ?? {};
+export async function getPriceOn(id, day) {
+  const data = await getJson(`${BASE}/coins/${encodeURIComponent(id)}/history?date=${toCgDate(day)}&localization=false`);
+  const p = data?.market_data?.current_price?.usd;
+  return typeof p === 'number' ? p : null;
 }
 
-/** Close on a specific day, or null when the market was shut or data is missing. */
-export async function getClose(ticker, day) {
-  const closes = await getCloses(ticker, day, day);
-  return closes[day] ?? null;
-}
-
-/**
- * Percentage change between two closes.
- * Both sides must be real numbers — a missing close returns null rather than
- * guessing, because a wrong grade is worse than an ungraded pick.
- */
+/** Percentage change, or null when either side is missing. Never guesses. */
 export function pctChange(from, to) {
   if (typeof from !== 'number' || typeof to !== 'number' || from === 0) return null;
   return Number((((to - from) / from) * 100).toFixed(2));
+}
+
+export function providerName() {
+  return KEY ? 'coingecko (demo key)' : 'coingecko (keyless)';
 }

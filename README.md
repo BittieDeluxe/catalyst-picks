@@ -1,47 +1,54 @@
 # catalyst-picks
 
-Scheduled AI stock picks for **Catalyst**, graded against real closing prices.
+Scheduled AI **crypto** picks for Catalyst, graded against real prices — relative to Bitcoin.
 
-Three boards on a fixed schedule:
+| Board   | Cut on          | Covers        |
+|---------|-----------------|---------------|
+| daily   | every day       | next 24 hours |
+| weekly  | Monday          | week ahead    |
+| monthly | 1st of month    | month ahead   |
 
-| Board   | Cut on                          | Covers        |
-|---------|---------------------------------|---------------|
-| daily   | every weekday after the close   | next session  |
-| weekly  | Friday after the close          | the week ahead|
-| monthly | last weekday of the month       | the month ahead|
+Each run grades the outgoing board first, then publishes the next.
 
-Each run **grades the outgoing board first**, then publishes the next one. Grading
-needs the session's official close, which is why the job runs after the bell
-rather than before the open.
+## Why crypto and not stocks
 
-## Why the schedule is fixed
+This started as a stock picker. Every US equities vendor forbids showing price-derived
+data to end users without a redistribution licence — quotes came back at $150/month
+(Tiingo, Finnhub, marketdata.app), $399 (EODHD) and **$1,500/month plus exchange fees**
+(Databento), whose support was explicit: *"Any data that requires our product as an input
+in its creation process counts as derived data."*
 
-The publisher's exclusion that lets a newsletter give securities opinions without
-registering as an investment adviser turns on the publication being bona fide,
-**impersonal**, and **regularly circulated**. Every subscriber gets the identical
-board. Nothing is tailored to anyone's finances. Keep it that way.
+CoinGecko's terms are the opposite: *"You're entitled to charge for your services and
+products that incorporate or integrate data from CoinGecko API."* What is forbidden is
+reselling **access to the API**, not displaying data in a paid app. Free tier is 10,000
+calls/month; this pipeline uses roughly one call per run.
 
-## Prices
+**Attribution is a licence condition** — the app must show "Data provided by CoinGecko"
+with a link. Do not remove it.
 
-`price-provider.mjs` is the only file that talks to a market data vendor. It
-defaults to a **development-only** source that is not licensed for showing data
-to end users. Before launch, set `PRICE_PROVIDER` and the matching token to a
-commercially licensed vendor — that is the entire swap.
+## Grading is relative to BTC
 
-**Never grade with an LLM.** Measured 2026-09-10 against Nasdaq's own closes,
-Gemini with search grounding returned two false prices out of fifteen answers,
-off by up to 0.47%. A day-trade moves 1-3%, so that is enough to report a loser
-as a winner, and nothing in the response marks the wrong ones.
+`resultPct = (coin move − BTC move)`, sign-flipped for shorts.
+
+Most alts are high-beta BTC bets. A coin up 3% on a day BTC rose 4% *lost* you money
+versus just holding BTC, and grading against zero would credit the model for market beta
+it did not produce. Relative scoring isolates whatever selection skill actually exists.
+It makes the record look worse. It is the honest number.
 
 ## Integrity rules
 
 - Grade **every** pick. Never delete a loser from the archive.
 - A pick with no resolvable price stays **ungraded**, never guessed.
-- Methodology is close-to-close and disclosed. Don't change it retroactively.
+- **Never grade with an LLM.** Measured 2026-09-10 against Nasdaq's own closes, Gemini
+  with search grounding returned two false prices out of fifteen, off by up to 0.47%,
+  with nothing marking the wrong ones.
+- Entry price is captured from the same snapshot the model reasoned over, so the price
+  shown on the board is the price it is graded from. Do not switch to CoinGecko's
+  `/history` — it only covers completed UTC days and silently returns null for today.
 
 ## Run locally
 
 ```bash
 GEMINI_API_KEY=... node generate-picks.mjs
-GEMINI_API_KEY=... PICKS_ONLY_HORIZON=daily node generate-picks.mjs   # force one board
+GEMINI_API_KEY=... PICKS_ONLY_HORIZON=daily node generate-picks.mjs
 ```
