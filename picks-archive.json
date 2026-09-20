@@ -121,8 +121,130 @@
         "losses": 1,
         "avgPct": 1.37
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-09-19",
+      "generatedAt": "2026-09-19T15:49:15.665Z",
+      "benchmarkEntry": 81850,
+      "picks": [
+        {
+          "id": "injective-protocol",
+          "symbol": "INJ",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Injective has been integrated as a launch pairing asset on Pump.fun, LaunchOnSF, and MeteoraAG, and 21Shares updated its ETF filing to include INJ staking plans, all on September 19, 2026.",
+          "rationale": "These concurrent developments create multiple direct demand channels for INJ, expanding its utility in new token launches and meme markets while signaling growing institutional interest through the proposed ETF with staking. The integration with Phantom wallet on Solana further broadens its ecosystem reach.",
+          "risk": "The price durability depends on regulatory approval for the ETF and sustained trading volume on the new launch platforms.",
+          "entryPrice": 7.48,
+          "livePrice": 7.48,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 7.94,
+          "exitDate": "2026-09-20",
+          "changePct": 6.15,
+          "benchmarkPct": -1.18,
+          "resultPct": 7.33,
+          "result": "W"
+        },
+        {
+          "id": "uniswap",
+          "symbol": "UNI",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "The US SEC introduced a provisional 'Innovation Exemption' on September 18, 2026, allowing tokenized US stocks to trade via permissioned AMMs, directly benefiting Uniswap v4 technology.",
+          "rationale": "This regulatory clarity legitimizes Uniswap's infrastructure for tokenized real-world assets (RWAs), potentially attracting significant institutional liquidity and validating its role in the evolving tokenization landscape. Uniswap's existing integrations and strong positioning in tokenization further amplify the positive impact.",
+          "risk": "Any reversal or stricter interpretation of the SEC's exemption could negatively impact sentiment and adoption.",
+          "entryPrice": 8.91,
+          "livePrice": 8.91,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 8.7,
+          "exitDate": "2026-09-20",
+          "changePct": -2.36,
+          "benchmarkPct": -1.18,
+          "resultPct": -1.18,
+          "result": "L"
+        },
+        {
+          "id": "avalanche-2",
+          "symbol": "AVAX",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Paxos deployed its regulated financial infrastructure on Avalanche on September 17, 2026, expanding institutional access to AVAX and Avalanche-native USDC.",
+          "rationale": "This integration provides a regulated channel for institutional AVAX exposure and payment flows, strengthening Avalanche's position in the RWA narrative. Additionally, the upcoming Helicon upgrade on September 22, 2026, and ongoing NYSE/ICE tokenization work further enhance its fundamental outlook.",
+          "risk": "Actual institutional flows and usage levels on the newly integrated infrastructure remain to be seen, and broader market sentiment could affect performance.",
+          "entryPrice": 9.4,
+          "livePrice": 9.4,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 11.27,
+          "exitDate": "2026-09-20",
+          "changePct": 19.89,
+          "benchmarkPct": -1.18,
+          "resultPct": 21.07,
+          "result": "W"
+        },
+        {
+          "id": "arbitrum",
+          "symbol": "ARB",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Standard Chartered set a bullish $10 target for ARB by end-2030 in a research note published on September 18, 2026, with an interim target of $0.50 by end-2026.",
+          "rationale": "This significant endorsement from a major financial institution provides a strong sentiment boost, highlighting Arbitrum's growing importance as a real-world asset (RWA) trading hub. The network's benefit from the SEC's 'Innovation Exemption' further reinforces its long-term potential in tokenization.",
+          "risk": "The rally may face short-term profit-taking after the initial news, and the long-term price target is subject to market conditions and adoption rates.",
+          "entryPrice": 0.209645,
+          "livePrice": 0.209645,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.20346,
+          "exitDate": "2026-09-20",
+          "changePct": -2.95,
+          "benchmarkPct": -1.18,
+          "resultPct": -1.77,
+          "result": "L"
+        },
+        {
+          "id": "optimism",
+          "symbol": "OP",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Optimism's Superchain Upgrade 20 was approved by governance on September 16, 2026, with contract deployment on September 17, laying the groundwork for future multi-chain interoperability and targeting mainnet activation on September 24.",
+          "rationale": "This pivotal technical upgrade represents significant progress toward Optimism's Superchain vision, enhancing network utility and developer attractiveness. The recent approval and impending mainnet activation are likely to generate continued positive sentiment in the short term.",
+          "risk": "A scheduled token unlock of 116 million OP tokens on September 21, 2026, could introduce selling pressure, and any delays in the mainnet activation would be a negative catalyst.",
+          "entryPrice": 0.123774,
+          "livePrice": 0.123774,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.123516,
+          "exitDate": "2026-09-20",
+          "changePct": -0.21,
+          "benchmarkPct": -1.18,
+          "resultPct": 0.97,
+          "result": "W"
+        }
+      ],
+      "liveAsOf": "2026-09-19",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-09-20T15:56:38.017Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": -1.18
+      },
+      "record": {
+        "wins": 3,
+        "losses": 2,
+        "avgPct": 5.28
+      }
     }
   ],
-  "updatedAt": "2026-09-19T15:49:15.665Z",
+  "updatedAt": "2026-09-20T15:56:38.018Z",
   "attribution": "Powered by CoinGecko"
 }

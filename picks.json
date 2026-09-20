@@ -1,77 +1,64 @@
 {
   "daily": {
     "horizon": "daily",
-    "date": "2026-09-19",
-    "generatedAt": "2026-09-19T15:49:15.665Z",
-    "benchmarkEntry": 81850,
+    "date": "2026-09-20",
+    "generatedAt": "2026-09-20T15:56:38.017Z",
+    "benchmarkEntry": 80883,
     "picks": [
-      {
-        "id": "injective-protocol",
-        "symbol": "INJ",
-        "direction": "long",
-        "conviction": "high",
-        "catalyst": "Injective has been integrated as a launch pairing asset on Pump.fun, LaunchOnSF, and MeteoraAG, and 21Shares updated its ETF filing to include INJ staking plans, all on September 19, 2026.",
-        "rationale": "These concurrent developments create multiple direct demand channels for INJ, expanding its utility in new token launches and meme markets while signaling growing institutional interest through the proposed ETF with staking. The integration with Phantom wallet on Solana further broadens its ecosystem reach.",
-        "risk": "The price durability depends on regulatory approval for the ETF and sustained trading volume on the new launch platforms.",
-        "entryPrice": 7.48,
-        "livePrice": 7.48,
-        "liveChangePct": 0,
-        "livePct": 0
-      },
-      {
-        "id": "uniswap",
-        "symbol": "UNI",
-        "direction": "long",
-        "conviction": "high",
-        "catalyst": "The US SEC introduced a provisional 'Innovation Exemption' on September 18, 2026, allowing tokenized US stocks to trade via permissioned AMMs, directly benefiting Uniswap v4 technology.",
-        "rationale": "This regulatory clarity legitimizes Uniswap's infrastructure for tokenized real-world assets (RWAs), potentially attracting significant institutional liquidity and validating its role in the evolving tokenization landscape. Uniswap's existing integrations and strong positioning in tokenization further amplify the positive impact.",
-        "risk": "Any reversal or stricter interpretation of the SEC's exemption could negatively impact sentiment and adoption.",
-        "entryPrice": 8.91,
-        "livePrice": 8.91,
-        "liveChangePct": 0,
-        "livePct": 0
-      },
       {
         "id": "avalanche-2",
         "symbol": "AVAX",
         "direction": "long",
-        "conviction": "medium",
-        "catalyst": "Paxos deployed its regulated financial infrastructure on Avalanche on September 17, 2026, expanding institutional access to AVAX and Avalanche-native USDC.",
-        "rationale": "This integration provides a regulated channel for institutional AVAX exposure and payment flows, strengthening Avalanche's position in the RWA narrative. Additionally, the upcoming Helicon upgrade on September 22, 2026, and ongoing NYSE/ICE tokenization work further enhance its fundamental outlook.",
-        "risk": "Actual institutional flows and usage levels on the newly integrated infrastructure remain to be seen, and broader market sentiment could affect performance.",
-        "entryPrice": 9.4,
-        "livePrice": 9.4,
+        "conviction": "high",
+        "catalyst": "Avalanche's Helicon mainnet upgrade on September 22, 2026, will significantly reduce the AVAX staking lockup period from 14 days to 48 hours.",
+        "rationale": "This upgrade dramatically improves capital flexibility for validators and stakers, making AVAX staking more attractive and likely to draw in substantial retail and institutional capital. The market has already shown a strong positive reaction, indicating anticipation for the upgrade's activation.",
+        "risk": "A broader market downturn or unexpected technical issues during the upgrade process could invalidate the positive price action.",
+        "entryPrice": 11.27,
+        "livePrice": 11.27,
         "liveChangePct": 0,
         "livePct": 0
       },
       {
-        "id": "arbitrum",
-        "symbol": "ARB",
+        "id": "ondo-finance",
+        "symbol": "ONDO",
         "direction": "long",
-        "conviction": "medium",
-        "catalyst": "Standard Chartered set a bullish $10 target for ARB by end-2030 in a research note published on September 18, 2026, with an interim target of $0.50 by end-2026.",
-        "rationale": "This significant endorsement from a major financial institution provides a strong sentiment boost, highlighting Arbitrum's growing importance as a real-world asset (RWA) trading hub. The network's benefit from the SEC's 'Innovation Exemption' further reinforces its long-term potential in tokenization.",
-        "risk": "The rally may face short-term profit-taking after the initial news, and the long-term price target is subject to market conditions and adoption rates.",
-        "entryPrice": 0.209645,
-        "livePrice": 0.209645,
+        "conviction": "high",
+        "catalyst": "Ondo Finance's subsidiary Oasis Pro Markets joined DTCC's Fund/SERV network on September 16, 2026, becoming the first tokenization platform to participate.",
+        "rationale": "This membership allows Ondo to distribute tokenized products through a major existing fund infrastructure, processing over 85% of US mutual fund transaction volume, significantly bolstering its institutional distribution and the overall real-world asset (RWA) narrative. This institutional adoption is a strong fundamental driver for potential outperformance.",
+        "risk": "Slower-than-expected adoption of tokenized assets through traditional finance channels or negative regulatory developments could dampen enthusiasm.",
+        "entryPrice": 0.414363,
+        "livePrice": 0.414363,
         "liveChangePct": 0,
         "livePct": 0
       },
       {
-        "id": "optimism",
-        "symbol": "OP",
+        "id": "near",
+        "symbol": "NEAR",
         "direction": "long",
         "conviction": "medium",
-        "catalyst": "Optimism's Superchain Upgrade 20 was approved by governance on September 16, 2026, with contract deployment on September 17, laying the groundwork for future multi-chain interoperability and targeting mainnet activation on September 24.",
-        "rationale": "This pivotal technical upgrade represents significant progress toward Optimism's Superchain vision, enhancing network utility and developer attractiveness. The recent approval and impending mainnet activation are likely to generate continued positive sentiment in the short term.",
-        "risk": "A scheduled token unlock of 116 million OP tokens on September 21, 2026, could introduce selling pressure, and any delays in the mainnet activation would be a negative catalyst.",
-        "entryPrice": 0.123774,
-        "livePrice": 0.123774,
+        "catalyst": "NEAR Protocol launched confidential perpetual contracts on near.com on September 17, 2026, making positions confidential by default, and Aurora Intents integrated Sui on the same day.",
+        "rationale": "The introduction of confidential perpetuals enhances trader privacy, potentially attracting significant trading volume to the NEAR ecosystem. The integration with Sui expands NEAR's cross-chain reach and utility, driving ecosystem growth and strengthening its competitive differentiation.",
+        "risk": "Profit-taking after its recent significant rally, or a general shift in market sentiment away from Layer 1s, could lead to underperformance.",
+        "entryPrice": 3.81,
+        "livePrice": 3.81,
+        "liveChangePct": 0,
+        "livePct": 0
+      },
+      {
+        "id": "pepe",
+        "symbol": "PEPE",
+        "direction": "long",
+        "conviction": "medium",
+        "catalyst": "A Spot PEPE ETF was filed with the SEC on August 27, 2026, and PEPE is being highlighted in 'Altseason 2026 Outlooks' as of September 19, 2026.",
+        "rationale": "The filing of a Spot PEPE ETF, while approval is uncertain, introduces a significant institutional narrative and potential legitimization for the meme coin. Coupled with its inclusion in altseason narratives, this could attract substantial speculative capital, leading to potential outperformance relative to BTC in a risk-on environment.",
+        "risk": "Meme coin sentiment is highly volatile and could reverse quickly, or the ETF filing could face significant delays or outright rejection.",
+        "entryPrice": 0.00000395,
+        "livePrice": 0.00000395,
         "liveChangePct": 0,
         "livePct": 0
       }
     ],
-    "liveAsOf": "2026-09-19",
+    "liveAsOf": "2026-09-20",
     "liveBenchmarkPct": 0,
     "liveRecord": {
       "ahead": 0,
@@ -95,9 +82,9 @@
         "rationale": "Historically, Worldcoin (WLD) token unlocks have resulted in an average price decline of 17.7% within 10 days, indicating significant selling pressure as new supply enters the market. This substantial unlock is likely to exert downward pressure on WLD's price relative to Bitcoin in the coming week.",
         "risk": "Strong underlying demand for AI-related cryptocurrencies could absorb the selling pressure from the unlock, mitigating the expected negative price impact.",
         "entryPrice": 0.387252,
-        "livePrice": 0.428661,
-        "liveChangePct": 10.69,
-        "livePct": -3.68
+        "livePrice": 0.431177,
+        "liveChangePct": 11.34,
+        "livePct": -5.6
       },
       {
         "id": "aptos",
@@ -108,9 +95,9 @@
         "rationale": "The association of Aptos with state-sponsored malware activity introduces negative sentiment and reputational risk, potentially deterring legitimate users and developers. Concerns over security and potential regulatory scrutiny from this news could lead to APT underperforming Bitcoin.",
         "risk": "The market may view this as an isolated incident with no lasting impact on Aptos's fundamental value, or a broader bullish market trend could overshadow the negative news.",
         "entryPrice": 0.604319,
-        "livePrice": 0.731746,
-        "liveChangePct": 21.09,
-        "livePct": -14.08
+        "livePrice": 0.722144,
+        "liveChangePct": 19.5,
+        "livePct": -13.76
       },
       {
         "id": "binancecoin",
@@ -121,9 +108,9 @@
         "rationale": "Similar to Aptos, the reported use of BNB Smart Chain for state-linked malware distribution could generate negative sentiment and raise concerns regarding the network's security and potential regulatory implications. This negative association may cause BNB to underperform Bitcoin.",
         "risk": "Binance's extensive ecosystem and large user base might help to absorb or mitigate the impact of this news, or the market could perceive it as a minor, non-systemic issue.",
         "entryPrice": 736.82,
-        "livePrice": 769.03,
-        "liveChangePct": 4.37,
-        "livePct": 2.64
+        "livePrice": 756.49,
+        "liveChangePct": 2.67,
+        "livePct": 3.07
       },
       {
         "id": "pendle",
@@ -134,9 +121,9 @@
         "rationale": "This initiative significantly expands Pendle's offerings into the Real World Asset sector, allowing users to fix, trade, and speculate on yields associated with private infrastructure assets. This enhancement in platform utility is expected to attract new investors and liquidity, driving positive price action for PENDLE relative to Bitcoin.",
         "risk": "A broader market downturn or slower-than-anticipated adoption of the new RWA offerings could temper the positive sentiment and limit PENDLE's outperformance.",
         "entryPrice": 2.34,
-        "livePrice": 2.71,
-        "liveChangePct": 15.81,
-        "livePct": 8.8
+        "livePrice": 2.56,
+        "liveChangePct": 9.4,
+        "livePct": 3.66
       },
       {
         "id": "uniswap",
@@ -147,18 +134,18 @@
         "rationale": "While Uniswap V4 launched in January 2025, continuous development, integration, and the introduction of new features like permissioned pools demonstrate a strong commitment to innovation and expanding the protocol's capabilities. This sustained effort is likely to drive increased adoption and positive sentiment, positioning UNI to outperform Bitcoin.",
         "risk": "Intensified competition from other decentralized exchanges or a general slowdown in DeFi sector activity could limit UNI's potential upside.",
         "entryPrice": 7.73,
-        "livePrice": 8.91,
-        "liveChangePct": 15.27,
-        "livePct": 8.26
+        "livePrice": 8.7,
+        "liveChangePct": 12.55,
+        "livePct": 6.81
       }
     ],
-    "liveAsOf": "2026-09-19",
-    "liveBenchmarkPct": 7.01,
+    "liveAsOf": "2026-09-20",
+    "liveBenchmarkPct": 5.74,
     "liveRecord": {
       "ahead": 3,
       "behind": 2,
-      "avgPct": 0.39,
-      "daysOpen": 1
+      "avgPct": -1.16,
+      "daysOpen": 2
     }
   },
   "monthly": {
@@ -176,9 +163,9 @@
         "rationale": "The conclusion of this major vesting period for Aptos removes a significant structural overhang of selling pressure, which has historically diluted price action. This reduction in new supply entering the market creates a strong tailwind for APT to outperform BTC in the coming month, assuming consistent network activity.",
         "risk": "A significant decline in overall market sentiment or a lack of sustained network usage could invalidate this thesis.",
         "entryPrice": 0.604319,
-        "livePrice": 0.731746,
-        "liveChangePct": 21.09,
-        "livePct": 14.08
+        "livePrice": 0.722144,
+        "liveChangePct": 19.5,
+        "livePct": 13.76
       },
       {
         "id": "pendle",
@@ -189,9 +176,9 @@
         "rationale": "These multiple expansion initiatives, particularly the integration with Robinhood Chain and its retail platform, significantly broaden Pendle's reach and utility for tokenized yield products. Increased accessibility and new yield opportunities on Monad are expected to drive adoption and demand for PENDLE, enabling it to outperform BTC.",
         "risk": "Lower-than-expected user adoption on new platforms or a broader downturn in DeFi yield markets would invalidate this pick.",
         "entryPrice": 2.34,
-        "livePrice": 2.71,
-        "liveChangePct": 15.81,
-        "livePct": 8.8
+        "livePrice": 2.56,
+        "liveChangePct": 9.4,
+        "livePct": 3.66
       },
       {
         "id": "aave",
@@ -202,9 +189,9 @@
         "rationale": "This strategic move into institutional DeFi and Real-World Assets (RWAs) through a formal governance proposal on Aave V4 has the potential to attract substantial, sticky capital from regulated entities. This expansion of Aave's addressable market and utility could drive significant demand for AAVE, leading to outperformance relative to BTC.",
         "risk": "Slow institutional adoption or regulatory hurdles for RWA integration could temper the positive impact.",
         "entryPrice": 128.34,
-        "livePrice": 142.85,
-        "liveChangePct": 11.31,
-        "livePct": 4.3
+        "livePrice": 135.66,
+        "liveChangePct": 5.7,
+        "livePct": -0.04
       },
       {
         "id": "starknet",
@@ -215,9 +202,9 @@
         "rationale": "This significant technical upgrade enhances Starknet's capabilities, allowing for more complex and computationally intensive applications on the network. This could attract new developer activity and users, increasing demand for STRK to cover transaction fees and potentially leading to outperformance against BTC.",
         "risk": "A lack of immediate developer or user adoption of the new capabilities, or continued selling pressure from scheduled token unlocks, could offset the positive impact.",
         "entryPrice": 0.02902057,
-        "livePrice": 0.04389776,
-        "liveChangePct": 51.26,
-        "livePct": 44.25
+        "livePrice": 0.04509626,
+        "liveChangePct": 55.39,
+        "livePct": 49.65
       },
       {
         "id": "arbitrum",
@@ -228,18 +215,18 @@
         "rationale": "This substantial token unlock, occurring within the coming week, represents a significant increase in the circulating supply of ARB, particularly as a percentage of its current market capitalization. Given Arbitrum's cliff vesting schedule, such events can lead to increased selling pressure as early investors and contributors realize gains, potentially causing ARB to underperform BTC.",
         "risk": "Strong underlying market demand or unexpected positive news could absorb the unlocked supply, mitigating the expected selling pressure.",
         "entryPrice": 0.181519,
-        "livePrice": 0.209645,
-        "liveChangePct": 15.49,
-        "livePct": -8.48
+        "livePrice": 0.20346,
+        "liveChangePct": 12.09,
+        "livePct": -6.35
       }
     ],
-    "liveAsOf": "2026-09-19",
-    "liveBenchmarkPct": 7.01,
+    "liveAsOf": "2026-09-20",
+    "liveBenchmarkPct": 5.74,
     "liveRecord": {
-      "ahead": 4,
-      "behind": 1,
-      "avgPct": 12.59,
-      "daysOpen": 1
+      "ahead": 3,
+      "behind": 2,
+      "avgPct": 12.14,
+      "daysOpen": 2
     }
   }
 }
