@@ -152,6 +152,12 @@ async function generateBoard(horizon, categoryKeys, count, dateStr, markets) {
         .map((p) => ({ ...p, _id: resolveId(p?.id ?? p?.symbol ?? p?.ticker, allowed) }))
         .filter((p) => {
           if (!p._id) console.log(`  dropped off-universe id: ${p?.id ?? p?.symbol}`);
+          // Belt and braces: the benchmark is already out of `allowed`, but a
+          // pick on it would score zero forever, so never let one through.
+          if (p._id === BENCHMARK_ID) {
+            console.log(`  dropped ${BENCHMARK_SYMBOL}: cannot pick the benchmark`);
+            return false;
+          }
           return Boolean(p._id);
         })
         .map((p) => ({
@@ -379,9 +385,11 @@ async function main() {
   if (gradeOnly.length) console.log(`  GRADE ONLY: ${gradeOnly.join(', ')} — no new boards`);
   console.log(`  boards due: ${due.join(', ') || 'none'}`);
 
+  // Pickable universe excludes the benchmark; the price fetch must still
+  // include it, since every pick is scored against its move.
   const universe = universeFor(CATEGORY_KEYS);
-  console.log(`  universe: ${universe.length} coins`);
-  const markets = await getMarkets(universe.map(([id]) => id));
+  console.log(`  universe: ${universe.length} coins (excl. ${BENCHMARK_SYMBOL})`);
+  const markets = await getMarkets([...universe.map(([id]) => id), BENCHMARK_ID]);
   console.log(`  market data for ${Object.keys(markets).length} coins`);
   if (!Object.keys(markets).length) throw new Error('No market data — aborting rather than publishing a blind board');
 

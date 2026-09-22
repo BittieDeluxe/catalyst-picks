@@ -76,12 +76,22 @@ export const MAX_PICKS = 10;
 export const BENCHMARK_ID = 'bitcoin';
 export const BENCHMARK_SYMBOL = 'BTC';
 
-/** Deduplicated [id, symbol] universe for a set of category keys. */
-export function universeFor(categoryKeys) {
+/**
+ * Deduplicated [id, symbol] universe for a set of category keys.
+ *
+ * The benchmark itself is never pickable. Every pick is scored as its move
+ * minus the benchmark's move over the same window, so a pick ON the benchmark
+ * evaluates to exactly zero forever — it can never win, lose, or push, and it
+ * occupies a slot on the board while saying nothing. It still has to stay in
+ * the CATEGORIES list because prices for it are fetched the same way and it is
+ * what every other pick is measured against.
+ */
+export function universeFor(categoryKeys, { includeBenchmark = false } = {}) {
   const seen = new Map();
   for (const k of categoryKeys) {
     for (const [id, sym] of CATEGORIES[k]?.coins ?? []) seen.set(id, sym);
   }
+  if (!includeBenchmark) seen.delete(BENCHMARK_ID);
   return [...seen.entries()];
 }
 
