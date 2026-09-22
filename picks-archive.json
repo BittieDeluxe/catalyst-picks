@@ -468,8 +468,111 @@
         "losses": 2,
         "avgPct": -1.93
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-09-21",
+      "generatedAt": "2026-09-21T18:10:59.761Z",
+      "benchmarkEntry": 85930,
+      "picks": [
+        {
+          "id": "ripple",
+          "symbol": "XRP",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Absa Corporate and Investment Banking launched Absa Digital Asset Custody using Ripple's technology on September 21, 2026.",
+          "rationale": "This immediate institutional adoption of Ripple's technology in Africa expands its real-world utility and market footprint, providing bank-backed digital asset storage for institutional clients. This direct integration into traditional finance is a strong positive driver for XRP's value proposition.",
+          "risk": "A broader market downturn or unexpected negative regulatory news concerning Ripple's ongoing legal status could invalidate this positive outlook.",
+          "entryPrice": 1.5,
+          "livePrice": 1.5,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 1.56,
+          "exitDate": "2026-09-22",
+          "changePct": 4,
+          "benchmarkPct": 0.39,
+          "resultPct": 3.61,
+          "result": "W"
+        },
+        {
+          "id": "filecoin",
+          "symbol": "FIL",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Filecoin launched AI Agent Skills on September 19, 2026, enabling AI agents to publish verifiable results and store context on-chain.",
+          "rationale": "This development strategically positions Filecoin within the high-demand artificial intelligence sector, creating new utility and potential demand for its decentralized storage network. The project's focus on a 'Commercial Validation Year' further emphasizes a shift towards sustainable, revenue-generating use cases.",
+          "risk": "Slower-than-anticipated adoption of these new AI agent skills or increased competition in the decentralized AI storage space could limit Filecoin's outperformance.",
+          "entryPrice": 0.96241,
+          "livePrice": 0.96241,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 1.006,
+          "exitDate": "2026-09-22",
+          "changePct": 4.53,
+          "benchmarkPct": 0.39,
+          "resultPct": 4.14,
+          "result": "W"
+        },
+        {
+          "id": "arbitrum",
+          "symbol": "ARB",
+          "direction": "short",
+          "conviction": "high",
+          "catalyst": "A significant token unlock of approximately 139 million ARB is scheduled for September 23, 2026.",
+          "rationale": "Following a substantial price rally (ARB is up 64.31% in the last 7 days), this large influx of tokens from team, advisors, and early investors introduces considerable selling pressure. This supply shock is likely to trigger profit-taking and cause ARB to underperform Bitcoin in the immediate 24-hour window.",
+          "risk": "Unforeseen strong underlying demand or additional positive news from the Arbitrum ecosystem could absorb the unlocked supply, mitigating the expected selling pressure.",
+          "entryPrice": 0.226569,
+          "livePrice": 0.226569,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.214013,
+          "exitDate": "2026-09-22",
+          "changePct": -5.54,
+          "benchmarkPct": 0.39,
+          "resultPct": 5.93,
+          "result": "W"
+        },
+        {
+          "id": "aptos",
+          "symbol": "APT",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "The four-year token unlock schedule, which has been a consistent source of monthly sell pressure for Aptos, is set to conclude in October 2026.",
+          "rationale": "The impending end of this long-term vesting overhang removes a major structural headwind, which the market often front-runs. Investors may begin to price in a more favorable supply-demand dynamic, leading to anticipatory buying and potential outperformance as the consistent selling pressure is removed.",
+          "risk": "Overall market weakness or unexpected negative developments within the Aptos ecosystem could overshadow the positive sentiment derived from the conclusion of the vesting schedule.",
+          "entryPrice": 0.756728,
+          "livePrice": 0.756728,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.769059,
+          "exitDate": "2026-09-22",
+          "changePct": 1.63,
+          "benchmarkPct": 0.39,
+          "resultPct": 1.24,
+          "result": "W"
+        }
+      ],
+      "liveAsOf": "2026-09-21",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-09-22T16:47:40.396Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": 0.39
+      },
+      "record": {
+        "wins": 4,
+        "losses": 0,
+        "avgPct": 3.73
+      }
     }
   ],
-  "updatedAt": "2026-09-21T18:11:37.243Z",
+  "updatedAt": "2026-09-22T16:47:40.397Z",
   "attribution": "Powered by CoinGecko"
 }
