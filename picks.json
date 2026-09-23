@@ -1,77 +1,77 @@
 {
   "daily": {
     "horizon": "daily",
-    "date": "2026-09-22",
-    "generatedAt": "2026-09-22T16:47:40.396Z",
-    "benchmarkEntry": 86264,
+    "date": "2026-09-23",
+    "generatedAt": "2026-09-23T16:44:44.163Z",
+    "benchmarkEntry": 84021,
     "picks": [
       {
-        "id": "near",
-        "symbol": "NEAR",
+        "id": "optimism",
+        "symbol": "OP",
         "direction": "long",
         "conviction": "high",
-        "catalyst": "NEAR Protocol and Ondo Finance launched tokenized US stocks and ETFs on near.com on September 22, 2026, enabling trading of tokenized equities from over 30 networks.",
-        "rationale": "This significant Real World Asset (RWA) integration brings traditional financial products on-chain, expanding NEAR's utility and attracting new capital and users. Coupled with the recent confidential perpetual trading launch and unified account system, it strengthens NEAR's position as a versatile and adopted blockchain, indicating potential for outperformance relative to BTC.",
-        "risk": "The substantial price appreciation over the past week might lead to short-term profit-taking, potentially causing a temporary pullback.",
-        "entryPrice": 4.44,
-        "livePrice": 4.44,
+        "catalyst": "Optimism's Upgrade 20, introducing Super Root Dispute Games for cross-chain interoperability, is scheduled for mainnet execution on September 24, 2026.",
+        "rationale": "This upgrade represents a critical technical advancement towards a more integrated and verifiable Superchain ecosystem, enhancing Optimism's long-term value proposition by laying the groundwork for future interoperability.",
+        "risk": "The upgrade does not immediately activate full interoperability, and the market's reaction might be muted if the anticipated benefits are perceived as long-term rather than immediate.",
+        "entryPrice": 0.124415,
+        "livePrice": 0.124415,
         "liveChangePct": 0,
         "livePct": 0
       },
       {
-        "id": "solana",
-        "symbol": "SOL",
+        "id": "ondo-finance",
+        "symbol": "ONDO",
         "direction": "long",
         "conviction": "high",
-        "catalyst": "Solana's Alpenglow consensus protocol is targeted for mainnet activation in Q3 2026, with validators currently testing the Alpenswitch migration, alongside the recent Firedancer Mainnet Release v26.08.5 on September 18, 2026.",
-        "rationale": "These core infrastructure upgrades are set to dramatically improve Solana's transaction finality, network stability, and client diversity. Such fundamental enhancements position Solana as a more robust and enterprise-grade blockchain, which could drive increased developer and institutional adoption, leading to outperformance against BTC.",
-        "risk": "Any delays in the full mainnet activation of Alpenglow or unforeseen technical issues during the migration process could negatively impact market sentiment.",
-        "entryPrice": 117.19,
-        "livePrice": 117.19,
+        "catalyst": "Ondo Finance launched 'in-kind conversion' for Ondo Stocks on September 21, 2026, allowing approved institutions to directly convert existing equity holdings into tokenized stocks, and expanded Ondo Stocks to near.com and the NEAR Intents network on September 22, 2026.",
+        "rationale": "These developments significantly reduce friction for institutional adoption of tokenized real-world assets (RWA) and broaden market access across multiple blockchains, positioning ONDO as a leader in the growing RWA sector.",
+        "risk": "The in-kind conversion is currently limited to approved institutions, and broader regulatory uncertainty or increased competition in the tokenized assets space could impact ONDO's growth.",
+        "entryPrice": 0.415127,
+        "livePrice": 0.415127,
         "liveChangePct": 0,
         "livePct": 0
       },
       {
-        "id": "bitcoin",
-        "symbol": "BTC",
+        "id": "raydium",
+        "symbol": "RAY",
         "direction": "long",
         "conviction": "medium",
-        "catalyst": "US spot Bitcoin ETFs recorded over $1 billion in combined net inflows on September 22, 2026, marking the largest single-day inflow since last October.",
-        "rationale": "This significant and sustained institutional capital inflow into Bitcoin ETFs demonstrates robust demand from traditional finance, providing a strong bullish fundamental driver for BTC. Such renewed institutional interest often acts as a powerful catalyst for broader market upside.",
-        "risk": "A sudden reversal in ETF flows or a broader risk-off sentiment in the global financial markets could invalidate this positive outlook.",
-        "entryPrice": 86264,
-        "livePrice": 86264,
+        "catalyst": "Raydium is deploying $1 million of its treasury into USDv and supporting USDv trading pairs, aligning with USDv's launch on September 23, 2026. This follows its recent establishment as a dominant DEX for tokenized stocks on Solana and integration with Injective on September 17, 2026.",
+        "rationale": "The direct treasury investment and new stablecoin integration provide immediate utility and liquidity, while its established market share in tokenized stocks on Solana and cross-chain expansion through Injective solidify its competitive position.",
+        "risk": "The performance of USDv and the broader Solana DeFi ecosystem could influence RAY's trajectory, and intense competition in the DEX landscape remains a factor.",
+        "entryPrice": 2.03,
+        "livePrice": 2.03,
         "liveChangePct": 0,
         "livePct": 0
       },
       {
-        "id": "ethereum",
-        "symbol": "ETH",
-        "direction": "long",
-        "conviction": "medium",
-        "catalyst": "Spot Ethereum ETFs recorded a $270 million net inflow on September 21, 2026, with BlackRock's ETHA leading the inflows.",
-        "rationale": "Following a period of mixed flows, this substantial single-day inflow into Ethereum ETFs signals renewed institutional buying interest. This influx of capital could provide significant upward momentum for ETH, potentially leading to outperformance relative to BTC.",
-        "risk": "Continued volatility in ETF flows or a shift in institutional sentiment could temper the positive impact of recent inflows.",
-        "entryPrice": 2738.87,
-        "livePrice": 2738.87,
-        "liveChangePct": 0,
-        "livePct": 0
-      },
-      {
-        "id": "arbitrum",
-        "symbol": "ARB",
+        "id": "ethena",
+        "symbol": "ENA",
         "direction": "short",
-        "conviction": "high",
-        "catalyst": "A significant token unlock of approximately 139 million ARB tokens is scheduled for September 23, 2026, allocated to team members and early investors.",
-        "rationale": "Large token unlocks for early participants often introduce considerable selling pressure as recipients may realize profits or rebalance their holdings. Given Arbitrum's recent price volatility and elevated futures open interest, this unlock could lead to underperformance relative to BTC.",
-        "risk": "Strong underlying demand for Arbitrum or significant positive news from its ecosystem could absorb the unlocked tokens, mitigating the expected selling pressure.",
-        "entryPrice": 0.214013,
-        "livePrice": 0.214013,
+        "conviction": "medium",
+        "catalyst": "Ethena's USDe experienced a brief depeg to $0.92 on Binance on September 22, 2026, raising concerns about its stability, and a major lock-up of 3 billion ENA tokens ends on October 5, 2026, representing a significant potential supply increase.",
+        "rationale": "The recent depeg incident, even if temporary, highlights potential vulnerabilities in USDe's synthetic dollar design, while the upcoming unlock of a substantial ENA supply could create selling pressure despite a structured release.",
+        "risk": "Ethena has expanded its delta-hedging strategy and institutional integrations, which could mitigate depeg risks, and the structured release of ENA tokens might prevent a significant sell-off.",
+        "entryPrice": 0.205009,
+        "livePrice": 0.205009,
+        "liveChangePct": 0,
+        "livePct": 0
+      },
+      {
+        "id": "akash-network",
+        "symbol": "AKT",
+        "direction": "long",
+        "conviction": "medium",
+        "catalyst": "Akash Network is experiencing strong market momentum, with a 14% rally on September 23, 2026, driven by AI sector rotation and whale buying, following recent analysis highlighting its strategic positioning as decentralized AI infrastructure.",
+        "rationale": "The sustained narrative around decentralized AI compute, coupled with recent price appreciation, whale accumulation, and ongoing technical developments, positions AKT for potential outperformance.",
+        "risk": "The valuation of AKT is heavily tied to the speculative 'AI narrative,' and a shift in market sentiment or slower-than-expected adoption of its compute resources could invalidate the bullish thesis.",
+        "entryPrice": 0.705025,
+        "livePrice": 0.705025,
         "liveChangePct": 0,
         "livePct": 0
       }
     ],
-    "liveAsOf": "2026-09-22",
+    "liveAsOf": "2026-09-23",
     "liveBenchmarkPct": 0,
     "liveRecord": {
       "ahead": 0,
@@ -95,9 +95,9 @@
         "rationale": "This regulatory clarity is a significant fundamental tailwind for Layer 2 solutions like Arbitrum, expanding its potential institutional use cases in tokenized real-world assets. Despite a scheduled token unlock on September 23, the positive long-term implications of institutional adoption could drive outperformance relative to BTC.",
         "risk": "The upcoming token unlock on September 23 could introduce selling pressure if recipients immediately liquidate their holdings, potentially offsetting the positive regulatory news.",
         "entryPrice": 0.226569,
-        "livePrice": 0.214013,
-        "liveChangePct": -5.54,
-        "livePct": -5.93
+        "livePrice": 0.22164,
+        "liveChangePct": -2.18,
+        "livePct": 0.04
       },
       {
         "id": "ethereum",
@@ -108,9 +108,9 @@
         "rationale": "'Glamsterdam' is a major protocol upgrade focused on improving scalability, hardening the network, and enhancing usability, positioning Ethereum for increased adoption in stablecoin settlement and real-world asset use cases. The successful testnet deployment is a concrete step demonstrating progress towards these significant network enhancements.",
         "risk": "Hard fork schedules are provisional and can experience delays, which could temper bullish sentiment if the Sepolia testnet fork or subsequent milestones are postponed.",
         "entryPrice": 2747.35,
-        "livePrice": 2738.87,
-        "liveChangePct": -0.31,
-        "livePct": -0.7
+        "livePrice": 2659.45,
+        "liveChangePct": -3.2,
+        "livePct": -0.98
       },
       {
         "id": "bitcoin",
@@ -121,8 +121,8 @@
         "rationale": "Sustained institutional demand through spot ETFs provides a strong, verifiable demand signal, while derivatives markets show a clear bullish bias with substantial short liquidations and rising open interest. This combination suggests continued upward momentum and potential for outperformance against broader market sentiment.",
         "risk": "A sudden reversal in ETF flows or a significant deleveraging event in the derivatives market could quickly dissipate bullish momentum.",
         "entryPrice": 85930,
-        "livePrice": 86264,
-        "liveChangePct": 0.39,
+        "livePrice": 84021,
+        "liveChangePct": -2.22,
         "livePct": 0
       },
       {
@@ -134,9 +134,9 @@
         "rationale": "Achieving a significant milestone in deposits for its latest protocol version (V4) underscores Aave's continued dominance and innovation in the DeFi lending sector. This robust user engagement and successful upgrade adoption signal strong fundamental health and potential for growth.",
         "risk": "Broader DeFi market downturns or increased competition from other lending protocols could impact Aave's growth trajectory and token performance.",
         "entryPrice": 142.79,
-        "livePrice": 142.68,
-        "liveChangePct": -0.08,
-        "livePct": -0.47
+        "livePrice": 139.75,
+        "liveChangePct": -2.13,
+        "livePct": 0.09
       },
       {
         "id": "ondo-finance",
@@ -147,18 +147,18 @@
         "rationale": "This regulatory development significantly de-risks and expands the addressable market for Real World Asset (RWA) protocols like Ondo Finance, which focuses on bringing traditional financial assets onto the blockchain. The increased institutional comfort and clarity could drive substantial capital inflows into the RWA sector.",
         "risk": "Broader regulatory uncertainty or slower-than-expected adoption of tokenized securities by traditional financial institutions could limit ONDO's upside.",
         "entryPrice": 0.44139,
-        "livePrice": 0.428028,
-        "liveChangePct": -3.03,
-        "livePct": -3.42
+        "livePrice": 0.415127,
+        "liveChangePct": -5.95,
+        "livePct": -3.73
       }
     ],
-    "liveAsOf": "2026-09-22",
-    "liveBenchmarkPct": 0.39,
+    "liveAsOf": "2026-09-23",
+    "liveBenchmarkPct": -2.22,
     "liveRecord": {
-      "ahead": 0,
-      "behind": 4,
-      "avgPct": -2.1,
-      "daysOpen": 1
+      "ahead": 2,
+      "behind": 2,
+      "avgPct": -0.92,
+      "daysOpen": 2
     }
   },
   "monthly": {
@@ -176,9 +176,9 @@
         "rationale": "The conclusion of this major vesting period for Aptos removes a significant structural overhang of selling pressure, which has historically diluted price action. This reduction in new supply entering the market creates a strong tailwind for APT to outperform BTC in the coming month, assuming consistent network activity.",
         "risk": "A significant decline in overall market sentiment or a lack of sustained network usage could invalidate this thesis.",
         "entryPrice": 0.604319,
-        "livePrice": 0.769059,
-        "liveChangePct": 27.26,
-        "livePct": 14.48
+        "livePrice": 0.769939,
+        "liveChangePct": 27.41,
+        "livePct": 17.56
       },
       {
         "id": "pendle",
@@ -189,9 +189,9 @@
         "rationale": "These multiple expansion initiatives, particularly the integration with Robinhood Chain and its retail platform, significantly broaden Pendle's reach and utility for tokenized yield products. Increased accessibility and new yield opportunities on Monad are expected to drive adoption and demand for PENDLE, enabling it to outperform BTC.",
         "risk": "Lower-than-expected user adoption on new platforms or a broader downturn in DeFi yield markets would invalidate this pick.",
         "entryPrice": 2.34,
-        "livePrice": 2.41,
-        "liveChangePct": 2.99,
-        "livePct": -9.79
+        "livePrice": 2.45,
+        "liveChangePct": 4.7,
+        "livePct": -5.15
       },
       {
         "id": "aave",
@@ -202,9 +202,9 @@
         "rationale": "This strategic move into institutional DeFi and Real-World Assets (RWAs) through a formal governance proposal on Aave V4 has the potential to attract substantial, sticky capital from regulated entities. This expansion of Aave's addressable market and utility could drive significant demand for AAVE, leading to outperformance relative to BTC.",
         "risk": "Slow institutional adoption or regulatory hurdles for RWA integration could temper the positive impact.",
         "entryPrice": 128.34,
-        "livePrice": 142.68,
-        "liveChangePct": 11.17,
-        "livePct": -1.61
+        "livePrice": 139.75,
+        "liveChangePct": 8.89,
+        "livePct": -0.96
       },
       {
         "id": "starknet",
@@ -215,9 +215,9 @@
         "rationale": "This significant technical upgrade enhances Starknet's capabilities, allowing for more complex and computationally intensive applications on the network. This could attract new developer activity and users, increasing demand for STRK to cover transaction fees and potentially leading to outperformance against BTC.",
         "risk": "A lack of immediate developer or user adoption of the new capabilities, or continued selling pressure from scheduled token unlocks, could offset the positive impact.",
         "entryPrice": 0.02902057,
-        "livePrice": 0.04191177,
-        "liveChangePct": 44.42,
-        "livePct": 31.64
+        "livePrice": 0.03889573,
+        "liveChangePct": 34.03,
+        "livePct": 24.18
       },
       {
         "id": "arbitrum",
@@ -228,18 +228,18 @@
         "rationale": "This substantial token unlock, occurring within the coming week, represents a significant increase in the circulating supply of ARB, particularly as a percentage of its current market capitalization. Given Arbitrum's cliff vesting schedule, such events can lead to increased selling pressure as early investors and contributors realize gains, potentially causing ARB to underperform BTC.",
         "risk": "Strong underlying market demand or unexpected positive news could absorb the unlocked supply, mitigating the expected selling pressure.",
         "entryPrice": 0.181519,
-        "livePrice": 0.214013,
-        "liveChangePct": 17.9,
-        "livePct": -5.12
+        "livePrice": 0.22164,
+        "liveChangePct": 22.1,
+        "livePct": -12.25
       }
     ],
-    "liveAsOf": "2026-09-22",
-    "liveBenchmarkPct": 12.78,
+    "liveAsOf": "2026-09-23",
+    "liveBenchmarkPct": 9.85,
     "liveRecord": {
       "ahead": 2,
       "behind": 3,
-      "avgPct": 5.92,
-      "daysOpen": 4
+      "avgPct": 4.68,
+      "daysOpen": 5
     }
   }
 }

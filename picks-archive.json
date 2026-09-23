@@ -571,8 +571,130 @@
         "losses": 0,
         "avgPct": 3.73
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-09-22",
+      "generatedAt": "2026-09-22T16:47:40.396Z",
+      "benchmarkEntry": 86264,
+      "picks": [
+        {
+          "id": "near",
+          "symbol": "NEAR",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "NEAR Protocol and Ondo Finance launched tokenized US stocks and ETFs on near.com on September 22, 2026, enabling trading of tokenized equities from over 30 networks.",
+          "rationale": "This significant Real World Asset (RWA) integration brings traditional financial products on-chain, expanding NEAR's utility and attracting new capital and users. Coupled with the recent confidential perpetual trading launch and unified account system, it strengthens NEAR's position as a versatile and adopted blockchain, indicating potential for outperformance relative to BTC.",
+          "risk": "The substantial price appreciation over the past week might lead to short-term profit-taking, potentially causing a temporary pullback.",
+          "entryPrice": 4.44,
+          "livePrice": 4.44,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 4.22,
+          "exitDate": "2026-09-23",
+          "changePct": -4.95,
+          "benchmarkPct": -2.6,
+          "resultPct": -2.35,
+          "result": "L"
+        },
+        {
+          "id": "solana",
+          "symbol": "SOL",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Solana's Alpenglow consensus protocol is targeted for mainnet activation in Q3 2026, with validators currently testing the Alpenswitch migration, alongside the recent Firedancer Mainnet Release v26.08.5 on September 18, 2026.",
+          "rationale": "These core infrastructure upgrades are set to dramatically improve Solana's transaction finality, network stability, and client diversity. Such fundamental enhancements position Solana as a more robust and enterprise-grade blockchain, which could drive increased developer and institutional adoption, leading to outperformance against BTC.",
+          "risk": "Any delays in the full mainnet activation of Alpenglow or unforeseen technical issues during the migration process could negatively impact market sentiment.",
+          "entryPrice": 117.19,
+          "livePrice": 117.19,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 114.41,
+          "exitDate": "2026-09-23",
+          "changePct": -2.37,
+          "benchmarkPct": -2.6,
+          "resultPct": 0.23,
+          "result": "W"
+        },
+        {
+          "id": "bitcoin",
+          "symbol": "BTC",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "US spot Bitcoin ETFs recorded over $1 billion in combined net inflows on September 22, 2026, marking the largest single-day inflow since last October.",
+          "rationale": "This significant and sustained institutional capital inflow into Bitcoin ETFs demonstrates robust demand from traditional finance, providing a strong bullish fundamental driver for BTC. Such renewed institutional interest often acts as a powerful catalyst for broader market upside.",
+          "risk": "A sudden reversal in ETF flows or a broader risk-off sentiment in the global financial markets could invalidate this positive outlook.",
+          "entryPrice": 86264,
+          "livePrice": 86264,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 84021,
+          "exitDate": "2026-09-23",
+          "changePct": -2.6,
+          "benchmarkPct": -2.6,
+          "resultPct": 0,
+          "result": "push"
+        },
+        {
+          "id": "ethereum",
+          "symbol": "ETH",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Spot Ethereum ETFs recorded a $270 million net inflow on September 21, 2026, with BlackRock's ETHA leading the inflows.",
+          "rationale": "Following a period of mixed flows, this substantial single-day inflow into Ethereum ETFs signals renewed institutional buying interest. This influx of capital could provide significant upward momentum for ETH, potentially leading to outperformance relative to BTC.",
+          "risk": "Continued volatility in ETF flows or a shift in institutional sentiment could temper the positive impact of recent inflows.",
+          "entryPrice": 2738.87,
+          "livePrice": 2738.87,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 2659.45,
+          "exitDate": "2026-09-23",
+          "changePct": -2.9,
+          "benchmarkPct": -2.6,
+          "resultPct": -0.3,
+          "result": "L"
+        },
+        {
+          "id": "arbitrum",
+          "symbol": "ARB",
+          "direction": "short",
+          "conviction": "high",
+          "catalyst": "A significant token unlock of approximately 139 million ARB tokens is scheduled for September 23, 2026, allocated to team members and early investors.",
+          "rationale": "Large token unlocks for early participants often introduce considerable selling pressure as recipients may realize profits or rebalance their holdings. Given Arbitrum's recent price volatility and elevated futures open interest, this unlock could lead to underperformance relative to BTC.",
+          "risk": "Strong underlying demand for Arbitrum or significant positive news from its ecosystem could absorb the unlocked tokens, mitigating the expected selling pressure.",
+          "entryPrice": 0.214013,
+          "livePrice": 0.214013,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.22164,
+          "exitDate": "2026-09-23",
+          "changePct": 3.56,
+          "benchmarkPct": -2.6,
+          "resultPct": -6.16,
+          "result": "L"
+        }
+      ],
+      "liveAsOf": "2026-09-22",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-09-23T16:44:44.163Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": -2.6
+      },
+      "record": {
+        "wins": 1,
+        "losses": 3,
+        "avgPct": -1.72
+      }
     }
   ],
-  "updatedAt": "2026-09-22T16:47:40.397Z",
+  "updatedAt": "2026-09-23T16:44:44.164Z",
   "attribution": "Powered by CoinGecko"
 }
