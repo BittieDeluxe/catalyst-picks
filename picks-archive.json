@@ -693,8 +693,130 @@
         "losses": 3,
         "avgPct": -1.72
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-09-23",
+      "generatedAt": "2026-09-23T16:44:44.163Z",
+      "benchmarkEntry": 84021,
+      "picks": [
+        {
+          "id": "optimism",
+          "symbol": "OP",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Optimism's Upgrade 20, introducing Super Root Dispute Games for cross-chain interoperability, is scheduled for mainnet execution on September 24, 2026.",
+          "rationale": "This upgrade represents a critical technical advancement towards a more integrated and verifiable Superchain ecosystem, enhancing Optimism's long-term value proposition by laying the groundwork for future interoperability.",
+          "risk": "The upgrade does not immediately activate full interoperability, and the market's reaction might be muted if the anticipated benefits are perceived as long-term rather than immediate.",
+          "entryPrice": 0.124415,
+          "livePrice": 0.124415,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.135729,
+          "exitDate": "2026-09-24",
+          "changePct": 9.09,
+          "benchmarkPct": 0.55,
+          "resultPct": 8.54,
+          "result": "W"
+        },
+        {
+          "id": "ondo-finance",
+          "symbol": "ONDO",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Ondo Finance launched 'in-kind conversion' for Ondo Stocks on September 21, 2026, allowing approved institutions to directly convert existing equity holdings into tokenized stocks, and expanded Ondo Stocks to near.com and the NEAR Intents network on September 22, 2026.",
+          "rationale": "These developments significantly reduce friction for institutional adoption of tokenized real-world assets (RWA) and broaden market access across multiple blockchains, positioning ONDO as a leader in the growing RWA sector.",
+          "risk": "The in-kind conversion is currently limited to approved institutions, and broader regulatory uncertainty or increased competition in the tokenized assets space could impact ONDO's growth.",
+          "entryPrice": 0.415127,
+          "livePrice": 0.415127,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.517383,
+          "exitDate": "2026-09-24",
+          "changePct": 24.63,
+          "benchmarkPct": 0.55,
+          "resultPct": 24.08,
+          "result": "W"
+        },
+        {
+          "id": "raydium",
+          "symbol": "RAY",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Raydium is deploying $1 million of its treasury into USDv and supporting USDv trading pairs, aligning with USDv's launch on September 23, 2026. This follows its recent establishment as a dominant DEX for tokenized stocks on Solana and integration with Injective on September 17, 2026.",
+          "rationale": "The direct treasury investment and new stablecoin integration provide immediate utility and liquidity, while its established market share in tokenized stocks on Solana and cross-chain expansion through Injective solidify its competitive position.",
+          "risk": "The performance of USDv and the broader Solana DeFi ecosystem could influence RAY's trajectory, and intense competition in the DEX landscape remains a factor.",
+          "entryPrice": 2.03,
+          "livePrice": 2.03,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 2.07,
+          "exitDate": "2026-09-24",
+          "changePct": 1.97,
+          "benchmarkPct": 0.55,
+          "resultPct": 1.42,
+          "result": "W"
+        },
+        {
+          "id": "ethena",
+          "symbol": "ENA",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "Ethena's USDe experienced a brief depeg to $0.92 on Binance on September 22, 2026, raising concerns about its stability, and a major lock-up of 3 billion ENA tokens ends on October 5, 2026, representing a significant potential supply increase.",
+          "rationale": "The recent depeg incident, even if temporary, highlights potential vulnerabilities in USDe's synthetic dollar design, while the upcoming unlock of a substantial ENA supply could create selling pressure despite a structured release.",
+          "risk": "Ethena has expanded its delta-hedging strategy and institutional integrations, which could mitigate depeg risks, and the structured release of ENA tokens might prevent a significant sell-off.",
+          "entryPrice": 0.205009,
+          "livePrice": 0.205009,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.219912,
+          "exitDate": "2026-09-24",
+          "changePct": 7.27,
+          "benchmarkPct": 0.55,
+          "resultPct": -6.72,
+          "result": "L"
+        },
+        {
+          "id": "akash-network",
+          "symbol": "AKT",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Akash Network is experiencing strong market momentum, with a 14% rally on September 23, 2026, driven by AI sector rotation and whale buying, following recent analysis highlighting its strategic positioning as decentralized AI infrastructure.",
+          "rationale": "The sustained narrative around decentralized AI compute, coupled with recent price appreciation, whale accumulation, and ongoing technical developments, positions AKT for potential outperformance.",
+          "risk": "The valuation of AKT is heavily tied to the speculative 'AI narrative,' and a shift in market sentiment or slower-than-expected adoption of its compute resources could invalidate the bullish thesis.",
+          "entryPrice": 0.705025,
+          "livePrice": 0.705025,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.696743,
+          "exitDate": "2026-09-24",
+          "changePct": -1.17,
+          "benchmarkPct": 0.55,
+          "resultPct": -1.72,
+          "result": "L"
+        }
+      ],
+      "liveAsOf": "2026-09-23",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-09-24T17:01:44.182Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": 0.55
+      },
+      "record": {
+        "wins": 3,
+        "losses": 2,
+        "avgPct": 5.12
+      }
     }
   ],
-  "updatedAt": "2026-09-23T16:44:44.164Z",
+  "updatedAt": "2026-09-24T17:01:44.182Z",
   "attribution": "Powered by CoinGecko"
 }
