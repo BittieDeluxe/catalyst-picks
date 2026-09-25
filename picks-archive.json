@@ -815,8 +815,130 @@
         "losses": 2,
         "avgPct": 5.12
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-09-24",
+      "generatedAt": "2026-09-24T17:01:44.182Z",
+      "benchmarkEntry": 84480,
+      "picks": [
+        {
+          "id": "ondo-finance",
+          "symbol": "ONDO",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Ondo Finance launched three tokenized portfolios based on BlackRock strategies on September 24, bringing professionally designed portfolios on-chain for eligible non-US investors.",
+          "rationale": "This launch significantly expands Ondo's product offering and leverages a prominent traditional finance partner, BlackRock, to attract institutional capital into the Real World Asset (RWA) space. The immediate market reaction, with ONDO surging over 24% in 24 hours, indicates strong positive sentiment and increased utility for the ONDO token.",
+          "risk": "A broader market downturn or lower-than-expected adoption of the new tokenized portfolios could invalidate this thesis.",
+          "entryPrice": 0.517383,
+          "livePrice": 0.517383,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.534375,
+          "exitDate": "2026-09-25",
+          "changePct": 3.28,
+          "benchmarkPct": -0.84,
+          "resultPct": 4.12,
+          "result": "W"
+        },
+        {
+          "id": "quant-network",
+          "symbol": "QNT",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Quant announced a partnership with The Clearing House on September 24 to power its On-Chain Money Initiative in the US and confirmed its technology is underpinning the UK banking sector's first live tokenized deposit and interbank transactions.",
+          "rationale": "These developments represent significant institutional adoption of Quant's interoperability technology within regulated financial systems in both the US and UK. This solidifies QNT's utility in real-world applications for central bank digital currencies and tokenized deposits, positioning it for continued outperformance as institutional interest grows.",
+          "risk": "Delays in regulatory approvals or slower-than-anticipated rollout of the on-chain money initiatives could temper the upside.",
+          "entryPrice": 85.49,
+          "livePrice": 85.49,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 98.25,
+          "exitDate": "2026-09-25",
+          "changePct": 14.93,
+          "benchmarkPct": -0.84,
+          "resultPct": 15.77,
+          "result": "W"
+        },
+        {
+          "id": "near",
+          "symbol": "NEAR",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "NEAR Protocol integrated with Ondo Finance on September 23 to offer 20 tokenized US stocks and ETFs via NEAR Intents, and Hyperliquid launched a NEAR/USDC spot trading pair.",
+          "rationale": "The partnership with Ondo Finance brings significant real-world asset exposure to the NEAR ecosystem, enhancing its utility and attracting new users. The addition of a spot market on Hyperliquid further improves liquidity and accessibility, contributing to its recent strong price performance and potential for continued growth.",
+          "risk": "Increased competition in the tokenized asset space or a general pullback in AI-related narratives could impact NEAR's momentum.",
+          "entryPrice": 4.7,
+          "livePrice": 4.7,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 5.04,
+          "exitDate": "2026-09-25",
+          "changePct": 7.23,
+          "benchmarkPct": -0.84,
+          "resultPct": 8.07,
+          "result": "W"
+        },
+        {
+          "id": "solana",
+          "symbol": "SOL",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Solana's Alpenglow upgrade, targeting 150ms transaction finality, begins mainnet feature activation on September 28, with ongoing validator migration milestones, alongside new Solana Foundation leadership appointments focused on institutional growth on September 24.",
+          "rationale": "The Alpenglow upgrade promises a significant improvement in network speed and efficiency, enhancing Solana's competitiveness as a high-performance blockchain. The strategic focus on institutional growth through new leadership appointments further strengthens its market positioning and potential for increased adoption, as evidenced by its record RWA value.",
+          "risk": "Technical issues during the Alpenglow rollout or a failure to attract significant institutional capital could dampen the positive outlook.",
+          "entryPrice": 117.03,
+          "livePrice": 117.03,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 121.03,
+          "exitDate": "2026-09-25",
+          "changePct": 3.42,
+          "benchmarkPct": -0.84,
+          "resultPct": 4.26,
+          "result": "W"
+        },
+        {
+          "id": "cardano",
+          "symbol": "ADA",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Cardano officially integrated with the x402 payment standard on September 21, enabling applications and AI agents to make payments using ADA and Cardano Native Tokens.",
+          "rationale": "This integration provides a new and significant utility for ADA by positioning Cardano as a settlement layer for the emerging AI agent economy. The ability for direct, account-less payments via HTTP requests could drive developer adoption and increase transaction volume on the network.",
+          "risk": "Slower-than-expected adoption of the x402 standard or delays in mainnet deployment of the facilitator could limit immediate upside.",
+          "entryPrice": 0.248558,
+          "livePrice": 0.248558,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.254031,
+          "exitDate": "2026-09-25",
+          "changePct": 2.2,
+          "benchmarkPct": -0.84,
+          "resultPct": 3.04,
+          "result": "W"
+        }
+      ],
+      "liveAsOf": "2026-09-24",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-09-25T17:03:42.006Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": -0.84
+      },
+      "record": {
+        "wins": 5,
+        "losses": 0,
+        "avgPct": 7.05
+      }
     }
   ],
-  "updatedAt": "2026-09-24T17:01:44.182Z",
+  "updatedAt": "2026-09-25T17:03:42.007Z",
   "attribution": "Powered by CoinGecko"
 }
