@@ -1059,8 +1059,130 @@
         "losses": 1,
         "avgPct": 2.9
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-09-26",
+      "generatedAt": "2026-09-26T16:17:15.328Z",
+      "benchmarkEntry": 84115,
+      "picks": [
+        {
+          "id": "near",
+          "symbol": "NEAR",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "The Bitwise NEAR ETF's registration statement became effective and its application to list on NYSE Arca was approved on September 24, 2026.",
+          "rationale": "This recent regulatory clearance for a spot NEAR ETF significantly de-risks institutional investment and provides a new, accessible avenue for capital inflow. The formal approval for exchange trading on NYSE Arca could lead to increased demand and positive price action for NEAR relative to BTC.",
+          "risk": "A broader crypto market downturn or unexpected delays in the ETF's actual trading launch could invalidate this idea.",
+          "entryPrice": 4.82,
+          "livePrice": 4.82,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 5.18,
+          "exitDate": "2026-09-27",
+          "changePct": 7.47,
+          "benchmarkPct": 0.33,
+          "resultPct": 7.14,
+          "result": "W"
+        },
+        {
+          "id": "solana",
+          "symbol": "SOL",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Solana's Alpenglow consensus protocol, a major upgrade, is targeting mainnet activation in Q3 2026, which concludes in the next few days.",
+          "rationale": "With Q3 2026 ending soon, any official announcements or positive updates regarding the Alpenglow mainnet launch could generate significant market anticipation. This substantial protocol overhaul is expected to enhance Solana's performance and stability, potentially driving outperformance against BTC.",
+          "risk": "Delays in the Alpenglow mainnet activation or unforeseen technical issues could negatively impact Solana's price.",
+          "entryPrice": 121.71,
+          "livePrice": 121.71,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 121.86,
+          "exitDate": "2026-09-27",
+          "changePct": 0.12,
+          "benchmarkPct": 0.33,
+          "resultPct": -0.21,
+          "result": "L"
+        },
+        {
+          "id": "sui",
+          "symbol": "SUI",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "The DeepBook App, an on-chain order book for spot and predict trading, launched on Sui on September 24, 2026.",
+          "rationale": "The recent launch of the DeepBook App provides a significant new trading primitive within the Sui ecosystem, potentially increasing on-chain trading volume and user engagement. This direct utility enhancement could attract more liquidity and users to Sui, leading to outperformance against BTC.",
+          "risk": "Lower-than-expected adoption of the new DeepBook App or adverse broader market conditions could temper its positive impact.",
+          "entryPrice": 1.18,
+          "livePrice": 1.18,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 1.24,
+          "exitDate": "2026-09-27",
+          "changePct": 5.08,
+          "benchmarkPct": 0.33,
+          "resultPct": 4.75,
+          "result": "W"
+        },
+        {
+          "id": "arbitrum",
+          "symbol": "ARB",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Arbitrum's Stylus upgrade, enabling multi-language smart contract development (Rust, C, C++), continues to be a focus, with recent documentation released on September 17, 2026.",
+          "rationale": "The ongoing emphasis and communication around Arbitrum's Stylus upgrade highlight its potential to attract a broader developer base and enable more efficient smart contracts. This focus on developer adoption and technical innovation could lead to increased dApp deployment and TVL, allowing ARB to outperform BTC.",
+          "risk": "Slower-than-anticipated developer migration to Stylus or intense competition from other Layer 2 solutions could limit Arbitrum's upside.",
+          "entryPrice": 0.227121,
+          "livePrice": 0.227121,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.220821,
+          "exitDate": "2026-09-27",
+          "changePct": -2.77,
+          "benchmarkPct": 0.33,
+          "resultPct": -3.1,
+          "result": "L"
+        },
+        {
+          "id": "ripple",
+          "symbol": "XRP",
+          "direction": "long",
+          "conviction": "low",
+          "catalyst": "XRP ETF products attracted over $150 million in inflows during August 2026, with momentum accelerating towards the end of the month.",
+          "rationale": "Despite recent regulatory setbacks for broader crypto legislation, the sustained and accelerating institutional inflows into XRP ETFs indicate persistent demand. This consistent accumulation of assets by regulated funds could provide continued price support and potential outperformance for XRP relative to BTC.",
+          "risk": "Any further negative regulatory developments or a significant deceleration in ETF inflows could invalidate this bullish outlook.",
+          "entryPrice": 1.55,
+          "livePrice": 1.55,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 1.52,
+          "exitDate": "2026-09-27",
+          "changePct": -1.94,
+          "benchmarkPct": 0.33,
+          "resultPct": -2.27,
+          "result": "L"
+        }
+      ],
+      "liveAsOf": "2026-09-26",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-09-27T16:52:51.382Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": 0.33
+      },
+      "record": {
+        "wins": 2,
+        "losses": 3,
+        "avgPct": 1.26
+      }
     }
   ],
-  "updatedAt": "2026-09-26T16:17:15.329Z",
+  "updatedAt": "2026-09-27T16:52:51.383Z",
   "attribution": "Powered by CoinGecko"
 }
