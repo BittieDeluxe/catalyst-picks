@@ -1,20 +1,20 @@
 {
   "daily": {
     "horizon": "daily",
-    "date": "2026-09-28",
-    "generatedAt": "2026-09-28T19:36:07.556Z",
-    "benchmarkEntry": 83614,
+    "date": "2026-09-29",
+    "generatedAt": "2026-09-29T18:01:42.342Z",
+    "benchmarkEntry": 83026,
     "picks": [
       {
-        "id": "ethena",
-        "symbol": "ENA",
+        "id": "chainlink",
+        "symbol": "LINK",
         "direction": "long",
         "conviction": "high",
-        "catalyst": "Binance Futures is listing five new TradFi perpetual contracts on September 28, 2026.",
-        "rationale": "Ethena recently expanded its USDe backing strategy to utilize Binance bStocks and equity perpetuals. The launch of additional TradFi perpetuals on Binance today directly expands the available instruments and potential liquidity for Ethena's delta-neutral strategy, demonstrating further utility and growth for the Ethena ecosystem, which should lead to outperformance relative to BTC.",
-        "risk": "Unexpected negative developments or market volatility in the newly listed TradFi perpetuals could impact Ethena's strategy and ENA's performance relative to BTC.",
-        "entryPrice": 0.260927,
-        "livePrice": 0.260927,
+        "catalyst": "Chainlink officially launched its CCIP 2.0 upgrade on September 28, 2026, enhancing institutional digital finance capabilities.",
+        "rationale": "The CCIP 2.0 upgrade is a significant fundamental development, positioning Chainlink as a key interoperability standard for institutional tokenized assets, which has already driven a notable price surge and increased trading volume. This upgrade addresses critical needs for security, compliance, and speed, suggesting continued positive sentiment and potential for outperformance relative to BTC as institutions integrate the protocol.",
+        "risk": "A broader market downturn or unexpected technical issues with CCIP 2.0 could invalidate this long thesis.",
+        "entryPrice": 14.54,
+        "livePrice": 14.54,
         "liveChangePct": 0,
         "livePct": 0
       },
@@ -23,29 +23,55 @@
         "symbol": "SOL",
         "direction": "long",
         "conviction": "medium",
-        "catalyst": "Solana ETFs have recorded 12 consecutive weeks of inflows, indicating sustained institutional interest.",
-        "rationale": "Despite the tentative delay of the Alpenglow mainnet upgrade for today, consistent and significant capital inflows into Solana ETFs demonstrate strong underlying demand and confidence from institutional investors. This sustained flow of capital positions SOL for potential outperformance relative to BTC.",
-        "risk": "A broader market downturn or a significant negative development related to the Alpenglow upgrade (beyond a simple delay) could invalidate this pick.",
-        "entryPrice": 118.9,
-        "livePrice": 118.9,
+        "catalyst": "Solana's Alpenglow consensus upgrade successfully launched on Devnet and Testnet on September 24-25, 2026, aiming to reduce transaction finality to 150 milliseconds.",
+        "rationale": "The successful deployment of Alpenglow on testnets is a major technical milestone, promising a significant improvement in transaction finality which could enhance Solana's utility for various applications. While a mainnet launch date is not yet set, the positive news flow and successful testing are likely to maintain bullish sentiment and drive outperformance relative to BTC.",
+        "risk": "Delays in the mainnet launch or unforeseen issues during further testing could temper the positive impact.",
+        "entryPrice": 117.61,
+        "livePrice": 117.61,
         "liveChangePct": 0,
         "livePct": 0
       },
       {
-        "id": "bittensor",
-        "symbol": "TAO",
-        "direction": "long",
+        "id": "optimism",
+        "symbol": "OP",
+        "direction": "short",
         "conviction": "medium",
-        "catalyst": "Bittensor has entered a 'revenue era' with 24-25 subnets currently generating commercial revenue and 14 subnets running revenue-driven Alpha token buyback programs.",
-        "rationale": "The increasing number of revenue-generating subnets and active buyback programs signify growing utility and direct value accrual within the Bittensor ecosystem. This fundamental growth in commercial activity and value capture for TAO holders provides a compelling bullish case for outperformance relative to BTC.",
-        "risk": "A slowdown in the adoption of Bittensor's AI services or a reduction in the effectiveness of the buyback programs could invalidate this thesis.",
-        "entryPrice": 303.24,
-        "livePrice": 303.24,
+        "catalyst": "Optimism (OP) has a scheduled token unlock on September 30, 2026.",
+        "rationale": "Token unlocks typically increase the circulating supply of an asset, which can lead to selling pressure as early investors or team members gain access to their vested tokens. This increased supply, especially in a market where the overall sentiment is not overwhelmingly bullish, could cause OP to underperform relative to BTC.",
+        "risk": "Strong underlying demand or unexpected positive news for Optimism could absorb the additional supply from the unlock, mitigating selling pressure.",
+        "entryPrice": 0.128944,
+        "livePrice": 0.128944,
+        "liveChangePct": 0,
+        "livePct": 0
+      },
+      {
+        "id": "celestia",
+        "symbol": "TIA",
+        "direction": "short",
+        "conviction": "medium",
+        "catalyst": "Celestia (TIA) has a scheduled token unlock on September 30, 2026.",
+        "rationale": "Similar to other token unlocks, the release of TIA tokens into circulation on September 30 is expected to increase sell-side pressure. This event, by increasing the available supply, could lead to a short-term price depreciation or underperformance against BTC as recipients potentially take profits or rebalance their portfolios.",
+        "risk": "If the unlocked amount is smaller than anticipated or if there is strong new demand for TIA, the negative price impact might be limited.",
+        "entryPrice": 0.437968,
+        "livePrice": 0.437968,
+        "liveChangePct": 0,
+        "livePct": 0
+      },
+      {
+        "id": "sui",
+        "symbol": "SUI",
+        "direction": "short",
+        "conviction": "medium",
+        "catalyst": "Sui (SUI) has a scheduled token unlock on October 1, 2026.",
+        "rationale": "The upcoming unlock for SUI on October 1, 2026, introduces additional tokens into the market, which historically can create selling pressure and dilute existing holdings. Traders often anticipate these events, leading to pre-emptive selling or a post-unlock dip, making SUI a potential underperformer relative to BTC in the immediate timeframe.",
+        "risk": "A significant increase in network activity or new partnerships for Sui could offset the selling pressure from the token unlock.",
+        "entryPrice": 1.13,
+        "livePrice": 1.13,
         "liveChangePct": 0,
         "livePct": 0
       }
     ],
-    "liveAsOf": "2026-09-28",
+    "liveAsOf": "2026-09-29",
     "liveBenchmarkPct": 0,
     "liveRecord": {
       "ahead": 0,
@@ -69,9 +95,9 @@
         "rationale": "This substantial unlock, representing approximately 14% of the total supply and valued at around $381 million, removes a significant portion of locked tokens from investor hands, likely leading to increased selling pressure as early investors realize profits. The finality of this vesting event could amplify its impact on market sentiment.",
         "risk": "Strong fundamental adoption or unexpected positive news could absorb the increased supply, mitigating selling pressure.",
         "entryPrice": 0.260927,
-        "livePrice": 0.260927,
-        "liveChangePct": 0,
-        "livePct": 0
+        "livePrice": 0.245243,
+        "liveChangePct": -6.01,
+        "livePct": 5.31
       },
       {
         "id": "sui",
@@ -82,9 +108,9 @@
         "rationale": "Sui has a recurring monthly unlock schedule, and previous unlocks have historically led to short-term price dips ranging from 5-14%. This upcoming unlock represents 0.32% of the released supply and could induce similar selling pressure in the short term.",
         "risk": "A smaller percentage of unlocked supply compared to other tokens, coupled with strong ecosystem demand, could absorb the new tokens without significant price impact.",
         "entryPrice": 1.16,
-        "livePrice": 1.16,
-        "liveChangePct": 0,
-        "livePct": 0
+        "livePrice": 1.13,
+        "liveChangePct": -2.59,
+        "livePct": 1.89
       },
       {
         "id": "solana",
@@ -95,9 +121,9 @@
         "rationale": "This major architectural overhaul of Solana's consensus layer is a significant technological advancement that could enhance network performance, scalability, and developer attractiveness. The ongoing news and anticipation surrounding its imminent October activation are likely to drive positive sentiment and outperform BTC.",
         "risk": "Any delays in the Alpenglow rollout or unforeseen technical issues during its activation could negatively impact market sentiment.",
         "entryPrice": 118.9,
-        "livePrice": 118.9,
-        "liveChangePct": 0,
-        "livePct": 0
+        "livePrice": 117.61,
+        "liveChangePct": -1.08,
+        "livePct": -0.38
       },
       {
         "id": "aave",
@@ -108,9 +134,9 @@
         "rationale": "With the current week encompassing a weekend, this identified operational risk in a new, high-profile product could expose lenders to bad debt or trigger negative market reactions if exploited or highlighted, creating short-term bearish pressure on AAVE.",
         "risk": "The vulnerability may not be exploited or may be quickly patched, or the market may deem the impact negligible, leading to a muted or positive reaction.",
         "entryPrice": 147.54,
-        "livePrice": 147.54,
-        "liveChangePct": 0,
-        "livePct": 0
+        "livePrice": 166.04,
+        "liveChangePct": 12.54,
+        "livePct": -13.24
       },
       {
         "id": "aptos",
@@ -121,18 +147,18 @@
         "rationale": "The end of this major vesting period removes a substantial overhang of potential selling pressure from early participants, which has historically been a concern for APT. This structural shift towards reduced token emissions could lead to a more favorable supply-demand dynamic and positive sentiment in the coming weeks.",
         "risk": "The market may have already priced in this event, or continued staking rewards and general market downturns could offset the positive impact of reduced investor unlocks.",
         "entryPrice": 0.812908,
-        "livePrice": 0.812908,
-        "liveChangePct": 0,
-        "livePct": 0
+        "livePrice": 0.782196,
+        "liveChangePct": -3.78,
+        "livePct": -3.08
       }
     ],
-    "liveAsOf": "2026-09-28",
-    "liveBenchmarkPct": 0,
+    "liveAsOf": "2026-09-29",
+    "liveBenchmarkPct": -0.7,
     "liveRecord": {
-      "ahead": 0,
-      "behind": 0,
-      "avgPct": 0,
-      "daysOpen": 0
+      "ahead": 2,
+      "behind": 3,
+      "avgPct": -1.9,
+      "daysOpen": 1
     }
   },
   "monthly": {
@@ -150,9 +176,9 @@
         "rationale": "The conclusion of this major vesting period for Aptos removes a significant structural overhang of selling pressure, which has historically diluted price action. This reduction in new supply entering the market creates a strong tailwind for APT to outperform BTC in the coming month, assuming consistent network activity.",
         "risk": "A significant decline in overall market sentiment or a lack of sustained network usage could invalidate this thesis.",
         "entryPrice": 0.604319,
-        "livePrice": 0.812908,
-        "liveChangePct": 34.52,
-        "livePct": 25.2
+        "livePrice": 0.782196,
+        "liveChangePct": 29.43,
+        "livePct": 20.88
       },
       {
         "id": "pendle",
@@ -163,9 +189,9 @@
         "rationale": "These multiple expansion initiatives, particularly the integration with Robinhood Chain and its retail platform, significantly broaden Pendle's reach and utility for tokenized yield products. Increased accessibility and new yield opportunities on Monad are expected to drive adoption and demand for PENDLE, enabling it to outperform BTC.",
         "risk": "Lower-than-expected user adoption on new platforms or a broader downturn in DeFi yield markets would invalidate this pick.",
         "entryPrice": 2.34,
-        "livePrice": 2.37,
-        "liveChangePct": 1.28,
-        "livePct": -8.04
+        "livePrice": 2.33,
+        "liveChangePct": -0.43,
+        "livePct": -8.98
       },
       {
         "id": "aave",
@@ -176,9 +202,9 @@
         "rationale": "This strategic move into institutional DeFi and Real-World Assets (RWAs) through a formal governance proposal on Aave V4 has the potential to attract substantial, sticky capital from regulated entities. This expansion of Aave's addressable market and utility could drive significant demand for AAVE, leading to outperformance relative to BTC.",
         "risk": "Slow institutional adoption or regulatory hurdles for RWA integration could temper the positive impact.",
         "entryPrice": 128.34,
-        "livePrice": 147.54,
-        "liveChangePct": 14.96,
-        "livePct": 5.64
+        "livePrice": 166.04,
+        "liveChangePct": 29.38,
+        "livePct": 20.83
       },
       {
         "id": "starknet",
@@ -189,9 +215,9 @@
         "rationale": "This significant technical upgrade enhances Starknet's capabilities, allowing for more complex and computationally intensive applications on the network. This could attract new developer activity and users, increasing demand for STRK to cover transaction fees and potentially leading to outperformance against BTC.",
         "risk": "A lack of immediate developer or user adoption of the new capabilities, or continued selling pressure from scheduled token unlocks, could offset the positive impact.",
         "entryPrice": 0.02902057,
-        "livePrice": 0.04059312,
-        "liveChangePct": 39.88,
-        "livePct": 30.56
+        "livePrice": 0.0412402,
+        "liveChangePct": 42.11,
+        "livePct": 33.56
       },
       {
         "id": "arbitrum",
@@ -202,18 +228,18 @@
         "rationale": "This substantial token unlock, occurring within the coming week, represents a significant increase in the circulating supply of ARB, particularly as a percentage of its current market capitalization. Given Arbitrum's cliff vesting schedule, such events can lead to increased selling pressure as early investors and contributors realize gains, potentially causing ARB to underperform BTC.",
         "risk": "Strong underlying market demand or unexpected positive news could absorb the unlocked supply, mitigating the expected selling pressure.",
         "entryPrice": 0.181519,
-        "livePrice": 0.20223,
-        "liveChangePct": 11.41,
-        "livePct": -2.09
+        "livePrice": 0.203881,
+        "liveChangePct": 12.32,
+        "livePct": -3.77
       }
     ],
-    "liveAsOf": "2026-09-28",
-    "liveBenchmarkPct": 9.32,
+    "liveAsOf": "2026-09-29",
+    "liveBenchmarkPct": 8.55,
     "liveRecord": {
       "ahead": 3,
       "behind": 2,
-      "avgPct": 10.25,
-      "daysOpen": 10
+      "avgPct": 12.5,
+      "daysOpen": 11
     }
   }
 }

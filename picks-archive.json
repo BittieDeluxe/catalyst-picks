@@ -1425,8 +1425,92 @@
         "losses": 1,
         "avgPct": 3.48
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-09-28",
+      "generatedAt": "2026-09-28T19:36:07.556Z",
+      "benchmarkEntry": 83614,
+      "picks": [
+        {
+          "id": "ethena",
+          "symbol": "ENA",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Binance Futures is listing five new TradFi perpetual contracts on September 28, 2026.",
+          "rationale": "Ethena recently expanded its USDe backing strategy to utilize Binance bStocks and equity perpetuals. The launch of additional TradFi perpetuals on Binance today directly expands the available instruments and potential liquidity for Ethena's delta-neutral strategy, demonstrating further utility and growth for the Ethena ecosystem, which should lead to outperformance relative to BTC.",
+          "risk": "Unexpected negative developments or market volatility in the newly listed TradFi perpetuals could impact Ethena's strategy and ENA's performance relative to BTC.",
+          "entryPrice": 0.260927,
+          "livePrice": 0.260927,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.245243,
+          "exitDate": "2026-09-29",
+          "changePct": -6.01,
+          "benchmarkPct": -0.7,
+          "resultPct": -5.31,
+          "result": "L"
+        },
+        {
+          "id": "solana",
+          "symbol": "SOL",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Solana ETFs have recorded 12 consecutive weeks of inflows, indicating sustained institutional interest.",
+          "rationale": "Despite the tentative delay of the Alpenglow mainnet upgrade for today, consistent and significant capital inflows into Solana ETFs demonstrate strong underlying demand and confidence from institutional investors. This sustained flow of capital positions SOL for potential outperformance relative to BTC.",
+          "risk": "A broader market downturn or a significant negative development related to the Alpenglow upgrade (beyond a simple delay) could invalidate this pick.",
+          "entryPrice": 118.9,
+          "livePrice": 118.9,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 117.61,
+          "exitDate": "2026-09-29",
+          "changePct": -1.08,
+          "benchmarkPct": -0.7,
+          "resultPct": -0.38,
+          "result": "L"
+        },
+        {
+          "id": "bittensor",
+          "symbol": "TAO",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Bittensor has entered a 'revenue era' with 24-25 subnets currently generating commercial revenue and 14 subnets running revenue-driven Alpha token buyback programs.",
+          "rationale": "The increasing number of revenue-generating subnets and active buyback programs signify growing utility and direct value accrual within the Bittensor ecosystem. This fundamental growth in commercial activity and value capture for TAO holders provides a compelling bullish case for outperformance relative to BTC.",
+          "risk": "A slowdown in the adoption of Bittensor's AI services or a reduction in the effectiveness of the buyback programs could invalidate this thesis.",
+          "entryPrice": 303.24,
+          "livePrice": 303.24,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 304.95,
+          "exitDate": "2026-09-29",
+          "changePct": 0.56,
+          "benchmarkPct": -0.7,
+          "resultPct": 1.26,
+          "result": "W"
+        }
+      ],
+      "liveAsOf": "2026-09-28",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-09-29T18:01:42.342Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": -0.7
+      },
+      "record": {
+        "wins": 1,
+        "losses": 2,
+        "avgPct": -1.48
+      }
     }
   ],
-  "updatedAt": "2026-09-28T19:36:45.896Z",
+  "updatedAt": "2026-09-29T18:01:42.343Z",
   "attribution": "Powered by CoinGecko"
 }
