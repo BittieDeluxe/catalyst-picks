@@ -1509,8 +1509,130 @@
         "losses": 2,
         "avgPct": -1.48
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-09-29",
+      "generatedAt": "2026-09-29T18:01:42.342Z",
+      "benchmarkEntry": 83026,
+      "picks": [
+        {
+          "id": "chainlink",
+          "symbol": "LINK",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Chainlink officially launched its CCIP 2.0 upgrade on September 28, 2026, enhancing institutional digital finance capabilities.",
+          "rationale": "The CCIP 2.0 upgrade is a significant fundamental development, positioning Chainlink as a key interoperability standard for institutional tokenized assets, which has already driven a notable price surge and increased trading volume. This upgrade addresses critical needs for security, compliance, and speed, suggesting continued positive sentiment and potential for outperformance relative to BTC as institutions integrate the protocol.",
+          "risk": "A broader market downturn or unexpected technical issues with CCIP 2.0 could invalidate this long thesis.",
+          "entryPrice": 14.54,
+          "livePrice": 14.54,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 14.37,
+          "exitDate": "2026-09-30",
+          "changePct": -1.17,
+          "benchmarkPct": 1.19,
+          "resultPct": -2.36,
+          "result": "L"
+        },
+        {
+          "id": "solana",
+          "symbol": "SOL",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Solana's Alpenglow consensus upgrade successfully launched on Devnet and Testnet on September 24-25, 2026, aiming to reduce transaction finality to 150 milliseconds.",
+          "rationale": "The successful deployment of Alpenglow on testnets is a major technical milestone, promising a significant improvement in transaction finality which could enhance Solana's utility for various applications. While a mainnet launch date is not yet set, the positive news flow and successful testing are likely to maintain bullish sentiment and drive outperformance relative to BTC.",
+          "risk": "Delays in the mainnet launch or unforeseen issues during further testing could temper the positive impact.",
+          "entryPrice": 117.61,
+          "livePrice": 117.61,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 119.12,
+          "exitDate": "2026-09-30",
+          "changePct": 1.28,
+          "benchmarkPct": 1.19,
+          "resultPct": 0.09,
+          "result": "W"
+        },
+        {
+          "id": "optimism",
+          "symbol": "OP",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "Optimism (OP) has a scheduled token unlock on September 30, 2026.",
+          "rationale": "Token unlocks typically increase the circulating supply of an asset, which can lead to selling pressure as early investors or team members gain access to their vested tokens. This increased supply, especially in a market where the overall sentiment is not overwhelmingly bullish, could cause OP to underperform relative to BTC.",
+          "risk": "Strong underlying demand or unexpected positive news for Optimism could absorb the additional supply from the unlock, mitigating selling pressure.",
+          "entryPrice": 0.128944,
+          "livePrice": 0.128944,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.13075,
+          "exitDate": "2026-09-30",
+          "changePct": 1.4,
+          "benchmarkPct": 1.19,
+          "resultPct": -0.21,
+          "result": "L"
+        },
+        {
+          "id": "celestia",
+          "symbol": "TIA",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "Celestia (TIA) has a scheduled token unlock on September 30, 2026.",
+          "rationale": "Similar to other token unlocks, the release of TIA tokens into circulation on September 30 is expected to increase sell-side pressure. This event, by increasing the available supply, could lead to a short-term price depreciation or underperformance against BTC as recipients potentially take profits or rebalance their portfolios.",
+          "risk": "If the unlocked amount is smaller than anticipated or if there is strong new demand for TIA, the negative price impact might be limited.",
+          "entryPrice": 0.437968,
+          "livePrice": 0.437968,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.443779,
+          "exitDate": "2026-09-30",
+          "changePct": 1.33,
+          "benchmarkPct": 1.19,
+          "resultPct": -0.14,
+          "result": "L"
+        },
+        {
+          "id": "sui",
+          "symbol": "SUI",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "Sui (SUI) has a scheduled token unlock on October 1, 2026.",
+          "rationale": "The upcoming unlock for SUI on October 1, 2026, introduces additional tokens into the market, which historically can create selling pressure and dilute existing holdings. Traders often anticipate these events, leading to pre-emptive selling or a post-unlock dip, making SUI a potential underperformer relative to BTC in the immediate timeframe.",
+          "risk": "A significant increase in network activity or new partnerships for Sui could offset the selling pressure from the token unlock.",
+          "entryPrice": 1.13,
+          "livePrice": 1.13,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 1.17,
+          "exitDate": "2026-09-30",
+          "changePct": 3.54,
+          "benchmarkPct": 1.19,
+          "resultPct": -2.35,
+          "result": "L"
+        }
+      ],
+      "liveAsOf": "2026-09-29",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-09-30T17:57:09.935Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": 1.19
+      },
+      "record": {
+        "wins": 1,
+        "losses": 4,
+        "avgPct": -0.99
+      }
     }
   ],
-  "updatedAt": "2026-09-29T18:01:42.343Z",
+  "updatedAt": "2026-09-30T17:57:09.935Z",
   "attribution": "Powered by CoinGecko"
 }
