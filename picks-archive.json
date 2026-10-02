@@ -1875,8 +1875,130 @@
         "losses": 1,
         "avgPct": 12.84
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-01",
+      "generatedAt": "2026-10-01T18:23:01.647Z",
+      "benchmarkEntry": 84788,
+      "picks": [
+        {
+          "id": "ethereum",
+          "symbol": "ETH",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "The 'Glamsterdam' upgrade is scheduled to activate on the Sepolia testnet on October 6, 2026, marking a significant step towards Layer 1 scalability.",
+          "rationale": "This testnet activation is a crucial public trial for Ethereum's next major upgrade, which aims to enhance execution capacity and prepare the network for greater parallelization. Successful testing could build strong positive sentiment ahead of a potential mainnet rollout in Q4 2026, outperforming BTC due to specific protocol advancements.",
+          "risk": "Delays or unexpected issues during the Sepolia testnet activation could invalidate this thesis.",
+          "entryPrice": 2699.27,
+          "livePrice": 2699.27,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 2680.46,
+          "exitDate": "2026-10-02",
+          "changePct": -0.7,
+          "benchmarkPct": -0.22,
+          "resultPct": -0.48,
+          "result": "L"
+        },
+        {
+          "id": "ethena",
+          "symbol": "ENA",
+          "direction": "short",
+          "conviction": "high",
+          "catalyst": "Ethena will release all remaining locked tokens held by its original investors in a single step on October 5, 2026.",
+          "rationale": "This substantial token unlock, estimated at approximately 1.41 billion ENA, represents a significant increase in circulating supply. Such a large influx of tokens typically creates downward selling pressure as early investors realize profits, potentially leading to underperformance relative to BTC.",
+          "risk": "Strong market demand or unexpected positive news could absorb the additional supply without significant price depreciation.",
+          "entryPrice": 0.250288,
+          "livePrice": 0.250288,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.242177,
+          "exitDate": "2026-10-02",
+          "changePct": -3.24,
+          "benchmarkPct": -0.22,
+          "resultPct": 3.02,
+          "result": "W"
+        },
+        {
+          "id": "ripple",
+          "symbol": "XRP",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "XRP has seen cumulative net inflows of approximately $1.68 billion into US spot ETFs and a notable 1.6 billion XRP leaving exchanges in the past two weeks.",
+          "rationale": "These strong institutional inflows and on-chain movements suggest significant accumulation, indicating growing institutional interest and demand for XRP. Additionally, the upcoming 'Batch' upgrade in October and Ripple's Swell conference later this month could provide further positive catalysts, driving outperformance against BTC.",
+          "risk": "Negative regulatory developments or a broader market downturn could outweigh the positive inflow sentiment.",
+          "entryPrice": 1.5,
+          "livePrice": 1.5,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 1.49,
+          "exitDate": "2026-10-02",
+          "changePct": -0.67,
+          "benchmarkPct": -0.22,
+          "resultPct": -0.45,
+          "result": "L"
+        },
+        {
+          "id": "sui",
+          "symbol": "SUI",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "A token unlock of 13.26 million SUI tokens is scheduled for today, October 1, 2026.",
+          "rationale": "While the unlock is a relatively small percentage of the total supply (0.32%), Sui has experienced a significant 17.08% price surge over the past seven days. This combination of a scheduled supply increase on a high-flying asset could trigger profit-taking and exacerbate selling pressure, leading to underperformance against BTC.",
+          "risk": "The market might absorb the unlocked tokens without significant price impact, or continued bullish momentum could overcome selling pressure.",
+          "entryPrice": 1.19,
+          "livePrice": 1.19,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 1.15,
+          "exitDate": "2026-10-02",
+          "changePct": -3.36,
+          "benchmarkPct": -0.22,
+          "resultPct": 3.14,
+          "result": "W"
+        },
+        {
+          "id": "dogecoin",
+          "symbol": "DOGE",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "The Bitwise Dogecoin ETF (BWOW) is expected to liquidate in October 2026.",
+          "rationale": "The liquidation of a Dogecoin-specific ETF will likely result in forced selling of DOGE holdings by the fund, adding selling pressure to the market. This event could generate negative sentiment and directly impact Dogecoin's price, causing it to underperform relative to BTC.",
+          "risk": "A strong overall meme coin rally or unexpected positive news for Dogecoin could mitigate the impact of the ETF liquidation.",
+          "entryPrice": 0.095028,
+          "livePrice": 0.095028,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.094318,
+          "exitDate": "2026-10-02",
+          "changePct": -0.75,
+          "benchmarkPct": -0.22,
+          "resultPct": 0.53,
+          "result": "W"
+        }
+      ],
+      "liveAsOf": "2026-10-01",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-10-02T17:48:29.043Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": -0.22
+      },
+      "record": {
+        "wins": 3,
+        "losses": 2,
+        "avgPct": 1.15
+      }
     }
   ],
-  "updatedAt": "2026-10-01T18:23:28.203Z",
+  "updatedAt": "2026-10-02T17:48:29.044Z",
   "attribution": "Powered by CoinGecko"
 }
