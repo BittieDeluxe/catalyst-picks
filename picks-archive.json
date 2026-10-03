@@ -1997,8 +1997,130 @@
         "losses": 2,
         "avgPct": 1.15
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-02",
+      "generatedAt": "2026-10-02T17:48:29.043Z",
+      "benchmarkEntry": 84599,
+      "picks": [
+        {
+          "id": "ethena",
+          "symbol": "ENA",
+          "direction": "short",
+          "conviction": "high",
+          "catalyst": "Ethena is scheduled for a major cliff unlock of all remaining investor tokens on October 5, 2026, estimated at $210-$240 million.",
+          "rationale": "The imminent release of a substantial portion of ENA investor tokens into circulation is likely to create significant selling pressure, leading to underperformance relative to Bitcoin as new supply hits the market.",
+          "risk": "Strong overall market bullishness could temporarily absorb the increased supply, or the unlock details are already fully priced into the market.",
+          "entryPrice": 0.242177,
+          "livePrice": 0.242177,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.23282,
+          "exitDate": "2026-10-03",
+          "changePct": -3.86,
+          "benchmarkPct": 0.28,
+          "resultPct": 4.14,
+          "result": "W"
+        },
+        {
+          "id": "near",
+          "symbol": "NEAR",
+          "direction": "short",
+          "conviction": "high",
+          "catalyst": "NEAR Intents infrastructure suffered a confirmed attack on October 1, 2026, resulting in approximately $3.8 million in damages.",
+          "rationale": "The recent exploit introduces significant security concerns and negative sentiment around the NEAR ecosystem, likely leading to continued selling pressure and underperformance against BTC as investors react to the breach.",
+          "risk": "The market may have already fully priced in the negative news, or the project's announced compensation plan could mitigate further selling pressure.",
+          "entryPrice": 4.78,
+          "livePrice": 4.78,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 4.64,
+          "exitDate": "2026-10-03",
+          "changePct": -2.93,
+          "benchmarkPct": 0.28,
+          "resultPct": 3.21,
+          "result": "W"
+        },
+        {
+          "id": "ripple",
+          "symbol": "XRP",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "Ripple-backed Evernorth is set to list on Nasdaq under the ticker XRPN on October 8, 2026, holding 473 million XRP, with concerns that its lending strategy could add supply pressure.",
+          "rationale": "Despite the Nasdaq listing, the substantial XRP holdings by Evernorth and the potential for its lending strategy to increase circulating supply, coupled with a recent low in the Binance XRP Scarcity Index, suggest a bearish outlook for XRP relative to BTC.",
+          "risk": "The Nasdaq listing could be misinterpreted as a universally positive catalyst, or broader market sentiment could lift XRP despite fundamental concerns.",
+          "entryPrice": 1.49,
+          "livePrice": 1.49,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 1.49,
+          "exitDate": "2026-10-03",
+          "changePct": 0,
+          "benchmarkPct": 0.28,
+          "resultPct": 0.28,
+          "result": "W"
+        },
+        {
+          "id": "solana",
+          "symbol": "SOL",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Solana continues to attract strong institutional inflows into its ETFs, with $188.2 million in the week to September 25, alongside impressive daily DApp revenues of $6.04 million.",
+          "rationale": "Consistent institutional demand and robust on-chain activity, as evidenced by high DApp revenues outperforming competitors, indicate strong fundamental growth and could drive SOL to outperform BTC.",
+          "risk": "A sudden shift in institutional sentiment or a broader market downturn could negate the positive impact of these inflows and on-chain metrics.",
+          "entryPrice": 119.33,
+          "livePrice": 119.33,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 119.61,
+          "exitDate": "2026-10-03",
+          "changePct": 0.23,
+          "benchmarkPct": 0.28,
+          "resultPct": -0.05,
+          "result": "L"
+        },
+        {
+          "id": "ethereum",
+          "symbol": "ETH",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "The Ethereum Glamsterdam upgrade is scheduled to activate on the Sepolia testnet on October 6, 2026.",
+          "rationale": "While a testnet activation, this marks a significant step in Ethereum's development roadmap towards improved scalability and efficiency, potentially generating positive sentiment and driving modest outperformance against BTC.",
+          "risk": "The immediate price impact of a testnet activation may be limited, or broader market sentiment could overshadow this specific technical development.",
+          "entryPrice": 2680.46,
+          "livePrice": 2680.46,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 2679.68,
+          "exitDate": "2026-10-03",
+          "changePct": -0.03,
+          "benchmarkPct": 0.28,
+          "resultPct": -0.31,
+          "result": "L"
+        }
+      ],
+      "liveAsOf": "2026-10-02",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-10-03T16:08:19.876Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": 0.28
+      },
+      "record": {
+        "wins": 3,
+        "losses": 2,
+        "avgPct": 1.45
+      }
     }
   ],
-  "updatedAt": "2026-10-02T17:48:29.044Z",
+  "updatedAt": "2026-10-03T16:08:19.876Z",
   "attribution": "Powered by CoinGecko"
 }
