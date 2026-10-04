@@ -2119,8 +2119,130 @@
         "losses": 2,
         "avgPct": 1.45
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-03",
+      "generatedAt": "2026-10-03T16:08:19.876Z",
+      "benchmarkEntry": 84840,
+      "picks": [
+        {
+          "id": "solana",
+          "symbol": "SOL",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Solana's Alpenglow upgrade is going live in October 2026, aiming to reduce transaction finality to approximately 150 milliseconds.",
+          "rationale": "The Alpenglow upgrade represents a significant architectural change to Solana's consensus layer, promising substantial improvements in transaction finality and overall network performance. The Solana Foundation has recently released insights on this key development, which could drive increased adoption and positive sentiment, leading to outperformance relative to BTC.",
+          "risk": "Delays in the full rollout or unexpected technical issues with the Alpenglow upgrade could invalidate this thesis.",
+          "entryPrice": 119.61,
+          "livePrice": 119.61,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 121.64,
+          "exitDate": "2026-10-04",
+          "changePct": 1.7,
+          "benchmarkPct": 0.58,
+          "resultPct": 1.12,
+          "result": "W"
+        },
+        {
+          "id": "quant-network",
+          "symbol": "QNT",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Quant partnered with The Clearing House on September 24, 2026, for its On-Chain Money Initiative, which supports interoperable tokenized-deposit payments.",
+          "rationale": "This partnership signifies major institutional adoption for Quant's Overledger technology within the traditional U.S. banking system. While the initial price surge may have occurred, the market could continue to digest the long-term implications of Quant powering a key piece of regulated financial infrastructure, potentially driving further outperformance.",
+          "risk": "Lack of clear financial terms or slower-than-expected adoption of the On-Chain Money Initiative could limit sustained upward momentum.",
+          "entryPrice": 248.62,
+          "livePrice": 248.62,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 256.09,
+          "exitDate": "2026-10-04",
+          "changePct": 3,
+          "benchmarkPct": 0.58,
+          "resultPct": 2.42,
+          "result": "W"
+        },
+        {
+          "id": "starknet",
+          "symbol": "STRK",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Starknet's v0.14.4 mainnet upgrade is planned for October 5, 2026, enabling block-sized proofs of up to 1.1 billion Layer-2 gas.",
+          "rationale": "This imminent technical upgrade is a significant bullish catalyst, as it removes previous computation limits and could attract more complex, high-throughput applications to the Starknet ecosystem. Increased network usage directly translates to higher demand for STRK, as it is the mandatory currency for transaction fees, positioning it for potential outperformance.",
+          "risk": "Any delays in the upgrade deployment or lower-than-expected developer adoption post-upgrade could temper positive price action.",
+          "entryPrice": 0.04974647,
+          "livePrice": 0.04974647,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.055973,
+          "exitDate": "2026-10-04",
+          "changePct": 12.52,
+          "benchmarkPct": 0.58,
+          "resultPct": 11.94,
+          "result": "W"
+        },
+        {
+          "id": "arbitrum",
+          "symbol": "ARB",
+          "direction": "short",
+          "conviction": "high",
+          "catalyst": "Arbitrum faces ongoing monthly token unlock pressure, with 92.6 million ARB released each month until early 2027.",
+          "rationale": "Despite a recent significant rally, Arbitrum's price faces continuous headwinds from consistent monthly token unlocks, which introduce fresh supply into the market. This ongoing supply pressure, especially after a period of strong gains, could lead to underperformance relative to BTC as early investors and team members realize profits.",
+          "risk": "Stronger-than-anticipated demand or new positive developments could absorb the unlock supply, mitigating selling pressure.",
+          "entryPrice": 0.201365,
+          "livePrice": 0.201365,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.201606,
+          "exitDate": "2026-10-04",
+          "changePct": 0.12,
+          "benchmarkPct": 0.58,
+          "resultPct": 0.46,
+          "result": "W"
+        },
+        {
+          "id": "sui",
+          "symbol": "SUI",
+          "direction": "short",
+          "conviction": "high",
+          "catalyst": "Sui has a scheduled token unlock today, October 3, 2026, releasing approximately 23.4 million SUI tokens.",
+          "rationale": "The release of an additional 23.4 million SUI tokens into circulation today, representing 0.2% of supply and 0.6% of market cap, is a clear short-term bearish catalyst. Historically, similar unlocks for SUI have resulted in short-term price dips averaging 5-14%, suggesting potential underperformance against BTC.",
+          "risk": "Robust ecosystem demand or unexpected positive news could quickly absorb the new supply, negating the expected selling pressure.",
+          "entryPrice": 1.17,
+          "livePrice": 1.17,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 1.23,
+          "exitDate": "2026-10-04",
+          "changePct": 5.13,
+          "benchmarkPct": 0.58,
+          "resultPct": -4.55,
+          "result": "L"
+        }
+      ],
+      "liveAsOf": "2026-10-03",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-10-04T16:47:24.591Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": 0.58
+      },
+      "record": {
+        "wins": 4,
+        "losses": 1,
+        "avgPct": 2.28
+      }
     }
   ],
-  "updatedAt": "2026-10-03T16:08:19.876Z",
+  "updatedAt": "2026-10-04T16:47:24.591Z",
   "attribution": "Powered by CoinGecko"
 }
