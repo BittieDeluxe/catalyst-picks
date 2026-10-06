@@ -1,77 +1,77 @@
 {
   "daily": {
     "horizon": "daily",
-    "date": "2026-10-04",
-    "generatedAt": "2026-10-04T16:47:24.591Z",
-    "benchmarkEntry": 85332,
+    "date": "2026-10-06",
+    "generatedAt": "2026-10-06T18:17:40.699Z",
+    "benchmarkEntry": 85766,
     "picks": [
+      {
+        "id": "ethereum",
+        "symbol": "ETH",
+        "direction": "long",
+        "conviction": "high",
+        "catalyst": "Ethereum's Glamsterdam upgrade is activating on the Sepolia testnet today, October 6, 2026, around 13:53:36 UTC.",
+        "rationale": "This testnet deployment is a critical step for a major upgrade aimed at enhancing Ethereum's scalability and security, with the potential for increased transactions and lower fees on the mainnet. A successful testnet activation could generate positive sentiment and anticipation for the eventual mainnet launch.",
+        "risk": "Any unexpected issues or delays during the Sepolia testnet activation could negatively impact market sentiment.",
+        "entryPrice": 2700.48,
+        "livePrice": 2700.48,
+        "liveChangePct": 0,
+        "livePct": 0
+      },
       {
         "id": "ethena",
         "symbol": "ENA",
         "direction": "short",
-        "conviction": "high",
-        "catalyst": "A final investor cliff unlock of approximately 1.41 billion ENA (around 14% of circulating supply) is scheduled for October 5, 2026.",
-        "rationale": "This significant token unlock represents a substantial increase in tradable supply, likely leading to increased selling pressure as early investors may take profits. Cliff unlocks are known to cause notable price depreciation due to the sudden influx of tokens onto the market.",
-        "risk": "Strong underlying demand or strategic holding by recipients could absorb the unlocked tokens, mitigating selling pressure.",
-        "entryPrice": 0.236243,
-        "livePrice": 0.236243,
+        "conviction": "medium",
+        "catalyst": "Ethena experienced a significant unlock of 171.88 million ENA tokens, valued at $41.52 million, for core contributors and investors on October 5, 2026.",
+        "rationale": "The recent substantial token unlock to contributors and investors, occurring just yesterday, could lead to continued selling pressure as new supply is absorbed by the market, potentially causing short-term price depreciation.",
+        "risk": "If the unlocked tokens are held rather than sold, or if strong buying demand emerges, the selling pressure might be absorbed without a significant price drop.",
+        "entryPrice": 0.238221,
+        "livePrice": 0.238221,
         "liveChangePct": 0,
         "livePct": 0
       },
       {
-        "id": "starknet",
-        "symbol": "STRK",
-        "direction": "long",
-        "conviction": "high",
-        "catalyst": "The Starknet v0.14.4 mainnet upgrade is planned for October 5, 2026, enhancing Layer-2 gas capacity to 1.1 billion.",
-        "rationale": "This upgrade significantly improves Starknet's scalability and competitiveness among zero-knowledge rollups, which is a strong fundamental positive. The token has already shown considerable momentum and increased trading volume, indicating speculative interest ahead of the upgrade.",
-        "risk": "Technical delays in the upgrade or a 'sell the news' event post-launch could invalidate the bullish thesis.",
-        "entryPrice": 0.055973,
-        "livePrice": 0.055973,
-        "liveChangePct": 0,
-        "livePct": 0
-      },
-      {
-        "id": "sui",
-        "symbol": "SUI",
-        "direction": "long",
-        "conviction": "high",
-        "catalyst": "The Sui Basecamp conference takes place on October 7-8, 2026, in Singapore, featuring a public speed test and a teaser for a major finance product reveal.",
-        "rationale": "Major conferences often generate significant excitement and announcements that can drive short-term price appreciation, especially with the promise of new product reveals and a public demonstration of network capabilities. Recent price surges suggest growing anticipation in the market.",
-        "risk": "Announcements at Basecamp may disappoint market expectations, or the event could be a 'buy the rumor, sell the news' scenario.",
-        "entryPrice": 1.23,
-        "livePrice": 1.23,
-        "liveChangePct": 0,
-        "livePct": 0
-      },
-      {
-        "id": "near",
-        "symbol": "NEAR",
+        "id": "solana",
+        "symbol": "SOL",
         "direction": "long",
         "conviction": "medium",
-        "catalyst": "Bitwise recently launched a US spot NEAR ETF, providing institutional access and potential for sustained capital inflows.",
-        "rationale": "The introduction of a spot ETF by a major asset manager like Bitwise legitimizes NEAR for a broader institutional audience, potentially leading to increased demand. Despite a recent exploit on a related service, the core blockchain was unaffected, and the ETF launch offers a powerful long-term growth narrative.",
-        "risk": "Negative sentiment from the recent NEAR Intents hack could persist, or broader market downturns could overshadow ETF-driven inflows.",
-        "entryPrice": 4.91,
-        "livePrice": 4.91,
+        "catalyst": "Solana's Alpenglow upgrade, a major protocol change aimed at significantly reducing transaction finality time, is targeted for mainnet activation in October 2026.",
+        "rationale": "This upgrade represents a substantial improvement to Solana's core infrastructure, promising faster transaction finality and enhanced network performance, which could attract increased developer and user activity as the month progresses.",
+        "risk": "Delays in the mainnet activation or technical challenges during the rollout could temper positive market reaction.",
+        "entryPrice": 121.14,
+        "livePrice": 121.14,
         "liveChangePct": 0,
         "livePct": 0
       },
       {
-        "id": "quant-network",
-        "symbol": "QNT",
+        "id": "arbitrum",
+        "symbol": "ARB",
+        "direction": "short",
+        "conviction": "medium",
+        "catalyst": "A scheduled unlock of 92.6 million ARB tokens (worth approximately $18.8 million) is set for October 16, 2026, as part of its linear vesting schedule, with markets often pricing in such events in advance.",
+        "rationale": "The upcoming significant token unlock creates a predictable supply overhang, and traders often anticipate and price in potential selling pressure from early investors and team members in the days leading up to the event.",
+        "risk": "Strong institutional adoption and growing network revenue, as highlighted in recent reports, could potentially offset the selling pressure from the impending unlock.",
+        "entryPrice": 0.205573,
+        "livePrice": 0.205573,
+        "liveChangePct": 0,
+        "livePct": 0
+      },
+      {
+        "id": "render-token",
+        "symbol": "RNDR",
         "direction": "long",
         "conviction": "medium",
-        "catalyst": "Quant was selected by The Clearing House on September 24, 2026, to provide the interoperability layer for its On-Chain Money Initiative.",
-        "rationale": "This institutional partnership positions Quant's technology at the core of real-world payments, indicating significant adoption and a strong fundamental narrative. The recent expansion of QNT liquidity to Solana via Sunrise and Raydium further enhances its accessibility and market reach.",
-        "risk": "The full impact and details of the institutional partnership may unfold slowly, leading to a prolonged period of consolidation rather than immediate price surges.",
-        "entryPrice": 256.09,
-        "livePrice": 256.09,
+        "catalyst": "Render Network has an ongoing governance vote for its Mainnet Adapter and Protocol 28 Upgrade 1, initiated on September 16, 2026, focusing on decentralized GPU infrastructure for AI workloads.",
+        "rationale": "Render Network's continuous development and active governance around enhancing its decentralized GPU infrastructure for AI and 3D rendering position it well within a high-growth sector, potentially driving sustained interest and demand.",
+        "risk": "The long-term impact of the upgrade may not materialize immediately, and broader market sentiment or increased competition in the AI compute space could overshadow these developments.",
+        "entryPrice": 2.18,
+        "livePrice": 2.18,
         "liveChangePct": 0,
         "livePct": 0
       }
     ],
-    "liveAsOf": "2026-10-04",
+    "liveAsOf": "2026-10-06",
     "liveBenchmarkPct": 0,
     "liveRecord": {
       "ahead": 0,
@@ -82,83 +82,83 @@
   },
   "weekly": {
     "horizon": "weekly",
-    "date": "2026-09-28",
-    "generatedAt": "2026-09-28T19:36:45.896Z",
-    "benchmarkEntry": 83614,
+    "date": "2026-10-06",
+    "generatedAt": "2026-10-06T18:18:08.906Z",
+    "benchmarkEntry": 85766,
     "picks": [
       {
-        "id": "ethena",
-        "symbol": "ENA",
-        "direction": "short",
-        "conviction": "high",
-        "catalyst": "Ethena (ENA) will undergo a major token unlock of 1.41 billion ENA on October 5, 2026, marking the end of all investor vesting cliffs.",
-        "rationale": "This substantial unlock, representing approximately 14% of the total supply and valued at around $381 million, removes a significant portion of locked tokens from investor hands, likely leading to increased selling pressure as early investors realize profits. The finality of this vesting event could amplify its impact on market sentiment.",
-        "risk": "Strong fundamental adoption or unexpected positive news could absorb the increased supply, mitigating selling pressure.",
-        "entryPrice": 0.260927,
-        "livePrice": 0.236243,
-        "liveChangePct": -9.46,
-        "livePct": 11.51
-      },
-      {
-        "id": "sui",
-        "symbol": "SUI",
-        "direction": "short",
+        "id": "ethereum",
+        "symbol": "ETH",
+        "direction": "long",
         "conviction": "medium",
-        "catalyst": "Sui (SUI) has a scheduled monthly token unlock of approximately 13.26 million SUI on October 1, 2026.",
-        "rationale": "Sui has a recurring monthly unlock schedule, and previous unlocks have historically led to short-term price dips ranging from 5-14%. This upcoming unlock represents 0.32% of the released supply and could induce similar selling pressure in the short term.",
-        "risk": "A smaller percentage of unlocked supply compared to other tokens, coupled with strong ecosystem demand, could absorb the new tokens without significant price impact.",
-        "entryPrice": 1.16,
-        "livePrice": 1.23,
-        "liveChangePct": 6.03,
-        "livePct": -3.98
+        "catalyst": "The Glamsterdam upgrade successfully launched on the Sepolia testnet on October 6, 2026.",
+        "rationale": "This major Layer-1 scaling upgrade, featuring enshrined proposer-builder separation and block-level access lists, progresses Ethereum's roadmap towards enhanced scalability and efficiency. A successful testnet deployment builds confidence in the upcoming mainnet activation, targeted for Q4 2026, and could attract further developer and investor interest.",
+        "risk": "Delays or unforeseen issues during the subsequent Hoodi testnet activation or mainnet launch would invalidate this outlook.",
+        "entryPrice": 2700.48,
+        "livePrice": 2700.48,
+        "liveChangePct": 0,
+        "livePct": 0
       },
       {
         "id": "solana",
         "symbol": "SOL",
         "direction": "long",
-        "conviction": "high",
-        "catalyst": "Solana's 'Alpenglow' upgrade is scheduled to go live in October 2026, aiming to drastically reduce transaction finality to 100-150 milliseconds.",
-        "rationale": "This major architectural overhaul of Solana's consensus layer is a significant technological advancement that could enhance network performance, scalability, and developer attractiveness. The ongoing news and anticipation surrounding its imminent October activation are likely to drive positive sentiment and outperform BTC.",
-        "risk": "Any delays in the Alpenglow rollout or unforeseen technical issues during its activation could negatively impact market sentiment.",
-        "entryPrice": 118.9,
-        "livePrice": 121.64,
-        "liveChangePct": 2.3,
-        "livePct": 0.25
-      },
-      {
-        "id": "aave",
-        "symbol": "AAVE",
-        "direction": "short",
         "conviction": "medium",
-        "catalyst": "Aave's newly launched Equities Hub on Base, which enables borrowing against tokenized stocks, faces a reported weekend price gap vulnerability where price feeds freeze while trading and liquidations can still occur.",
-        "rationale": "With the current week encompassing a weekend, this identified operational risk in a new, high-profile product could expose lenders to bad debt or trigger negative market reactions if exploited or highlighted, creating short-term bearish pressure on AAVE.",
-        "risk": "The vulnerability may not be exploited or may be quickly patched, or the market may deem the impact negligible, leading to a muted or positive reaction.",
-        "entryPrice": 147.54,
-        "livePrice": 179.31,
-        "liveChangePct": 21.53,
-        "livePct": -19.48
+        "catalyst": "Solana's Alpenglow mainnet activation, featuring the new Votor and Rotor consensus protocols with Agave 4.3, is targeted for October 2026.",
+        "rationale": "Alpenglow represents Solana's most significant consensus overhaul, aiming to replace existing mechanisms for improved performance and resilience. The ongoing phased rollout of the Firedancer independent validator client throughout 2026 further enhances network robustness and throughput, potentially driving positive sentiment.",
+        "risk": "Failure to meet the October mainnet activation target or significant technical issues during the rollout would undermine this thesis.",
+        "entryPrice": 121.14,
+        "livePrice": 121.14,
+        "liveChangePct": 0,
+        "livePct": 0
       },
       {
-        "id": "aptos",
-        "symbol": "APT",
+        "id": "chainlink",
+        "symbol": "LINK",
         "direction": "long",
         "conviction": "medium",
-        "catalyst": "The four-year unlock cycle for Aptos's initial investors and core contributors concludes in October 2026, significantly reducing annualized supply unlocks by 60%.",
-        "rationale": "The end of this major vesting period removes a substantial overhang of potential selling pressure from early participants, which has historically been a concern for APT. This structural shift towards reduced token emissions could lead to a more favorable supply-demand dynamic and positive sentiment in the coming weeks.",
-        "risk": "The market may have already priced in this event, or continued staking rewards and general market downturns could offset the positive impact of reduced investor unlocks.",
-        "entryPrice": 0.812908,
-        "livePrice": 0.806267,
-        "liveChangePct": -0.82,
-        "livePct": -2.87
+        "catalyst": "Chainlink recently launched CCIP 2.0 and demonstrated cross-chain institutional financing with DTCC, signaling growing real-world asset integration.",
+        "rationale": "The upgraded Cross-Chain Interoperability Protocol (CCIP) with enhanced verification and compliance controls positions Chainlink for increased institutional adoption. Demonstrations with major financial entities like DTCC highlight the protocol's utility in bridging traditional finance with blockchain, potentially increasing demand for LINK.",
+        "risk": "A lack of tangible institutional adoption or delays in further real-world asset integrations could temper positive price action.",
+        "entryPrice": 13.98,
+        "livePrice": 13.98,
+        "liveChangePct": 0,
+        "livePct": 0
+      },
+      {
+        "id": "ethena",
+        "symbol": "ENA",
+        "direction": "short",
+        "conviction": "high",
+        "catalyst": "Ethena experienced a significant final investor token unlock of 1.41 billion ENA, representing 14% of its supply and valued at approximately $381 million, on October 5, 2026.",
+        "rationale": "This substantial release of previously locked tokens into the circulating supply, occurring just prior to the current week, is likely to create considerable selling pressure. The early conclusion of investor vesting could lead to profit-taking and increased token distribution.",
+        "risk": "Strong buying demand absorbing the unlocked supply without significant price depreciation would invalidate this short position.",
+        "entryPrice": 0.238221,
+        "livePrice": 0.238221,
+        "liveChangePct": 0,
+        "livePct": 0
+      },
+      {
+        "id": "binancecoin",
+        "symbol": "BNB",
+        "direction": "short",
+        "conviction": "medium",
+        "catalyst": "Binance is facing an ongoing investigation by European regulators regarding its continued operations in the EU without a MiCA license.",
+        "rationale": "The scrutiny from ESMA and national regulators over Binance's use of 'reverse solicitation' provisions creates significant regulatory uncertainty and potential for enforcement actions. This regulatory overhang could negatively impact sentiment and user activity on the exchange, indirectly affecting BNB's value.",
+        "risk": "A swift and favorable resolution to the regulatory probe, or a clear path to MiCA compliance, could mitigate the negative pressure on BNB.",
+        "entryPrice": 782.91,
+        "livePrice": 782.91,
+        "liveChangePct": 0,
+        "livePct": 0
       }
     ],
-    "liveAsOf": "2026-10-04",
-    "liveBenchmarkPct": 2.05,
+    "liveAsOf": "2026-10-06",
+    "liveBenchmarkPct": 0,
     "liveRecord": {
-      "ahead": 2,
-      "behind": 3,
-      "avgPct": -2.91,
-      "daysOpen": 6
+      "ahead": 0,
+      "behind": 0,
+      "avgPct": 0,
+      "daysOpen": 0
     }
   },
   "monthly": {
@@ -176,9 +176,9 @@
         "rationale": "The recent launch of CCIP 2.0, introducing enhanced security, compliance, and institutional features, alongside the upcoming mainnet deployment of a zero-knowledge Cross-Chain Verifier, significantly strengthens Chainlink's position for institutional adoption of tokenized assets. This increased utility and integration into traditional finance infrastructure are strong drivers for LINK to outperform BTC.",
         "risk": "Slower-than-expected institutional adoption or technical delays in CCIP deployments would invalidate this thesis.",
         "entryPrice": 14.33,
-        "livePrice": 14.14,
-        "liveChangePct": -1.33,
-        "livePct": -1.97
+        "livePrice": 13.98,
+        "liveChangePct": -2.44,
+        "livePct": -3.59
       },
       {
         "id": "ondo-finance",
@@ -189,9 +189,9 @@
         "rationale": "The partnership with Mirae Asset Global Investments to bring all products on-chain and the integration of Ondo's Oasis Pro markets with DTCC's Fund/SERV network are significant milestones for institutional adoption of Real-World Assets (RWA) tokenization. These developments position ONDO as a leader in bridging traditional finance with DeFi, potentially leading to strong outperformance relative to BTC.",
         "risk": "A slowdown in RWA adoption or adverse regulatory changes impacting tokenized securities would invalidate this thesis.",
         "entryPrice": 0.496763,
-        "livePrice": 0.49467,
-        "liveChangePct": -0.42,
-        "livePct": -1.06
+        "livePrice": 0.498571,
+        "liveChangePct": 0.36,
+        "livePct": -0.79
       },
       {
         "id": "ethena",
@@ -202,9 +202,9 @@
         "rationale": "This accelerated and substantial cliff unlock, estimated to be around 1.41 billion ENA, represents a significant supply shock to the market. The sudden availability of a large number of tokens previously held by early investors is likely to create considerable selling pressure, causing ENA to underperform BTC.",
         "risk": "Strong demand absorbing the unlocked supply without significant price depreciation would invalidate this thesis.",
         "entryPrice": 0.250288,
-        "livePrice": 0.236243,
-        "liveChangePct": -5.61,
-        "livePct": 6.25
+        "livePrice": 0.238221,
+        "liveChangePct": -4.82,
+        "livePct": 5.97
       },
       {
         "id": "solana",
@@ -215,9 +215,9 @@
         "rationale": "The upcoming Alpenglow mainnet activation in October signifies continued network development and potential performance improvements for Solana. Coupled with significant institutional inflows into Solana funds, this upgrade could enhance network utility and investor confidence, supporting SOL's outperformance relative to BTC.",
         "risk": "Technical issues with the Alpenglow upgrade or a broader market downturn impacting institutional sentiment would invalidate this thesis.",
         "entryPrice": 118.42,
-        "livePrice": 121.64,
-        "liveChangePct": 2.72,
-        "livePct": 2.08
+        "livePrice": 121.14,
+        "liveChangePct": 2.3,
+        "livePct": 1.15
       },
       {
         "id": "ethereum",
@@ -228,18 +228,18 @@
         "rationale": "The rollout of the first public test network for the Glamsterdam upgrade on October 6 is a key development milestone for Ethereum. This progression in its upgrade roadmap could generate positive sentiment and anticipate future network enhancements, supporting ETH's potential to outperform BTC.",
         "risk": "Delays or unforeseen issues with the testnet launch, or a lack of positive market reaction to the upgrade, would invalidate this thesis.",
         "entryPrice": 2699.27,
-        "livePrice": 2703.75,
-        "liveChangePct": 0.17,
-        "livePct": -0.47
+        "livePrice": 2700.48,
+        "liveChangePct": 0.04,
+        "livePct": -1.11
       }
     ],
-    "liveAsOf": "2026-10-04",
-    "liveBenchmarkPct": 0.64,
+    "liveAsOf": "2026-10-06",
+    "liveBenchmarkPct": 1.15,
     "liveRecord": {
       "ahead": 2,
       "behind": 3,
-      "avgPct": 0.97,
-      "daysOpen": 3
+      "avgPct": 0.33,
+      "daysOpen": 5
     }
   }
 }
