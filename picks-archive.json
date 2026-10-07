@@ -2485,8 +2485,130 @@
         "losses": 3,
         "avgPct": -1.99
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-06",
+      "generatedAt": "2026-10-06T18:17:40.699Z",
+      "benchmarkEntry": 85766,
+      "picks": [
+        {
+          "id": "ethereum",
+          "symbol": "ETH",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Ethereum's Glamsterdam upgrade is activating on the Sepolia testnet today, October 6, 2026, around 13:53:36 UTC.",
+          "rationale": "This testnet deployment is a critical step for a major upgrade aimed at enhancing Ethereum's scalability and security, with the potential for increased transactions and lower fees on the mainnet. A successful testnet activation could generate positive sentiment and anticipation for the eventual mainnet launch.",
+          "risk": "Any unexpected issues or delays during the Sepolia testnet activation could negatively impact market sentiment.",
+          "entryPrice": 2700.48,
+          "livePrice": 2700.48,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 2559.44,
+          "exitDate": "2026-10-07",
+          "changePct": -5.22,
+          "benchmarkPct": -2.83,
+          "resultPct": -2.39,
+          "result": "L"
+        },
+        {
+          "id": "ethena",
+          "symbol": "ENA",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "Ethena experienced a significant unlock of 171.88 million ENA tokens, valued at $41.52 million, for core contributors and investors on October 5, 2026.",
+          "rationale": "The recent substantial token unlock to contributors and investors, occurring just yesterday, could lead to continued selling pressure as new supply is absorbed by the market, potentially causing short-term price depreciation.",
+          "risk": "If the unlocked tokens are held rather than sold, or if strong buying demand emerges, the selling pressure might be absorbed without a significant price drop.",
+          "entryPrice": 0.238221,
+          "livePrice": 0.238221,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.224776,
+          "exitDate": "2026-10-07",
+          "changePct": -5.64,
+          "benchmarkPct": -2.83,
+          "resultPct": 2.81,
+          "result": "W"
+        },
+        {
+          "id": "solana",
+          "symbol": "SOL",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Solana's Alpenglow upgrade, a major protocol change aimed at significantly reducing transaction finality time, is targeted for mainnet activation in October 2026.",
+          "rationale": "This upgrade represents a substantial improvement to Solana's core infrastructure, promising faster transaction finality and enhanced network performance, which could attract increased developer and user activity as the month progresses.",
+          "risk": "Delays in the mainnet activation or technical challenges during the rollout could temper positive market reaction.",
+          "entryPrice": 121.14,
+          "livePrice": 121.14,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 116.25,
+          "exitDate": "2026-10-07",
+          "changePct": -4.04,
+          "benchmarkPct": -2.83,
+          "resultPct": -1.21,
+          "result": "L"
+        },
+        {
+          "id": "arbitrum",
+          "symbol": "ARB",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "A scheduled unlock of 92.6 million ARB tokens (worth approximately $18.8 million) is set for October 16, 2026, as part of its linear vesting schedule, with markets often pricing in such events in advance.",
+          "rationale": "The upcoming significant token unlock creates a predictable supply overhang, and traders often anticipate and price in potential selling pressure from early investors and team members in the days leading up to the event.",
+          "risk": "Strong institutional adoption and growing network revenue, as highlighted in recent reports, could potentially offset the selling pressure from the impending unlock.",
+          "entryPrice": 0.205573,
+          "livePrice": 0.205573,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.182578,
+          "exitDate": "2026-10-07",
+          "changePct": -11.19,
+          "benchmarkPct": -2.83,
+          "resultPct": 8.36,
+          "result": "W"
+        },
+        {
+          "id": "render-token",
+          "symbol": "RNDR",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Render Network has an ongoing governance vote for its Mainnet Adapter and Protocol 28 Upgrade 1, initiated on September 16, 2026, focusing on decentralized GPU infrastructure for AI workloads.",
+          "rationale": "Render Network's continuous development and active governance around enhancing its decentralized GPU infrastructure for AI and 3D rendering position it well within a high-growth sector, potentially driving sustained interest and demand.",
+          "risk": "The long-term impact of the upgrade may not materialize immediately, and broader market sentiment or increased competition in the AI compute space could overshadow these developments.",
+          "entryPrice": 2.18,
+          "livePrice": 2.18,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 2.05,
+          "exitDate": "2026-10-07",
+          "changePct": -5.96,
+          "benchmarkPct": -2.83,
+          "resultPct": -3.13,
+          "result": "L"
+        }
+      ],
+      "liveAsOf": "2026-10-06",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-10-07T18:49:50.773Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": -2.83
+      },
+      "record": {
+        "wins": 2,
+        "losses": 3,
+        "avgPct": 0.89
+      }
     }
   ],
-  "updatedAt": "2026-10-06T18:18:08.906Z",
+  "updatedAt": "2026-10-07T18:49:50.773Z",
   "attribution": "Powered by CoinGecko"
 }
