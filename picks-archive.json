@@ -2729,8 +2729,130 @@
         "losses": 2,
         "avgPct": -0.18
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-08",
+      "generatedAt": "2026-10-08T18:47:44.016Z",
+      "benchmarkEntry": 81447,
+      "picks": [
+        {
+          "id": "jupiter-exchange-solana",
+          "symbol": "JUP",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Jupiter Lend has reportedly surpassed Kamino to become Solana's largest lending protocol, with significant growth in TVL and active loans.",
+          "rationale": "The rapid expansion of Jupiter Lend signifies increasing adoption and utility within the Solana DeFi ecosystem, extending Jupiter's influence beyond DEX aggregation. This fundamental growth positions JUP for potential outperformance relative to BTC.",
+          "risk": "The reported lead in TVL over Kamino is not yet universally confirmed across all data sources, and a broader negative shift in Solana ecosystem sentiment could invalidate this pick.",
+          "entryPrice": 0.346088,
+          "livePrice": 0.346088,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.37855,
+          "exitDate": "2026-10-09",
+          "changePct": 9.38,
+          "benchmarkPct": 1.42,
+          "resultPct": 7.96,
+          "result": "W"
+        },
+        {
+          "id": "ondo-finance",
+          "symbol": "ONDO",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Ondo Finance launched 'Ondo Private Markets' on October 6, 2026, offering tokenized notes for a pre-IPO AI company, and signed an MOU with Kakaopay Securities on October 7, 2026, to explore tokenizing South Korean equities.",
+          "rationale": "These recent strategic expansions into private markets and a major international equity market represent significant new avenues for growth and user activity for Ondo. This fundamental development is expected to drive demand for the ONDO token.",
+          "risk": "The success of these new tokenized products hinges on market participation and regulatory acceptance, and the Korean partnership currently lacks concrete product launch dates.",
+          "entryPrice": 0.485162,
+          "livePrice": 0.485162,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.47951,
+          "exitDate": "2026-10-09",
+          "changePct": -1.16,
+          "benchmarkPct": 1.42,
+          "resultPct": -2.58,
+          "result": "L"
+        },
+        {
+          "id": "book-of-meme",
+          "symbol": "BOME",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Anticipation of Solana's 200ms slot-time reduction upgrade, scheduled for approximately 15:00 UTC on October 9, 2026, is driving positive sentiment for Solana-based assets.",
+          "rationale": "As a prominent memecoin within the Solana ecosystem, BOME is likely to benefit from significant network upgrades that enhance performance and user experience. Increased spot buying volume further supports this short-term bullish outlook.",
+          "risk": "Memecoins are highly volatile and susceptible to rapid sentiment shifts, and a broader market downturn could outweigh positive Solana-specific news.",
+          "entryPrice": 0.00103143,
+          "livePrice": 0.00103143,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.00104717,
+          "exitDate": "2026-10-09",
+          "changePct": 1.53,
+          "benchmarkPct": 1.42,
+          "resultPct": 0.11,
+          "result": "W"
+        },
+        {
+          "id": "celestia",
+          "symbol": "TIA",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Derive V3, a major on-chain options protocol, adopted Celestia for data availability in its V3 upgrade on October 1, 2026, following Celestia's Fibre system sustaining 3.07 Tb/s in a benchmark on October 2, 2026.",
+          "rationale": "High-profile adoption by a significant DeFi application validates Celestia's utility, while the impressive technical benchmark showcases its potential to address critical data availability bottlenecks for scaling rollups. These developments enhance TIA's fundamental value proposition.",
+          "risk": "The Fibre benchmark was an experimental test, not mainnet traffic, and sustained token demand depends on real-world blob usage translating into fees rather than solely on technical potential.",
+          "entryPrice": 0.490021,
+          "livePrice": 0.490021,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.471677,
+          "exitDate": "2026-10-09",
+          "changePct": -3.74,
+          "benchmarkPct": 1.42,
+          "resultPct": -5.16,
+          "result": "L"
+        },
+        {
+          "id": "starknet",
+          "symbol": "STRK",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Starknet completed its v0.14.4 mainnet upgrade on October 6, 2026, enhancing capacity and proof efficiency, and continues its strkBTC incentive program launched on October 2, 2026, to attract Bitcoin liquidity.",
+          "rationale": "The recent mainnet upgrade improves the network's technical capabilities, while the strkBTC program aims to integrate Bitcoin into the Starknet DeFi ecosystem, driving utility and demand for STRK. A narrative around 'AI or quantum resistant' tokens also provides a speculative tailwind.",
+          "risk": "A significant unlock of 127 million STRK for early contributors and investors is scheduled for October 15, 2026, which could introduce selling pressure in the near term.",
+          "entryPrice": 0.057255,
+          "livePrice": 0.057255,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.07321,
+          "exitDate": "2026-10-09",
+          "changePct": 27.87,
+          "benchmarkPct": 1.42,
+          "resultPct": 26.45,
+          "result": "W"
+        }
+      ],
+      "liveAsOf": "2026-10-08",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-10-09T18:18:34.953Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": 1.42
+      },
+      "record": {
+        "wins": 3,
+        "losses": 2,
+        "avgPct": 5.36
+      }
     }
   ],
-  "updatedAt": "2026-10-08T18:47:44.016Z",
+  "updatedAt": "2026-10-09T18:18:34.954Z",
   "attribution": "Powered by CoinGecko"
 }
