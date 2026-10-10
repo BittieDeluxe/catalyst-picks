@@ -2851,8 +2851,130 @@
         "losses": 2,
         "avgPct": 5.36
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-09",
+      "generatedAt": "2026-10-09T18:18:34.953Z",
+      "benchmarkEntry": 82600,
+      "picks": [
+        {
+          "id": "aptos",
+          "symbol": "APT",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "The four-year vesting cycle for early investors and core contributors concludes on October 12, 2026, reducing annualized unlocks by 60%, complemented by the Aptos Foundation's permanent lock of 210 million APT.",
+          "rationale": "This significant reduction in future token unlocks and the permanent locking of a substantial portion of the supply by the Foundation drastically reduce potential selling pressure and increase scarcity. This fundamental shift in tokenomics creates a strong bullish supply-side dynamic that should drive APT to outperform BTC.",
+          "risk": "A broader market downturn or unexpected delays in the tokenomics implementation could invalidate this thesis.",
+          "entryPrice": 0.805311,
+          "livePrice": 0.805311,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.84423,
+          "exitDate": "2026-10-10",
+          "changePct": 4.83,
+          "benchmarkPct": 0.47,
+          "resultPct": 4.36,
+          "result": "W"
+        },
+        {
+          "id": "filecoin",
+          "symbol": "FIL",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Filecoin's six-year vesting program concludes on October 15, 2026, which is expected to cut gross FIL issuance by approximately 75%.",
+          "rationale": "This is a major, dated supply shock that will dramatically reduce the rate of new FIL entering the market. Historically, such significant supply reductions tend to be bullish for an asset's price, as demand remains constant or increases against a shrinking new supply, positioning FIL for outperformance against BTC.",
+          "risk": "If demand for Filecoin's storage services does not grow, or if existing holders decide to sell off their current holdings, the positive impact of reduced issuance could be muted.",
+          "entryPrice": 1.085,
+          "livePrice": 1.085,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 1.12,
+          "exitDate": "2026-10-10",
+          "changePct": 3.23,
+          "benchmarkPct": 0.47,
+          "resultPct": 2.76,
+          "result": "W"
+        },
+        {
+          "id": "zksync",
+          "symbol": "ZK",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Matter Labs teased 'significant announcements expected early next week' (from Oct 3, 2026), alongside the recent open-sourcing of Prividium Core, which is being tested by the Deutsche Bundesbank.",
+          "rationale": "The combination of a teased major announcement, likely within the next 24-48 hours, and tangible progress in institutional adoption with a central bank testing its technology, positions ZK for potential upside. Positive news flow and increased institutional validation could lead to strong price action relative to BTC.",
+          "risk": "If the 'significant announcements' are underwhelming or institutional adoption doesn't immediately translate into network value, the price could stagnate or fall.",
+          "entryPrice": 0.01392729,
+          "livePrice": 0.01392729,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.0147066,
+          "exitDate": "2026-10-10",
+          "changePct": 5.6,
+          "benchmarkPct": 0.47,
+          "resultPct": 5.13,
+          "result": "W"
+        },
+        {
+          "id": "binancecoin",
+          "symbol": "BNB",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "A security incident on BNB Chain resulted in the 79thVault project losing approximately $12.5 million on October 8, 2026, due to an admin role misuse.",
+          "rationale": "Security breaches on a blockchain network can significantly damage user trust and lead to a negative perception of the ecosystem's safety. This recent and substantial exploit on BNB Chain could trigger selling pressure as users and developers re-evaluate their exposure, causing BNB to underperform BTC.",
+          "risk": "If Binance or the BNB Chain team quickly and effectively addresses the security concerns, or if the market shrugs off the incident, the negative impact could be short-lived.",
+          "entryPrice": 740.63,
+          "livePrice": 740.63,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 749.26,
+          "exitDate": "2026-10-10",
+          "changePct": 1.17,
+          "benchmarkPct": 0.47,
+          "resultPct": -0.7,
+          "result": "L"
+        },
+        {
+          "id": "ethena",
+          "symbol": "ENA",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "The final investor unlock of 1.41 billion ENA tokens occurred on October 5, 2026, representing a significant supply increase.",
+          "rationale": "The release of such a large volume of tokens, even with some pre-purchases by the Foundation, introduces substantial sell-side liquidity. Investors and early contributors may choose to take profits, leading to sustained downward pressure on ENA's price relative to BTC in the immediate aftermath of the unlock.",
+          "risk": "If the market has already fully priced in the unlock, or if strong buying demand emerges to absorb the new supply, ENA might not experience significant further depreciation.",
+          "entryPrice": 0.21409,
+          "livePrice": 0.21409,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.220629,
+          "exitDate": "2026-10-10",
+          "changePct": 3.05,
+          "benchmarkPct": 0.47,
+          "resultPct": -2.58,
+          "result": "L"
+        }
+      ],
+      "liveAsOf": "2026-10-09",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-10-10T17:17:07.206Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": 0.47
+      },
+      "record": {
+        "wins": 3,
+        "losses": 2,
+        "avgPct": 1.79
+      }
     }
   ],
-  "updatedAt": "2026-10-09T18:18:34.954Z",
+  "updatedAt": "2026-10-10T17:17:07.206Z",
   "attribution": "Powered by CoinGecko"
 }
