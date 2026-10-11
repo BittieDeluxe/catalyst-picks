@@ -2973,8 +2973,130 @@
         "losses": 2,
         "avgPct": 1.79
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-10",
+      "generatedAt": "2026-10-10T17:17:07.206Z",
+      "benchmarkEntry": 82989,
+      "picks": [
+        {
+          "id": "aptos",
+          "symbol": "APT",
+          "direction": "short",
+          "conviction": "high",
+          "catalyst": "Aptos (APT) token unlock scheduled for October 11, 2026, releasing approximately 14.37 million APT tokens to the community.",
+          "rationale": "Token unlocks typically increase the circulating supply, which can introduce selling pressure as recipients may choose to liquidate their holdings. While Aptos has historically shown low volatility post-unlock, the significant release of tokens to the community could still create downward pressure relative to BTC.",
+          "risk": "Strong market demand or unexpected positive news for Aptos could absorb the additional supply and mitigate selling pressure.",
+          "entryPrice": 0.84423,
+          "livePrice": 0.84423,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.929302,
+          "exitDate": "2026-10-11",
+          "changePct": 10.08,
+          "benchmarkPct": 1.29,
+          "resultPct": -8.79,
+          "result": "L"
+        },
+        {
+          "id": "optimism",
+          "symbol": "OP",
+          "direction": "short",
+          "conviction": "high",
+          "catalyst": "Optimism (OP) token unlock scheduled for October 11, 2026, with tokens being released to the Seed Fund.",
+          "rationale": "The upcoming unlock for Optimism's Seed Fund allocation introduces new liquid supply into the market. This scheduled increase in tradable tokens often leads to selling pressure as early investors or foundational entities realize gains or rebalance portfolios, potentially causing underperformance relative to BTC.",
+          "risk": "Increased network activity or unforeseen positive developments within the Optimism ecosystem could offset the potential selling pressure from the token unlock.",
+          "entryPrice": 0.13773,
+          "livePrice": 0.13773,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.143724,
+          "exitDate": "2026-10-11",
+          "changePct": 4.35,
+          "benchmarkPct": 1.29,
+          "resultPct": -3.06,
+          "result": "L"
+        },
+        {
+          "id": "solana",
+          "symbol": "SOL",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Solana's Alpenglow upgrade and the activation of a 200-millisecond target slot time around October 9, 2026, aiming for sub-second transaction finality.",
+          "rationale": "The recent activation of the Alpenglow upgrade and the reduction in slot time represent significant technical advancements for Solana, enhancing network performance and transaction finality. These improvements could attract more developers and users, leading to increased adoption and positive sentiment that may drive outperformance against BTC in the short term.",
+          "risk": "Broader market downturns or unexpected issues with the recent upgrade implementation could negate the positive impact.",
+          "entryPrice": 109.98,
+          "livePrice": 109.98,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 112.48,
+          "exitDate": "2026-10-11",
+          "changePct": 2.27,
+          "benchmarkPct": 1.29,
+          "resultPct": 0.98,
+          "result": "W"
+        },
+        {
+          "id": "starknet",
+          "symbol": "STRK",
+          "direction": "short",
+          "conviction": "high",
+          "catalyst": "Extreme short-term speculative activity, with STRK experiencing a 24.6% gain in 24 hours and 88% of its market value changing hands, signaling an overextended rally prone to correction.",
+          "rationale": "Starknet has seen a massive price surge and exceptionally high trading turnover, indicative of significant short-term speculation. This kind of rapid, momentum-driven rally often precedes a sharp correction as traders take profits, making it vulnerable to underperform BTC.",
+          "risk": "Continued speculative buying or unforeseen positive news could prolong the rally, despite overbought conditions.",
+          "entryPrice": 0.092098,
+          "livePrice": 0.092098,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.118257,
+          "exitDate": "2026-10-11",
+          "changePct": 28.4,
+          "benchmarkPct": 1.29,
+          "resultPct": -27.11,
+          "result": "L"
+        },
+        {
+          "id": "arbitrum",
+          "symbol": "ARB",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Arbitrum's integration of Morpho's USDG Vaults on October 8, 2026, enabling developers to embed yield-generating stablecoin modules into DeFi applications.",
+          "rationale": "The recent integration of Morpho's USDG Vaults on Arbitrum enhances the network's DeFi capabilities by offering direct yield-earning opportunities for stablecoins. This development can attract more liquidity and users to the Arbitrum ecosystem, driving increased utility and potentially leading to outperformance relative to BTC.",
+          "risk": "Lack of immediate adoption of the new integration or broader negative market sentiment could temper the positive impact.",
+          "entryPrice": 0.185338,
+          "livePrice": 0.185338,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.198965,
+          "exitDate": "2026-10-11",
+          "changePct": 7.35,
+          "benchmarkPct": 1.29,
+          "resultPct": 6.06,
+          "result": "W"
+        }
+      ],
+      "liveAsOf": "2026-10-10",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-10-11T17:39:25.798Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": 1.29
+      },
+      "record": {
+        "wins": 2,
+        "losses": 3,
+        "avgPct": -6.38
+      }
     }
   ],
-  "updatedAt": "2026-10-10T17:17:07.206Z",
+  "updatedAt": "2026-10-11T17:39:25.799Z",
   "attribution": "Powered by CoinGecko"
 }
