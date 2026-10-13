@@ -3339,8 +3339,130 @@
         "losses": 3,
         "avgPct": -1.38
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-12",
+      "generatedAt": "2026-10-12T21:13:17.133Z",
+      "benchmarkEntry": 82842,
+      "picks": [
+        {
+          "id": "starknet",
+          "symbol": "STRK",
+          "direction": "short",
+          "conviction": "high",
+          "catalyst": "A significant token unlock of 127 million STRK is scheduled for October 15, 2026.",
+          "rationale": "Starknet has experienced a massive rally, with weekly gains exceeding 78% recently. The imminent unlock introduces a substantial amount of new supply (1.7% to 3.37% of circulating supply), creating strong potential for profit-taking and selling pressure relative to Bitcoin.",
+          "risk": "The strong positive sentiment from Starknet's long-term roadmap and quantum-resistance ambitions could outweigh the unlock pressure, leading to continued outperformance.",
+          "entryPrice": 0.092376,
+          "livePrice": 0.092376,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.088029,
+          "exitDate": "2026-10-13",
+          "changePct": -4.71,
+          "benchmarkPct": 0.39,
+          "resultPct": 5.1,
+          "result": "W"
+        },
+        {
+          "id": "arbitrum",
+          "symbol": "ARB",
+          "direction": "short",
+          "conviction": "high",
+          "catalyst": "Arbitrum will undergo a token unlock of 92.65 million ARB on October 16, 2026.",
+          "rationale": "This unlock, valued at approximately $18-18.48 million and representing 1.56% of circulating supply, is allocated to investors, team, and advisors. Arbitrum has already seen a price drop attributed to this looming supply increase and profit-taking, indicating the market is pricing in potential selling pressure.",
+          "risk": "Unexpected positive market sentiment or a surge in demand for Layer 2 solutions could absorb the unlocked supply, mitigating the anticipated selling pressure.",
+          "entryPrice": 0.187422,
+          "livePrice": 0.187422,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.190452,
+          "exitDate": "2026-10-13",
+          "changePct": 1.62,
+          "benchmarkPct": 0.39,
+          "resultPct": -1.23,
+          "result": "L"
+        },
+        {
+          "id": "aptos",
+          "symbol": "APT",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "The four-year vesting schedule for Aptos's early backers and core contributors concluded on October 12, 2026, significantly reducing future monthly token unlocks by approximately 60%.",
+          "rationale": "While a minor unlock of 11.31-14.4 million APT occurred on October 11/12, the cessation of major insider vesting removes a long-term supply overhang. This shift from continuous large unlocks to a significantly reduced future emission schedule is a strong fundamental positive, which the market may continue to price in.",
+          "risk": "Immediate profit-taking from the recently unlocked tokens could still lead to short-term price volatility, or a broader market downturn could negate the positive impact of reduced future supply.",
+          "entryPrice": 0.828022,
+          "livePrice": 0.828022,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.842388,
+          "exitDate": "2026-10-13",
+          "changePct": 1.73,
+          "benchmarkPct": 0.39,
+          "resultPct": 1.34,
+          "result": "W"
+        },
+        {
+          "id": "chainlink",
+          "symbol": "LINK",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Chainlink officially launched CCIP 2.0 and CCIP Vault Adapters around October 7-8, 2026.",
+          "rationale": "This significant upgrade enhances Chainlink's cross-chain interoperability protocol, enabling financial institutions to distribute tokenized assets and facilitating one-click cross-chain vault deposits with early adoption by projects like Aave. Despite an initial price dip attributed to broader market weakness, the increased utility and potential for institutional adoption should drive demand for LINK.",
+          "risk": "Slower-than-anticipated institutional adoption or a lack of immediate, quantifiable value capture from CCIP 2.0 could limit short-term upside, especially if the broader market remains weak.",
+          "entryPrice": 13.01,
+          "livePrice": 13.01,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 12.96,
+          "exitDate": "2026-10-13",
+          "changePct": -0.38,
+          "benchmarkPct": 0.39,
+          "resultPct": -0.77,
+          "result": "L"
+        },
+        {
+          "id": "solana",
+          "symbol": "SOL",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Solana is continuing the rollout of its Firedancer validator client on mainnet and progressing with the Alpenglow consensus upgrade, including a recent speed upgrade targeting 200-millisecond block times.",
+          "rationale": "These technical advancements significantly enhance Solana's network robustness, scalability, and transaction finality, moving it towards production-grade infrastructure suitable for institutional applications. Improved core performance should attract more developers and users, increasing demand for SOL relative to competitors.",
+          "risk": "A slower-than-expected adoption rate for Firedancer or unforeseen technical challenges with the Alpenglow upgrade could temper positive market reaction, as could general market weakness.",
+          "entryPrice": 108.09,
+          "livePrice": 108.09,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 108.02,
+          "exitDate": "2026-10-13",
+          "changePct": -0.06,
+          "benchmarkPct": 0.39,
+          "resultPct": -0.45,
+          "result": "L"
+        }
+      ],
+      "liveAsOf": "2026-10-12",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-10-13T19:12:06.143Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": 0.39
+      },
+      "record": {
+        "wins": 2,
+        "losses": 3,
+        "avgPct": 0.8
+      }
     }
   ],
-  "updatedAt": "2026-10-12T21:13:49.527Z",
+  "updatedAt": "2026-10-13T19:12:06.143Z",
   "attribution": "Powered by CoinGecko"
 }
