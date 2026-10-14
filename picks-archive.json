@@ -3461,8 +3461,130 @@
         "losses": 3,
         "avgPct": 0.8
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-13",
+      "generatedAt": "2026-10-13T19:12:06.143Z",
+      "benchmarkEntry": 83169,
+      "picks": [
+        {
+          "id": "injective-protocol",
+          "symbol": "INJ",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Injective secured SEC Transfer Agent Status on October 12, 2026, clearing a path for regulated tokenized securities.",
+          "rationale": "This regulatory approval is a significant milestone, positioning Injective as a compliant platform for institutional-grade tokenized assets. This could attract substantial capital and development, leading to outperformance relative to BTC.",
+          "risk": "Broader market downturns or unexpected negative news regarding the implementation of tokenized securities could invalidate this.",
+          "entryPrice": 8.26,
+          "livePrice": 8.26,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 7.66,
+          "exitDate": "2026-10-14",
+          "changePct": -7.26,
+          "benchmarkPct": -1.51,
+          "resultPct": -5.75,
+          "result": "L"
+        },
+        {
+          "id": "starknet",
+          "symbol": "STRK",
+          "direction": "short",
+          "conviction": "high",
+          "catalyst": "A significant token unlock of 127 million STRK for early contributors and investors is scheduled for October 15, 2026.",
+          "rationale": "This upcoming unlock represents a notable increase in liquid supply, which, combined with the token's historical high volatility post-unlocks and recent rally, could lead to profit-taking and downward pressure relative to BTC.",
+          "risk": "Strong whale accumulation or unexpected positive news could absorb the selling pressure from the unlock.",
+          "entryPrice": 0.088029,
+          "livePrice": 0.088029,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.077141,
+          "exitDate": "2026-10-14",
+          "changePct": -12.37,
+          "benchmarkPct": -1.51,
+          "resultPct": 10.86,
+          "result": "W"
+        },
+        {
+          "id": "arbitrum",
+          "symbol": "ARB",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "A scheduled monthly token unlock of 92.65 million ARB, valued at approximately $18.1 million, is set for October 16, 2026.",
+          "rationale": "This recurring unlock event consistently adds selling pressure to ARB, increasing the circulating supply and potentially diluting its value relative to BTC, especially in a market not overwhelmingly bullish.",
+          "risk": "The market might have already priced in this routine unlock, or new demand could absorb the supply.",
+          "entryPrice": 0.190452,
+          "livePrice": 0.190452,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.185592,
+          "exitDate": "2026-10-14",
+          "changePct": -2.55,
+          "benchmarkPct": -1.51,
+          "resultPct": 1.04,
+          "result": "W"
+        },
+        {
+          "id": "zksync",
+          "symbol": "ZK",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "A token unlock of 173.41 million ZK for investors and the team is scheduled for October 17, 2026.",
+          "rationale": "The release of a significant amount of ZK tokens to early investors and the team, who may be looking to realize profits, could create downward pressure on the token's price, causing underperformance against BTC.",
+          "risk": "The unlocked tokens may not be immediately sold, or strong ecosystem growth could offset the selling pressure.",
+          "entryPrice": 0.01596818,
+          "livePrice": 0.01596818,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.01517094,
+          "exitDate": "2026-10-14",
+          "changePct": -4.99,
+          "benchmarkPct": -1.51,
+          "resultPct": 3.48,
+          "result": "W"
+        },
+        {
+          "id": "ethereum",
+          "symbol": "ETH",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Vitalik Buterin's recent announcement (October 12, 2026) of a long-term upgrade roadmap for Ethereum, reinforcing a vision for enhanced scalability and security, coupled with a whale placing a $60.7M ETH long on October 13, 2026.",
+          "rationale": "The renewed focus on Ethereum's long-term technological advancements and the positive market sentiment from a significant whale long indicate potential for ETH to outperform, driven by fundamental strength and renewed institutional interest.",
+          "risk": "The long-term nature of the upgrades might not translate to immediate price action, or broader market weakness could negate bullish sentiment.",
+          "entryPrice": 2509.49,
+          "livePrice": 2509.49,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 2444.72,
+          "exitDate": "2026-10-14",
+          "changePct": -2.58,
+          "benchmarkPct": -1.51,
+          "resultPct": -1.07,
+          "result": "L"
+        }
+      ],
+      "liveAsOf": "2026-10-13",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-10-14T17:01:19.224Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": -1.51
+      },
+      "record": {
+        "wins": 3,
+        "losses": 2,
+        "avgPct": 1.71
+      }
     }
   ],
-  "updatedAt": "2026-10-13T19:12:06.143Z",
+  "updatedAt": "2026-10-14T17:01:19.224Z",
   "attribution": "Powered by CoinGecko"
 }
