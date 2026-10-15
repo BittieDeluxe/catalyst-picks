@@ -3583,8 +3583,111 @@
         "losses": 2,
         "avgPct": 1.71
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-14",
+      "generatedAt": "2026-10-14T17:01:19.224Z",
+      "benchmarkEntry": 81909,
+      "picks": [
+        {
+          "id": "starknet",
+          "symbol": "STRK",
+          "direction": "short",
+          "conviction": "high",
+          "catalyst": "A token unlock event on October 15, 2026, will release 127 million STRK tokens into circulation.",
+          "rationale": "Large token unlocks typically increase the circulating supply, leading to selling pressure as more tokens become available to the market. The asset has already experienced a significant rally recently, making it susceptible to profit-taking.",
+          "risk": "Strong buying interest or unexpected positive news could absorb the increased supply, or the unlock may already be fully priced into the market.",
+          "entryPrice": 0.077141,
+          "livePrice": 0.077141,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.087167,
+          "exitDate": "2026-10-15",
+          "changePct": 13,
+          "benchmarkPct": 0.24,
+          "resultPct": -12.76,
+          "result": "L"
+        },
+        {
+          "id": "optimism",
+          "symbol": "OP",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Uniswap announced on October 14, 2026, that Unichain's production operations are migrating to Optimism's OP Enterprise, with the mainnet transition scheduled for October 29.",
+          "rationale": "This migration signifies increased adoption and utility for the Optimism ecosystem, bringing more activity and potentially Total Value Locked (TVL) to the network. The news has already caused a significant price jump for OP, indicating strong positive market sentiment that could continue.",
+          "risk": "The broader market could experience a significant downturn, or the positive impact of the migration could be short-lived if further adoption does not materialize as expected.",
+          "entryPrice": 0.140712,
+          "livePrice": 0.140712,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.140648,
+          "exitDate": "2026-10-15",
+          "changePct": -0.05,
+          "benchmarkPct": 0.24,
+          "resultPct": -0.29,
+          "result": "L"
+        },
+        {
+          "id": "aave",
+          "symbol": "AAVE",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Babylon Labs published a governance proposal on October 14, 2026, detailing a plan to enable native Bitcoin collateral for borrowing stablecoins on Aave V4.",
+          "rationale": "Integrating native Bitcoin as collateral would significantly expand Aave's potential user base and total value locked (TVL), enhancing its position as a leading DeFi protocol. This fresh proposal could drive immediate positive sentiment and investor interest.",
+          "risk": "The proposal might not pass governance, or its implementation could face delays, diminishing the immediate positive impact.",
+          "entryPrice": 157.8,
+          "livePrice": 157.8,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 155.52,
+          "exitDate": "2026-10-15",
+          "changePct": -1.44,
+          "benchmarkPct": 0.24,
+          "resultPct": -1.68,
+          "result": "L"
+        },
+        {
+          "id": "solana",
+          "symbol": "SOL",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "The Solana Foundation announced on October 14, 2026, the Alpenglow consensus protocol upgrade, targeting a reduction in transaction finality to approximately 150 milliseconds, with activation scheduled for October 21.",
+          "rationale": "This is a major technical improvement that could significantly enhance Solana's performance and appeal for high-frequency applications, trading, and payments. Despite the upgrade being a week away, the immediate announcement and analysis suggesting a potential for price appreciation post-announcement (similar to Pectra) could drive short-term outperformance.",
+          "risk": "The market might interpret the news as a 'sell the news' event closer to the actual upgrade date, or broader market weakness could overshadow the positive technical development.",
+          "entryPrice": 104.71,
+          "livePrice": 104.71,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 105.64,
+          "exitDate": "2026-10-15",
+          "changePct": 0.89,
+          "benchmarkPct": 0.24,
+          "resultPct": 0.65,
+          "result": "W"
+        }
+      ],
+      "liveAsOf": "2026-10-14",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-10-15T16:49:17.191Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": 0.24
+      },
+      "record": {
+        "wins": 1,
+        "losses": 3,
+        "avgPct": -3.52
+      }
     }
   ],
-  "updatedAt": "2026-10-14T17:01:19.224Z",
+  "updatedAt": "2026-10-15T16:49:17.192Z",
   "attribution": "Powered by CoinGecko"
 }
