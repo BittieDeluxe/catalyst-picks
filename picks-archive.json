@@ -3686,8 +3686,130 @@
         "losses": 3,
         "avgPct": -3.52
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-15",
+      "generatedAt": "2026-10-15T16:49:17.192Z",
+      "benchmarkEntry": 82109,
+      "picks": [
+        {
+          "id": "starknet",
+          "symbol": "STRK",
+          "direction": "short",
+          "conviction": "high",
+          "catalyst": "Starknet has a scheduled token unlock of approximately 127 million STRK for early contributors and investors on October 15th.",
+          "rationale": "Given STRK's substantial rally of over 56% in the past seven days, this scheduled unlock introduces additional supply into the market, which could prompt profit-taking by early holders and lead to underperformance relative to Bitcoin.",
+          "risk": "Strong underlying demand or broader market bullishness could absorb the unlocked supply, mitigating selling pressure.",
+          "entryPrice": 0.087167,
+          "livePrice": 0.087167,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.074159,
+          "exitDate": "2026-10-16",
+          "changePct": -14.92,
+          "benchmarkPct": -0.63,
+          "resultPct": 14.29,
+          "result": "W"
+        },
+        {
+          "id": "arbitrum",
+          "symbol": "ARB",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "Arbitrum is scheduled to unlock 92.65 million ARB tokens on October 16th.",
+          "rationale": "This upcoming token unlock will increase the circulating supply of ARB, which often creates downward pressure on price as recipients may choose to sell. Considering ARB's recent positive performance, this event could lead to short-term underperformance against Bitcoin.",
+          "risk": "The unlocked tokens may not immediately enter the market, or strong buying interest could offset the increased supply.",
+          "entryPrice": 0.19023,
+          "livePrice": 0.19023,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.195271,
+          "exitDate": "2026-10-16",
+          "changePct": 2.65,
+          "benchmarkPct": -0.63,
+          "resultPct": -3.28,
+          "result": "L"
+        },
+        {
+          "id": "injective-protocol",
+          "symbol": "INJ",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Injective Institutional Services achieved SEC-registered transfer agent status on October 12th, and Thailand's GULF Group became an institutional validator for Injective on October 14th.",
+          "rationale": "These recent developments signify growing institutional adoption and regulatory credibility for Injective, positioning it favorably for continued growth. Despite a recent macro-driven market pullback, these strong fundamental catalysts are likely to attract further investment and drive outperformance relative to Bitcoin.",
+          "risk": "Broader market downturns or unexpected negative regulatory news could overshadow Injective's positive developments.",
+          "entryPrice": 8.06,
+          "livePrice": 8.06,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 8.95,
+          "exitDate": "2026-10-16",
+          "changePct": 11.04,
+          "benchmarkPct": -0.63,
+          "resultPct": 11.67,
+          "result": "W"
+        },
+        {
+          "id": "ondo-finance",
+          "symbol": "ONDO",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "The IMF recognized Ondo Finance as a leading platform in its October 2026 Global Financial Stability Report, and Ondo launched its 'Private Markets Product' on October 13th.",
+          "rationale": "Validation from the IMF significantly boosts Ondo's institutional standing, while the expansion into 'Private Markets' broadens its real-world asset tokenization offerings and utility. These factors are expected to increase demand and adoption, leading to outperformance against Bitcoin.",
+          "risk": "Regulatory scrutiny on tokenized real-world assets or slower-than-expected adoption of new products could temper bullish sentiment.",
+          "entryPrice": 0.464442,
+          "livePrice": 0.464442,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.457159,
+          "exitDate": "2026-10-16",
+          "changePct": -1.57,
+          "benchmarkPct": -0.63,
+          "resultPct": -0.94,
+          "result": "L"
+        },
+        {
+          "id": "zksync",
+          "symbol": "ZK",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "zkSync has a scheduled unlock of approximately 170 million ZK tokens for investors and the team on October 17th.",
+          "rationale": "Despite the relatively small dollar value of this recurring unlock, ZK has experienced a significant price surge of over 44% in the last seven days. This rapid appreciation makes it susceptible to profit-taking by token recipients, potentially causing it to underperform Bitcoin in the short term.",
+          "risk": "The market may have already priced in this routine unlock, or strong speculative interest could continue to drive the price higher.",
+          "entryPrice": 0.01739062,
+          "livePrice": 0.01739062,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.01684748,
+          "exitDate": "2026-10-16",
+          "changePct": -3.12,
+          "benchmarkPct": -0.63,
+          "resultPct": 2.49,
+          "result": "W"
+        }
+      ],
+      "liveAsOf": "2026-10-15",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-10-16T16:32:09.788Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": -0.63
+      },
+      "record": {
+        "wins": 3,
+        "losses": 2,
+        "avgPct": 4.85
+      }
     }
   ],
-  "updatedAt": "2026-10-15T16:49:17.192Z",
+  "updatedAt": "2026-10-16T16:32:09.789Z",
   "attribution": "Powered by CoinGecko"
 }

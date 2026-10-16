@@ -1,20 +1,46 @@
 {
   "daily": {
     "horizon": "daily",
-    "date": "2026-10-15",
-    "generatedAt": "2026-10-15T16:49:17.192Z",
-    "benchmarkEntry": 82109,
+    "date": "2026-10-16",
+    "generatedAt": "2026-10-16T16:32:09.789Z",
+    "benchmarkEntry": 81589,
     "picks": [
       {
-        "id": "starknet",
-        "symbol": "STRK",
-        "direction": "short",
+        "id": "injective-protocol",
+        "symbol": "INJ",
+        "direction": "long",
         "conviction": "high",
-        "catalyst": "Starknet has a scheduled token unlock of approximately 127 million STRK for early contributors and investors on October 15th.",
-        "rationale": "Given STRK's substantial rally of over 56% in the past seven days, this scheduled unlock introduces additional supply into the market, which could prompt profit-taking by early holders and lead to underperformance relative to Bitcoin.",
-        "risk": "Strong underlying demand or broader market bullishness could absorb the unlocked supply, mitigating selling pressure.",
-        "entryPrice": 0.087167,
-        "livePrice": 0.087167,
+        "catalyst": "Injective activated a new Cross-Chain Transfer Protocol (CCTP) route for USDC on October 16, 2026, and is actively engaging with US regulators regarding multiple pending ETF applications.",
+        "rationale": "The activation of the USDC CCTP route enhances Injective's liquidity and utility by facilitating stablecoin transfers. The ongoing discussions with US regulators and the presence of three pending INJ ETF applications signal significant institutional interest and potential for substantial capital inflows, positioning INJ for strong outperformance relative to BTC.",
+        "risk": "A negative regulatory decision on the pending INJ ETF applications or a broader market downturn could invalidate this long thesis.",
+        "entryPrice": 8.95,
+        "livePrice": 8.95,
+        "liveChangePct": 0,
+        "livePct": 0
+      },
+      {
+        "id": "uniswap",
+        "symbol": "UNI",
+        "direction": "long",
+        "conviction": "medium",
+        "catalyst": "CME Group is preparing to list Uniswap (UNI) futures contracts on October 19, 2026, pending regulatory approval.",
+        "rationale": "The impending listing of UNI futures on a major institutional exchange like CME Group represents a significant step towards broader institutional adoption and increased legitimacy. This development is likely to attract new capital and trading interest, potentially driving UNI's price to outperform BTC in anticipation of the listing.",
+        "risk": "Regulatory delays or a lack of significant institutional interest in the new futures contracts could temper UNI's performance.",
+        "entryPrice": 7.31,
+        "livePrice": 7.31,
+        "liveChangePct": 0,
+        "livePct": 0
+      },
+      {
+        "id": "lido-dao",
+        "symbol": "LDO",
+        "direction": "long",
+        "conviction": "medium",
+        "catalyst": "Lido announced on October 15, 2026, direct ETH staking support from four major Ethereum Layer 2 networks: Arbitrum, Base, Linea, and Optimism.",
+        "rationale": "This expansion significantly broadens Lido's market reach and enhances the accessibility and convenience of ETH liquid staking for users on leading Layer 2 solutions. Increased utility and ease of access are expected to drive higher demand for Lido's services and its LDO token, potentially leading to outperformance against BTC.",
+        "risk": "Lower-than-expected adoption rates on the integrated Layer 2 networks or increased competition in the liquid staking space could mitigate the positive impact.",
+        "entryPrice": 0.40303,
+        "livePrice": 0.40303,
         "liveChangePct": 0,
         "livePct": 0
       },
@@ -23,55 +49,29 @@
         "symbol": "ARB",
         "direction": "short",
         "conviction": "medium",
-        "catalyst": "Arbitrum is scheduled to unlock 92.65 million ARB tokens on October 16th.",
-        "rationale": "This upcoming token unlock will increase the circulating supply of ARB, which often creates downward pressure on price as recipients may choose to sell. Considering ARB's recent positive performance, this event could lead to short-term underperformance against Bitcoin.",
-        "risk": "The unlocked tokens may not immediately enter the market, or strong buying interest could offset the increased supply.",
-        "entryPrice": 0.19023,
-        "livePrice": 0.19023,
+        "catalyst": "Arbitrum (ARB) is undergoing a scheduled token unlock of 92.65 million ARB, representing 1.56% of its released supply, on October 16, 2026.",
+        "rationale": "Historically, token unlocks of this magnitude, especially those distributing to teams and investors, often introduce increased selling pressure as new supply enters the market. This additional supply can dilute existing value and lead to underperformance relative to BTC in the short term.",
+        "risk": "Strong underlying demand or unexpected positive news for Arbitrum could absorb the unlocked supply, mitigating the expected selling pressure.",
+        "entryPrice": 0.195271,
+        "livePrice": 0.195271,
         "liveChangePct": 0,
         "livePct": 0
       },
       {
-        "id": "injective-protocol",
-        "symbol": "INJ",
-        "direction": "long",
-        "conviction": "high",
-        "catalyst": "Injective Institutional Services achieved SEC-registered transfer agent status on October 12th, and Thailand's GULF Group became an institutional validator for Injective on October 14th.",
-        "rationale": "These recent developments signify growing institutional adoption and regulatory credibility for Injective, positioning it favorably for continued growth. Despite a recent macro-driven market pullback, these strong fundamental catalysts are likely to attract further investment and drive outperformance relative to Bitcoin.",
-        "risk": "Broader market downturns or unexpected negative regulatory news could overshadow Injective's positive developments.",
-        "entryPrice": 8.06,
-        "livePrice": 8.06,
-        "liveChangePct": 0,
-        "livePct": 0
-      },
-      {
-        "id": "ondo-finance",
-        "symbol": "ONDO",
-        "direction": "long",
-        "conviction": "high",
-        "catalyst": "The IMF recognized Ondo Finance as a leading platform in its October 2026 Global Financial Stability Report, and Ondo launched its 'Private Markets Product' on October 13th.",
-        "rationale": "Validation from the IMF significantly boosts Ondo's institutional standing, while the expansion into 'Private Markets' broadens its real-world asset tokenization offerings and utility. These factors are expected to increase demand and adoption, leading to outperformance against Bitcoin.",
-        "risk": "Regulatory scrutiny on tokenized real-world assets or slower-than-expected adoption of new products could temper bullish sentiment.",
-        "entryPrice": 0.464442,
-        "livePrice": 0.464442,
-        "liveChangePct": 0,
-        "livePct": 0
-      },
-      {
-        "id": "zksync",
-        "symbol": "ZK",
+        "id": "crypto-com-chain",
+        "symbol": "CRO",
         "direction": "short",
         "conviction": "medium",
-        "catalyst": "zkSync has a scheduled unlock of approximately 170 million ZK tokens for investors and the team on October 17th.",
-        "rationale": "Despite the relatively small dollar value of this recurring unlock, ZK has experienced a significant price surge of over 44% in the last seven days. This rapid appreciation makes it susceptible to profit-taking by token recipients, potentially causing it to underperform Bitcoin in the short term.",
-        "risk": "The market may have already priced in this routine unlock, or strong speculative interest could continue to drive the price higher.",
-        "entryPrice": 0.01739062,
-        "livePrice": 0.01739062,
+        "catalyst": "Cronos (CRO) has an elevated token unlock of 1.17 billion CRO, accounting for 2.33% of its released supply and valued at $70.85 million, scheduled for October 17, 2026.",
+        "rationale": "The substantial increase in circulating supply from this unlock, even if directed to a strategic reserve, can create anticipatory selling pressure as market participants price in the potential for increased liquidity. This event is likely to lead to underperformance for CRO relative to BTC.",
+        "risk": "The allocation of the unlocked tokens to a strategic reserve might result in less immediate selling pressure than if they were distributed directly to individual investors, or strong ecosystem growth could offset the supply increase.",
+        "entryPrice": 0.058005,
+        "livePrice": 0.058005,
         "liveChangePct": 0,
         "livePct": 0
       }
     ],
-    "liveAsOf": "2026-10-15",
+    "liveAsOf": "2026-10-16",
     "liveBenchmarkPct": 0,
     "liveRecord": {
       "ahead": 0,
@@ -95,9 +95,9 @@
         "rationale": "Large token unlocks often introduce selling pressure as early participants realize profits, especially following STRK's recent substantial price surge of over 78% in the past week. This influx of supply could lead to underperformance relative to Bitcoin, as new tokens become liquid.",
         "risk": "Strong underlying demand or unexpected positive news could absorb the unlocked supply, leading to outperformance against BTC.",
         "entryPrice": 0.092376,
-        "livePrice": 0.087167,
-        "liveChangePct": -5.64,
-        "livePct": 4.76
+        "livePrice": 0.074159,
+        "liveChangePct": -19.72,
+        "livePct": 18.21
       },
       {
         "id": "arbitrum",
@@ -108,9 +108,9 @@
         "rationale": "While the tokens are directed to the DAO Treasury, increasing the circulating supply can still create a perception of potential future selling pressure or dilute existing value. This supply event could dampen ARB's price action, causing it to underperform Bitcoin in the coming week.",
         "risk": "The DAO Treasury might hold the tokens, or strong ecosystem growth could outweigh the supply increase, leading to relative strength.",
         "entryPrice": 0.187422,
-        "livePrice": 0.19023,
-        "liveChangePct": 1.5,
-        "livePct": -2.38
+        "livePrice": 0.195271,
+        "liveChangePct": 4.19,
+        "livePct": -5.7
       },
       {
         "id": "zksync",
@@ -121,9 +121,9 @@
         "rationale": "Cliff unlocks for investors often result in profit-taking, particularly after ZK's 16% gain over the last seven days. The sudden increase in tradable supply for early backers could exert downward pressure, causing ZK to lag behind Bitcoin.",
         "risk": "Investor sentiment could remain strong, or new developments could generate sufficient buying interest to absorb the unlocked tokens.",
         "entryPrice": 0.0149624,
-        "livePrice": 0.01739062,
-        "liveChangePct": 16.23,
-        "livePct": -17.11
+        "livePrice": 0.01684748,
+        "liveChangePct": 12.6,
+        "livePct": -14.11
       },
       {
         "id": "crypto-com-chain",
@@ -134,9 +134,9 @@
         "rationale": "Even if designated for a strategic reserve, a large volume of tokens entering the market's awareness can signal increased potential supply, leading to negative sentiment. Given CRO's recent 7-day decline, this event could add further selling pressure relative to BTC.",
         "risk": "The strategic reserve might not deploy the tokens, or the market could view the allocation as a long-term positive for ecosystem development.",
         "entryPrice": 0.061468,
-        "livePrice": 0.058471,
-        "liveChangePct": -4.88,
-        "livePct": 4
+        "livePrice": 0.058005,
+        "liveChangePct": -5.63,
+        "livePct": 4.12
       },
       {
         "id": "ethereum",
@@ -147,18 +147,18 @@
         "rationale": "The successful testnet deployment significantly de-risks the upcoming mainnet upgrade, which aims to reduce transaction costs and increase network capacity. This fundamental improvement could drive positive sentiment and increased adoption, allowing ETH to outperform BTC as the mainnet launch approaches.",
         "risk": "Delays in the mainnet launch timeline or unexpected technical issues during the final stages of testing could invalidate this bullish outlook.",
         "entryPrice": 2510.41,
-        "livePrice": 2431.57,
-        "liveChangePct": -3.14,
-        "livePct": -2.26
+        "livePrice": 2442.37,
+        "liveChangePct": -2.71,
+        "livePct": -1.2
       }
     ],
-    "liveAsOf": "2026-10-15",
-    "liveBenchmarkPct": -0.88,
+    "liveAsOf": "2026-10-16",
+    "liveBenchmarkPct": -1.51,
     "liveRecord": {
       "ahead": 2,
       "behind": 3,
-      "avgPct": -2.6,
-      "daysOpen": 3
+      "avgPct": 0.26,
+      "daysOpen": 4
     }
   },
   "monthly": {
@@ -176,9 +176,9 @@
         "rationale": "The recent launch of CCIP 2.0, introducing enhanced security, compliance, and institutional features, alongside the upcoming mainnet deployment of a zero-knowledge Cross-Chain Verifier, significantly strengthens Chainlink's position for institutional adoption of tokenized assets. This increased utility and integration into traditional finance infrastructure are strong drivers for LINK to outperform BTC.",
         "risk": "Slower-than-expected institutional adoption or technical delays in CCIP deployments would invalidate this thesis.",
         "entryPrice": 14.33,
-        "livePrice": 12.42,
-        "liveChangePct": -13.33,
-        "livePct": -10.17
+        "livePrice": 12.4,
+        "liveChangePct": -13.47,
+        "livePct": -9.7
       },
       {
         "id": "ondo-finance",
@@ -189,9 +189,9 @@
         "rationale": "The partnership with Mirae Asset Global Investments to bring all products on-chain and the integration of Ondo's Oasis Pro markets with DTCC's Fund/SERV network are significant milestones for institutional adoption of Real-World Assets (RWA) tokenization. These developments position ONDO as a leader in bridging traditional finance with DeFi, potentially leading to strong outperformance relative to BTC.",
         "risk": "A slowdown in RWA adoption or adverse regulatory changes impacting tokenized securities would invalidate this thesis.",
         "entryPrice": 0.496763,
-        "livePrice": 0.464442,
-        "liveChangePct": -6.51,
-        "livePct": -3.35
+        "livePrice": 0.457159,
+        "liveChangePct": -7.97,
+        "livePct": -4.2
       },
       {
         "id": "ethena",
@@ -202,9 +202,9 @@
         "rationale": "This accelerated and substantial cliff unlock, estimated to be around 1.41 billion ENA, represents a significant supply shock to the market. The sudden availability of a large number of tokens previously held by early investors is likely to create considerable selling pressure, causing ENA to underperform BTC.",
         "risk": "Strong demand absorbing the unlocked supply without significant price depreciation would invalidate this thesis.",
         "entryPrice": 0.250288,
-        "livePrice": 0.201084,
-        "liveChangePct": -19.66,
-        "livePct": 16.5
+        "livePrice": 0.200807,
+        "liveChangePct": -19.77,
+        "livePct": 16
       },
       {
         "id": "solana",
@@ -215,9 +215,9 @@
         "rationale": "The upcoming Alpenglow mainnet activation in October signifies continued network development and potential performance improvements for Solana. Coupled with significant institutional inflows into Solana funds, this upgrade could enhance network utility and investor confidence, supporting SOL's outperformance relative to BTC.",
         "risk": "Technical issues with the Alpenglow upgrade or a broader market downturn impacting institutional sentiment would invalidate this thesis.",
         "entryPrice": 118.42,
-        "livePrice": 105.64,
-        "liveChangePct": -10.79,
-        "livePct": -7.63
+        "livePrice": 104.33,
+        "liveChangePct": -11.9,
+        "livePct": -8.13
       },
       {
         "id": "ethereum",
@@ -228,18 +228,18 @@
         "rationale": "The rollout of the first public test network for the Glamsterdam upgrade on October 6 is a key development milestone for Ethereum. This progression in its upgrade roadmap could generate positive sentiment and anticipate future network enhancements, supporting ETH's potential to outperform BTC.",
         "risk": "Delays or unforeseen issues with the testnet launch, or a lack of positive market reaction to the upgrade, would invalidate this thesis.",
         "entryPrice": 2699.27,
-        "livePrice": 2431.57,
-        "liveChangePct": -9.92,
-        "livePct": -6.76
+        "livePrice": 2442.37,
+        "liveChangePct": -9.52,
+        "livePct": -5.75
       }
     ],
-    "liveAsOf": "2026-10-15",
-    "liveBenchmarkPct": -3.16,
+    "liveAsOf": "2026-10-16",
+    "liveBenchmarkPct": -3.77,
     "liveRecord": {
       "ahead": 1,
       "behind": 4,
-      "avgPct": -2.28,
-      "daysOpen": 14
+      "avgPct": -2.36,
+      "daysOpen": 15
     }
   }
 }
