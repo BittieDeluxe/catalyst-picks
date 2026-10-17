@@ -3808,8 +3808,130 @@
         "losses": 2,
         "avgPct": 4.85
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-16",
+      "generatedAt": "2026-10-16T16:32:09.789Z",
+      "benchmarkEntry": 81589,
+      "picks": [
+        {
+          "id": "injective-protocol",
+          "symbol": "INJ",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Injective activated a new Cross-Chain Transfer Protocol (CCTP) route for USDC on October 16, 2026, and is actively engaging with US regulators regarding multiple pending ETF applications.",
+          "rationale": "The activation of the USDC CCTP route enhances Injective's liquidity and utility by facilitating stablecoin transfers. The ongoing discussions with US regulators and the presence of three pending INJ ETF applications signal significant institutional interest and potential for substantial capital inflows, positioning INJ for strong outperformance relative to BTC.",
+          "risk": "A negative regulatory decision on the pending INJ ETF applications or a broader market downturn could invalidate this long thesis.",
+          "entryPrice": 8.95,
+          "livePrice": 8.95,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 8.47,
+          "exitDate": "2026-10-17",
+          "changePct": -5.36,
+          "benchmarkPct": -0.2,
+          "resultPct": -5.16,
+          "result": "L"
+        },
+        {
+          "id": "uniswap",
+          "symbol": "UNI",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "CME Group is preparing to list Uniswap (UNI) futures contracts on October 19, 2026, pending regulatory approval.",
+          "rationale": "The impending listing of UNI futures on a major institutional exchange like CME Group represents a significant step towards broader institutional adoption and increased legitimacy. This development is likely to attract new capital and trading interest, potentially driving UNI's price to outperform BTC in anticipation of the listing.",
+          "risk": "Regulatory delays or a lack of significant institutional interest in the new futures contracts could temper UNI's performance.",
+          "entryPrice": 7.31,
+          "livePrice": 7.31,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 7.14,
+          "exitDate": "2026-10-17",
+          "changePct": -2.33,
+          "benchmarkPct": -0.2,
+          "resultPct": -2.13,
+          "result": "L"
+        },
+        {
+          "id": "lido-dao",
+          "symbol": "LDO",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Lido announced on October 15, 2026, direct ETH staking support from four major Ethereum Layer 2 networks: Arbitrum, Base, Linea, and Optimism.",
+          "rationale": "This expansion significantly broadens Lido's market reach and enhances the accessibility and convenience of ETH liquid staking for users on leading Layer 2 solutions. Increased utility and ease of access are expected to drive higher demand for Lido's services and its LDO token, potentially leading to outperformance against BTC.",
+          "risk": "Lower-than-expected adoption rates on the integrated Layer 2 networks or increased competition in the liquid staking space could mitigate the positive impact.",
+          "entryPrice": 0.40303,
+          "livePrice": 0.40303,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.38908,
+          "exitDate": "2026-10-17",
+          "changePct": -3.46,
+          "benchmarkPct": -0.2,
+          "resultPct": -3.26,
+          "result": "L"
+        },
+        {
+          "id": "arbitrum",
+          "symbol": "ARB",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "Arbitrum (ARB) is undergoing a scheduled token unlock of 92.65 million ARB, representing 1.56% of its released supply, on October 16, 2026.",
+          "rationale": "Historically, token unlocks of this magnitude, especially those distributing to teams and investors, often introduce increased selling pressure as new supply enters the market. This additional supply can dilute existing value and lead to underperformance relative to BTC in the short term.",
+          "risk": "Strong underlying demand or unexpected positive news for Arbitrum could absorb the unlocked supply, mitigating the expected selling pressure.",
+          "entryPrice": 0.195271,
+          "livePrice": 0.195271,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.184946,
+          "exitDate": "2026-10-17",
+          "changePct": -5.29,
+          "benchmarkPct": -0.2,
+          "resultPct": 5.09,
+          "result": "W"
+        },
+        {
+          "id": "crypto-com-chain",
+          "symbol": "CRO",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "Cronos (CRO) has an elevated token unlock of 1.17 billion CRO, accounting for 2.33% of its released supply and valued at $70.85 million, scheduled for October 17, 2026.",
+          "rationale": "The substantial increase in circulating supply from this unlock, even if directed to a strategic reserve, can create anticipatory selling pressure as market participants price in the potential for increased liquidity. This event is likely to lead to underperformance for CRO relative to BTC.",
+          "risk": "The allocation of the unlocked tokens to a strategic reserve might result in less immediate selling pressure than if they were distributed directly to individual investors, or strong ecosystem growth could offset the supply increase.",
+          "entryPrice": 0.058005,
+          "livePrice": 0.058005,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.057018,
+          "exitDate": "2026-10-17",
+          "changePct": -1.7,
+          "benchmarkPct": -0.2,
+          "resultPct": 1.5,
+          "result": "W"
+        }
+      ],
+      "liveAsOf": "2026-10-16",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-10-17T15:25:47.704Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": -0.2
+      },
+      "record": {
+        "wins": 2,
+        "losses": 3,
+        "avgPct": -0.79
+      }
     }
   ],
-  "updatedAt": "2026-10-16T16:32:09.789Z",
+  "updatedAt": "2026-10-17T15:25:47.705Z",
   "attribution": "Powered by CoinGecko"
 }
