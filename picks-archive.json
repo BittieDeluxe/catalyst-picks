@@ -3930,8 +3930,130 @@
         "losses": 3,
         "avgPct": -0.79
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-17",
+      "generatedAt": "2026-10-17T15:25:47.704Z",
+      "benchmarkEntry": 81424,
+      "picks": [
+        {
+          "id": "crypto-com-chain",
+          "symbol": "CRO",
+          "direction": "short",
+          "conviction": "high",
+          "catalyst": "Cronos (CRO) is undergoing a significant token unlock of 1.17 billion CRO on October 17, 2026, with the entire release allocated to the Cronos Strategic Reserve.",
+          "rationale": "The release of a substantial amount of CRO tokens, even to a strategic reserve, introduces a notable increase in the available supply. In a generally bearish market, this increased supply can lead to selling pressure and potential underperformance relative to Bitcoin.",
+          "risk": "A strong, unexpected positive development for the Cronos ecosystem or a sudden bullish shift in overall market sentiment could invalidate this short thesis.",
+          "entryPrice": 0.057018,
+          "livePrice": 0.057018,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.055346,
+          "exitDate": "2026-10-18",
+          "changePct": -2.93,
+          "benchmarkPct": -0.53,
+          "resultPct": 2.4,
+          "result": "W"
+        },
+        {
+          "id": "zksync",
+          "symbol": "ZK",
+          "direction": "short",
+          "conviction": "high",
+          "catalyst": "zkSync (ZK) has a cliff unlock scheduled for October 17, 2026, releasing 2.46% of its circulating supply, valued at approximately $2.6 million.",
+          "rationale": "Token unlocks, especially cliff unlocks representing a notable percentage of circulating supply, typically introduce selling pressure as recipients gain liquidity. Given the current market conditions, this event is likely to contribute to ZK underperforming BTC.",
+          "risk": "Strong demand for ZK or a significant positive development within the zkSync ecosystem that absorbs the new supply could mitigate the expected selling pressure.",
+          "entryPrice": 0.01595301,
+          "livePrice": 0.01595301,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.01461189,
+          "exitDate": "2026-10-18",
+          "changePct": -8.41,
+          "benchmarkPct": -0.53,
+          "resultPct": 7.88,
+          "result": "W"
+        },
+        {
+          "id": "arbitrum",
+          "symbol": "ARB",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "Arbitrum (ARB) has a substantial token unlock of 139.15 million ARB scheduled for October 23, 2026, following a previous unlock on October 16, 2026.",
+          "rationale": "The market often anticipates future token unlocks, and the proximity of this large release, coupled with recent negative price action following a prior unlock, suggests ongoing selling pressure as investors price in further dilution.",
+          "risk": "Strong ecosystem growth or unexpected positive news for Arbitrum could offset the anticipated selling pressure from the upcoming unlock.",
+          "entryPrice": 0.184946,
+          "livePrice": 0.184946,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.17882,
+          "exitDate": "2026-10-18",
+          "changePct": -3.31,
+          "benchmarkPct": -0.53,
+          "resultPct": 2.78,
+          "result": "W"
+        },
+        {
+          "id": "solana",
+          "symbol": "SOL",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Solana's (SOL) Alpenglow consensus upgrade is scheduled to activate on mainnet on October 21, 2026, targeting a significant reduction in transaction finality from 12.8 seconds to approximately 150 milliseconds.",
+          "rationale": "This is a major performance enhancement for the Solana network, and while the activation is a few days away, the market is likely to front-run such a significant technical improvement, leading to potential outperformance against Bitcoin.",
+          "risk": "Unexpected technical issues with the upgrade, a broader market downturn, or a delay in the activation could invalidate this long thesis.",
+          "entryPrice": 103.86,
+          "livePrice": 103.86,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 101.83,
+          "exitDate": "2026-10-18",
+          "changePct": -1.95,
+          "benchmarkPct": -0.53,
+          "resultPct": -1.42,
+          "result": "L"
+        },
+        {
+          "id": "ethereum",
+          "symbol": "ETH",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "The Ethereum Glamsterdam upgrade's Hoodi testnet is proposed for October 27, 2026, following client releases by October 16, which aims to increase the block gas limit and improve transaction efficiency.",
+          "rationale": "The continuous progress of a major Ethereum upgrade, particularly one focused on scalability and lower fees, can build positive sentiment and drive demand for ETH as the market anticipates the mainnet activation in December 2026.",
+          "risk": "Delays in the testnet or mainnet activation, or a general negative shift in the broader crypto market, could limit ETH's upside relative to BTC.",
+          "entryPrice": 2414.67,
+          "livePrice": 2414.67,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 2372.02,
+          "exitDate": "2026-10-18",
+          "changePct": -1.77,
+          "benchmarkPct": -0.53,
+          "resultPct": -1.24,
+          "result": "L"
+        }
+      ],
+      "liveAsOf": "2026-10-17",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-10-18T15:46:08.009Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": -0.53
+      },
+      "record": {
+        "wins": 3,
+        "losses": 2,
+        "avgPct": 2.08
+      }
     }
   ],
-  "updatedAt": "2026-10-17T15:25:47.705Z",
+  "updatedAt": "2026-10-18T15:46:08.010Z",
   "attribution": "Powered by CoinGecko"
 }
