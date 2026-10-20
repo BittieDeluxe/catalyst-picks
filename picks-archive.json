@@ -4296,8 +4296,111 @@
         "losses": 2,
         "avgPct": 7.07
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-19",
+      "generatedAt": "2026-10-19T18:40:54.832Z",
+      "benchmarkEntry": 81818,
+      "picks": [
+        {
+          "id": "aptos",
+          "symbol": "APT",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "The four-year vesting schedule for early investors and core contributors concluded on October 12, 2026, significantly reducing monthly token unlocks by 60%.",
+          "rationale": "The cessation of a major vesting cliff removes a substantial supply overhang, leading to a positive structural shift in Aptos's tokenomics and potentially attracting new capital due to reduced dilution risk.",
+          "risk": "A broader market downturn or unforeseen negative developments within the Aptos ecosystem could neutralize the positive impact of reduced selling pressure.",
+          "entryPrice": 0.760324,
+          "livePrice": 0.760324,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.807227,
+          "exitDate": "2026-10-20",
+          "changePct": 6.17,
+          "benchmarkPct": 0.84,
+          "resultPct": 5.33,
+          "result": "W"
+        },
+        {
+          "id": "injective-protocol",
+          "symbol": "INJ",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Recent mainnet upgrades (IIP-677 in July and Meridian IIP-701 in September 2026) introduced SEC and MiCA compliant tokenization for real-world assets.",
+          "rationale": "Injective is strategically positioning itself as a compliant platform for Real World Asset (RWA) tokenization, a sector poised for significant institutional growth, and these upgrades provide the essential regulatory-compliant infrastructure.",
+          "risk": "Slow institutional adoption of RWA on Injective or intensified competition from other RWA platforms could temper INJ's performance.",
+          "entryPrice": 8.55,
+          "livePrice": 8.55,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 8.59,
+          "exitDate": "2026-10-20",
+          "changePct": 0.47,
+          "benchmarkPct": 0.84,
+          "resultPct": -0.37,
+          "result": "L"
+        },
+        {
+          "id": "ethereum",
+          "symbol": "ETH",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "The U.S. SEC approved a rule change on October 2, 2026, allowing the listing of 3x leveraged Bitcoin and Ethereum ETFs.",
+          "rationale": "This regulatory approval, even for leveraged products, signals increasing acceptance of Ethereum-based investment vehicles by U.S. regulators, potentially paving the way for broader institutional engagement and capital inflow into the ETH ecosystem.",
+          "risk": "Delays in the actual trading commencement of the approved ETFs or a negative shift in broader crypto regulatory sentiment could limit immediate upside.",
+          "entryPrice": 2395.13,
+          "livePrice": 2395.13,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 2442.46,
+          "exitDate": "2026-10-20",
+          "changePct": 1.98,
+          "benchmarkPct": 0.84,
+          "resultPct": 1.14,
+          "result": "W"
+        },
+        {
+          "id": "solana",
+          "symbol": "SOL",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "The ongoing rollout and adoption of the Firedancer 1.0 validator client, live on mainnet since December 2025 and running on over 20% of active validators by Q2 2026, continues to improve network resilience and performance.",
+          "rationale": "Firedancer significantly enhances Solana's technical foundation through client diversity and improved throughput, addressing past network stability concerns and making the platform more attractive for developers and users, contributing to sustained positive sentiment.",
+          "risk": "Any new network outages or slower-than-expected broader adoption of Firedancer by validators could negatively impact sentiment.",
+          "entryPrice": 103.82,
+          "livePrice": 103.82,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 106.15,
+          "exitDate": "2026-10-20",
+          "changePct": 2.24,
+          "benchmarkPct": 0.84,
+          "resultPct": 1.4,
+          "result": "W"
+        }
+      ],
+      "liveAsOf": "2026-10-19",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-10-20T16:47:57.249Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": 0.84
+      },
+      "record": {
+        "wins": 3,
+        "losses": 1,
+        "avgPct": 1.88
+      }
     }
   ],
-  "updatedAt": "2026-10-19T18:41:28.447Z",
+  "updatedAt": "2026-10-20T16:47:57.250Z",
   "attribution": "Powered by CoinGecko"
 }
