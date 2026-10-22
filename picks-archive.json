@@ -4399,8 +4399,92 @@
         "losses": 1,
         "avgPct": 1.88
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-20",
+      "generatedAt": "2026-10-20T16:47:57.249Z",
+      "benchmarkEntry": 82508,
+      "picks": [
+        {
+          "id": "arbitrum",
+          "symbol": "ARB",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "The major token unlock event for Arbitrum on October 16, 2026, has already passed, potentially removing immediate selling pressure.",
+          "rationale": "Arbitrum experienced a 'sell the news' reaction around its recent significant token unlock, leading to underperformance relative to the broader market. With the immediate supply shock from this event now absorbed, and considering potential positive sentiment spillover from recent Bitcoin regulatory developments, ARB may be poised for a short-term rebound and outperformance against BTC.",
+          "risk": "Continued selling pressure from the recently unlocked tokens or a broader market downturn could invalidate this outlook.",
+          "entryPrice": 0.188254,
+          "livePrice": 0.194186,
+          "liveChangePct": 3.15,
+          "livePct": 0.75,
+          "exitPrice": 0.181301,
+          "exitDate": "2026-10-22",
+          "changePct": -3.69,
+          "benchmarkPct": -1.73,
+          "resultPct": -1.96,
+          "result": "L"
+        },
+        {
+          "id": "aptos",
+          "symbol": "APT",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Aptos completed its initial four-year token unlock schedule for core contributors and investors on October 12, 2026, removing a significant long-term vesting overhang.",
+          "rationale": "Similar to other projects post-major unlocks, Aptos experienced a price drawdown following the completion of its four-year vesting schedule. The removal of this long-term supply overhang could lead to a more positive market perception as the uncertainty around future large-scale distributions diminishes, allowing APT to potentially outperform BTC.",
+          "risk": "New selling pressure from the now fully liquid contributor and investor tokens or a general market weakness could invalidate this pick.",
+          "entryPrice": 0.807227,
+          "livePrice": 0.833998,
+          "liveChangePct": 3.32,
+          "livePct": 0.92,
+          "exitPrice": 0.7605,
+          "exitDate": "2026-10-22",
+          "changePct": -5.79,
+          "benchmarkPct": -1.73,
+          "resultPct": -4.06,
+          "result": "L"
+        },
+        {
+          "id": "celestia",
+          "symbol": "TIA",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "A substantial token unlock for Celestia (TIA) is scheduled for October 30, 2026, releasing approximately 175 million tokens, which represents about 17.68% of its total supply.",
+          "rationale": "Despite the unlock being several days away, the significant size of the upcoming TIA token release (nearly 18% of total supply) could prompt traders to pre-position for increased supply and potential selling pressure. This anticipation may lead to TIA underperforming BTC in the short term as market participants de-risk.",
+          "risk": "Strong buying interest or a broader altcoin rally leading up to the unlock date could negate the anticipated negative price action.",
+          "entryPrice": 0.626387,
+          "livePrice": 0.635367,
+          "liveChangePct": 1.43,
+          "livePct": 0.97,
+          "exitPrice": 0.568402,
+          "exitDate": "2026-10-22",
+          "changePct": -9.26,
+          "benchmarkPct": -1.73,
+          "resultPct": 7.53,
+          "result": "W"
+        }
+      ],
+      "liveAsOf": "2026-10-21",
+      "liveBenchmarkPct": 2.4,
+      "liveRecord": {
+        "ahead": 3,
+        "behind": 0,
+        "avgPct": 0.88,
+        "daysOpen": 1
+      },
+      "gradedAt": "2026-10-22T17:03:10.118Z",
+      "heldDays": 2,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": -1.73
+      },
+      "record": {
+        "wins": 1,
+        "losses": 2,
+        "avgPct": 0.5
+      }
     }
   ],
-  "updatedAt": "2026-10-21T17:03:43.789Z",
+  "updatedAt": "2026-10-22T17:03:10.118Z",
   "attribution": "Powered by CoinGecko"
 }
