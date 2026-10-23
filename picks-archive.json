@@ -4483,8 +4483,111 @@
         "losses": 2,
         "avgPct": 0.5
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-22",
+      "generatedAt": "2026-10-22T17:03:10.118Z",
+      "benchmarkEntry": 81081,
+      "picks": [
+        {
+          "id": "binancecoin",
+          "symbol": "BNB",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "BNB Chain launched its 'New L1' devnet today, October 22, 2026, a high-performance EVM-compatible Layer 1.",
+          "rationale": "The launch of a new Layer 1 devnet within the BNB Chain ecosystem signals continuous innovation and a commitment to scaling, aiming for sub-second finality and native account abstraction. This proactive development could generate positive sentiment and drive outperformance relative to BTC.",
+          "risk": "While a devnet launch indicates future potential, the immediate market impact might be limited if broad market sentiment remains negative or mainnet timing is further out.",
+          "entryPrice": 727.21,
+          "livePrice": 727.21,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 746.26,
+          "exitDate": "2026-10-23",
+          "changePct": 2.62,
+          "benchmarkPct": 0.67,
+          "resultPct": 1.95,
+          "result": "W"
+        },
+        {
+          "id": "avalanche-2",
+          "symbol": "AVAX",
+          "direction": "short",
+          "conviction": "high",
+          "catalyst": "A $15.38 million AVAX token unlock is scheduled for October 24, 2026.",
+          "rationale": "The impending release of a significant amount of AVAX tokens into circulation can create selling pressure as recipients may choose to liquidate their holdings, leading to potential underperformance relative to BTC. This event adds to the circulating supply, potentially diluting value.",
+          "risk": "Strong buying pressure or unexpected positive news for Avalanche could absorb the additional supply, mitigating the expected selling impact from the unlock.",
+          "entryPrice": 9.12,
+          "livePrice": 9.12,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 9.12,
+          "exitDate": "2026-10-23",
+          "changePct": 0,
+          "benchmarkPct": 0.67,
+          "resultPct": 0.67,
+          "result": "W"
+        },
+        {
+          "id": "ethena",
+          "symbol": "ENA",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Ethena is approaching a key milestone where 95% of net revenue will be routed to ENA buybacks once USDe supply reaches $7.5 billion (currently $4.9 billion as of October 5, 2026), alongside the imminent Q4 2026 launch of the Ethena Pay Card.",
+          "rationale": "The impending activation of a significant ENA buyback mechanism, triggered by USDe supply growth, coupled with the near-term launch of a real-world utility product, could drive strong demand and reduce circulating supply. This dual catalyst suggests potential for ENA to outperform BTC.",
+          "risk": "The USDe supply reaching the $7.5 billion threshold might take longer than anticipated, and the impact of the Pay Card launch could be gradual rather than immediately price-driving.",
+          "entryPrice": 0.196515,
+          "livePrice": 0.196515,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.208755,
+          "exitDate": "2026-10-23",
+          "changePct": 6.23,
+          "benchmarkPct": 0.67,
+          "resultPct": 5.56,
+          "result": "W"
+        },
+        {
+          "id": "aave",
+          "symbol": "AAVE",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Aave V4 is actively expanding its multi-chain deployments, with recent launches on Base (October 7, 2026) and Arc (September 16, 2026), and a new proposal to list USAT (a regulated stablecoin) on Avalanche V4 as of October 21, 2026.",
+          "rationale": "The continuous rollout of new V4 features and markets, particularly the strategic expansion into Real-World Assets (RWA) with proposals like USAT, demonstrates Aave's strong development and adaptability. This ongoing positive news flow and increased utility could attract more capital and users, leading to relative strength against BTC.",
+          "risk": "Broader market downturns could overshadow protocol-specific positive developments, and the impact of new market listings or proposals might not be immediately reflected in token price.",
+          "entryPrice": 145.86,
+          "livePrice": 145.86,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 147.61,
+          "exitDate": "2026-10-23",
+          "changePct": 1.2,
+          "benchmarkPct": 0.67,
+          "resultPct": 0.53,
+          "result": "W"
+        }
+      ],
+      "liveAsOf": "2026-10-22",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-10-23T16:56:02.067Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": 0.67
+      },
+      "record": {
+        "wins": 4,
+        "losses": 0,
+        "avgPct": 2.18
+      }
     }
   ],
-  "updatedAt": "2026-10-22T17:03:10.118Z",
+  "updatedAt": "2026-10-23T16:56:02.068Z",
   "attribution": "Powered by CoinGecko"
 }
