@@ -1,33 +1,20 @@
 {
   "daily": {
     "horizon": "daily",
-    "date": "2026-10-24",
-    "generatedAt": "2026-10-24T15:48:37.742Z",
-    "benchmarkEntry": 79476,
+    "date": "2026-10-25",
+    "generatedAt": "2026-10-25T15:59:13.044Z",
+    "benchmarkEntry": 80559,
     "picks": [
       {
-        "id": "ethereum",
-        "symbol": "ETH",
+        "id": "celestia",
+        "symbol": "TIA",
         "direction": "short",
         "conviction": "high",
-        "catalyst": "Persistent and substantial net outflows from US spot Ethereum ETFs, coupled with a negative Coinbase Premium, indicate ongoing selling pressure.",
-        "rationale": "US spot Ethereum ETFs recorded a net outflow of $110.5 million on October 23, 2026, contributing to a significant $1.08 billion outflow for the month. The Coinbase Premium Index is at its lowest since June, suggesting weaker demand and active selling from US-based markets, which historically leads to underperformance relative to Bitcoin.",
-        "risk": "A sudden reversal in institutional sentiment leading to significant ETH ETF inflows or a strong rebound in broader market risk appetite would invalidate this thesis.",
-        "entryPrice": 2295.61,
-        "livePrice": 2295.61,
-        "liveChangePct": 0,
-        "livePct": 0
-      },
-      {
-        "id": "avalanche-2",
-        "symbol": "AVAX",
-        "direction": "short",
-        "conviction": "medium",
-        "catalyst": "A scheduled token unlock of $14.93 million on October 24, 2026, adds new supply to the market.",
-        "rationale": "Avalanche (AVAX) has a token unlock valued at $14.93 million scheduled for today, October 24, 2026. In the current weak market conditions, such a release of new supply is likely to exert downward pressure on the token's price, causing it to underperform Bitcoin.",
-        "risk": "Strong buying interest absorbing the unlocked tokens or a significant positive development within the Avalanche ecosystem could mitigate the selling pressure.",
-        "entryPrice": 8.76,
-        "livePrice": 8.76,
+        "catalyst": "Celestia faces a massive token unlock on October 30, releasing 175.6 million TIA tokens, approximately 82% of its current circulating supply.",
+        "rationale": "Historically, such large token unlocks tend to introduce significant selling pressure as early investors and contributors gain liquidity. Despite a recent price surge, the market is likely to price in this substantial supply increase, leading to potential downside relative to BTC.",
+        "risk": "Strong underlying demand from new protocol integrations or unexpected positive news could absorb the unlock supply, invalidating the short thesis.",
+        "entryPrice": 0.535582,
+        "livePrice": 0.535582,
         "liveChangePct": 0,
         "livePct": 0
       },
@@ -36,42 +23,55 @@
         "symbol": "ARB",
         "direction": "short",
         "conviction": "medium",
-        "catalyst": "A significant token unlock of 139.15 million ARB occurred on October 23, 2026, introducing new supply.",
-        "rationale": "Arbitrum experienced a substantial token unlock of 139.15 million ARB, valued at $24.8 million and representing 2% of its market cap, on October 23, 2026. This recent influx of supply is likely to continue contributing to selling pressure, especially in a bearish market, leading to underperformance against BTC.",
-        "risk": "Increased demand for Arbitrum's Layer 2 solutions or unexpected positive news could absorb the new supply and support the price.",
-        "entryPrice": 0.164632,
-        "livePrice": 0.164632,
+        "catalyst": "Arbitrum experienced a large token unlock of 139.15 million ARB tokens on October 23, following a regular monthly unlock on October 16.",
+        "rationale": "The recent influx of a substantial amount of ARB tokens into the circulating supply can create persistent selling pressure, as recipients may choose to realize profits or rebalance their portfolios. This ongoing supply overhang could lead to underperformance relative to BTC in the immediate term.",
+        "risk": "Increased ecosystem activity or new dApp launches on Arbitrum could generate sufficient demand to offset the selling pressure from unlocked tokens.",
+        "entryPrice": 0.167742,
+        "livePrice": 0.167742,
         "liveChangePct": 0,
         "livePct": 0
       },
       {
-        "id": "sui",
-        "symbol": "SUI",
-        "direction": "short",
+        "id": "binancecoin",
+        "symbol": "BNB",
+        "direction": "long",
         "conviction": "medium",
-        "catalyst": "Anticipation of a significant token unlock tranche between October 31 and November 3, 2026, could lead to pre-emptive selling.",
-        "rationale": "Sui has an upcoming token unlock of between 2.07 million and 22.6 million SUI scheduled for the window of October 31 to November 3, 2026. Traders often front-run such events, leading to selling pressure in anticipation of increased circulating supply, making SUI vulnerable to underperformance relative to BTC.",
-        "risk": "If the unlocked tokens are held rather than sold, or if significant positive news emerges for Sui, the anticipated selling pressure might not materialize.",
-        "entryPrice": 0.919714,
-        "livePrice": 0.919714,
+        "catalyst": "The BNB Chain Jenner Upgrade is scheduled for the BNB Smart Chain testnet on October 28, introducing features like Payment Lane and a compliant asset standard (CAS20).",
+        "rationale": "This upgrade focuses on enhancing real-world utility and compliant asset support, which could attract institutional interest and drive demand for the BNB ecosystem. A successful testnet deployment is a positive precursor to the targeted mainnet upgrade in late November, potentially boosting sentiment for BNB.",
+        "risk": "Delays in the testnet deployment or negative feedback from developers could dampen sentiment, or the mainnet upgrade might not materialize as expected.",
+        "entryPrice": 741.16,
+        "livePrice": 741.16,
         "liveChangePct": 0,
         "livePct": 0
       },
       {
-        "id": "ripple",
-        "symbol": "XRP",
-        "direction": "short",
-        "conviction": "low",
-        "catalyst": "Lack of positive market reaction to Ripple's recent regulatory engagement with the SEC, despite the resolution of its lawsuit in 2025.",
-        "rationale": "Ripple submitted a comment letter to the SEC on October 20, 2026, supporting proposed crypto rules but requesting changes, yet XRP's price continues to decline. This suggests that regulatory clarity alone is not a sufficient catalyst to drive positive price action or outperformance relative to BTC in the current market, and historical trends show underperformance post-lawsuit resolution.",
-        "risk": "A definitive positive regulatory outcome for XRP or a broader market rally could reverse its current underperformance.",
-        "entryPrice": 1.26,
-        "livePrice": 1.26,
+        "id": "aptos",
+        "symbol": "APT",
+        "direction": "long",
+        "conviction": "medium",
+        "catalyst": "Aptos recently completed its four-year insider token unlock schedule on October 12, significantly reducing future annualized token issuance by approximately 60%.",
+        "rationale": "The conclusion of the largest scheduled insider vesting removes a major source of potential selling pressure and creates a more favorable supply-side dynamic for APT. This long-term positive shift in tokenomics could lead to outperformance as the market digests the reduced future supply.",
+        "risk": "Broader market downturns or a lack of significant ecosystem growth could overshadow the positive impact of reduced token unlocks.",
+        "entryPrice": 0.702246,
+        "livePrice": 0.702246,
+        "liveChangePct": 0,
+        "livePct": 0
+      },
+      {
+        "id": "chainlink",
+        "symbol": "LINK",
+        "direction": "long",
+        "conviction": "high",
+        "catalyst": "Chainlink's Q3 2026 report, released on October 21, highlighted over $15 billion in token value migrated to CCIP in 2026 and the accumulation of 1.54 million LINK in the Chainlink Reserve from enterprise and on-chain service revenue.",
+        "rationale": "The substantial increase in CCIP adoption by institutions and the growth of the Chainlink Reserve directly link network utility and revenue generation to LINK accumulation. This demonstrates strong fundamental demand and value capture, positioning LINK for potential outperformance relative to BTC.",
+        "risk": "A general slowdown in institutional adoption of blockchain technology or a failure of CCIP to sustain its growth could invalidate this thesis.",
+        "entryPrice": 11.43,
+        "livePrice": 11.43,
         "liveChangePct": 0,
         "livePct": 0
       }
     ],
-    "liveAsOf": "2026-10-24",
+    "liveAsOf": "2026-10-25",
     "liveBenchmarkPct": 0,
     "liveRecord": {
       "ahead": 0,
@@ -95,9 +95,9 @@
         "rationale": "The Alpenglow upgrade is a significant overhaul of Solana's core consensus mechanism, introducing the Votor protocol to drastically reduce transaction finality from approximately 12.8 seconds to 150 milliseconds. This fundamental improvement to network speed and efficiency is a strong bullish catalyst that is expected to drive increased adoption and potentially lead to outperformance relative to BTC.",
         "risk": "Technical issues during or immediately after the upgrade, or a broader negative market sentiment, could invalidate this outlook.",
         "entryPrice": 103.82,
-        "livePrice": 99.23,
-        "liveChangePct": -4.42,
-        "livePct": -1.56
+        "livePrice": 101.53,
+        "liveChangePct": -2.21,
+        "livePct": -0.67
       },
       {
         "id": "ethereum",
@@ -108,9 +108,9 @@
         "rationale": "The Glamsterdam upgrade, featuring enshrined proposer-builder separation (ePBS) and block-level access lists, represents a crucial step in Ethereum's Layer 1 scaling roadmap, with its deployment on the Hoodi testnet on October 26. While not a mainnet launch, this testnet activation signals significant progress in core development, which could generate positive sentiment and drive ETH to outperform BTC as the market anticipates future mainnet implementation.",
         "risk": "Any delays or unforeseen issues during the testnet deployment, or a lack of clear communication regarding mainnet timelines, could temper positive market reaction.",
         "entryPrice": 2395.13,
-        "livePrice": 2295.61,
-        "liveChangePct": -4.16,
-        "livePct": -1.3
+        "livePrice": 2342.11,
+        "liveChangePct": -2.21,
+        "livePct": -0.67
       },
       {
         "id": "ripple",
@@ -121,9 +121,9 @@
         "rationale": "The fixCleanup3_4_0 amendment, a collection of fixes and improvements for various components including Single Asset Vaults, the Lending Protocol, and Automated Market Makers, is scheduled for activation on the XRP Ledger around October 23, contingent on validator support. This continuous protocol enhancement demonstrates ongoing development and commitment to network stability and functionality, which could attract renewed interest and lead to outperformance against BTC.",
         "risk": "Failure to maintain the required validator support for activation or unexpected issues post-upgrade could negate the positive impact.",
         "entryPrice": 1.3,
-        "livePrice": 1.26,
-        "liveChangePct": -3.08,
-        "livePct": -0.22
+        "livePrice": 1.3,
+        "liveChangePct": 0,
+        "livePct": 1.54
       },
       {
         "id": "arbitrum",
@@ -134,9 +134,9 @@
         "rationale": "Arbitrum's new Stablecoin Growth Program, which incentivizes protocols to adopt USDG as their primary stablecoin on Arbitrum One with a 2 million ARB reward pool, is a direct catalyst for ecosystem expansion and increased Total Value Locked (TVL). This initiative aims to drive liquidity and developer activity, positioning ARB for potential outperformance relative to BTC as the Layer 2 ecosystem grows.",
         "risk": "The program's success is dependent on sustained participant engagement and the ability to attract significant, lasting liquidity, rather than short-term capital inflows.",
         "entryPrice": 0.193572,
-        "livePrice": 0.164632,
-        "liveChangePct": -14.95,
-        "livePct": -12.09
+        "livePrice": 0.167742,
+        "liveChangePct": -13.34,
+        "livePct": -11.8
       },
       {
         "id": "ethereum",
@@ -147,18 +147,18 @@
         "rationale": "The recent SEC approval for the listing of 3x leveraged Ethereum ETFs (October 2, 2026) and Thailand's establishment of a regulatory framework for locally established ETH ETFs (effective October 16, 2026) are significant developments that enhance institutional access and regulatory clarity for Ethereum. While trading launch dates may vary, these approvals signal growing mainstream acceptance and could drive sustained positive sentiment and capital inflows into ETH, leading to outperformance against BTC.",
         "risk": "Delays in the actual commencement of trading for the US ETFs or a broader market downturn could dampen the anticipated positive impact on ETH's price relative to BTC.",
         "entryPrice": 2395.13,
-        "livePrice": 2295.61,
-        "liveChangePct": -4.16,
-        "livePct": -1.3
+        "livePrice": 2342.11,
+        "liveChangePct": -2.21,
+        "livePct": -0.67
       }
     ],
-    "liveAsOf": "2026-10-24",
-    "liveBenchmarkPct": -2.86,
+    "liveAsOf": "2026-10-25",
+    "liveBenchmarkPct": -1.54,
     "liveRecord": {
-      "ahead": 0,
-      "behind": 5,
-      "avgPct": -3.29,
-      "daysOpen": 5
+      "ahead": 1,
+      "behind": 4,
+      "avgPct": -2.45,
+      "daysOpen": 6
     }
   },
   "monthly": {
@@ -176,9 +176,9 @@
         "rationale": "The recent launch of CCIP 2.0, introducing enhanced security, compliance, and institutional features, alongside the upcoming mainnet deployment of a zero-knowledge Cross-Chain Verifier, significantly strengthens Chainlink's position for institutional adoption of tokenized assets. This increased utility and integration into traditional finance infrastructure are strong drivers for LINK to outperform BTC.",
         "risk": "Slower-than-expected institutional adoption or technical delays in CCIP deployments would invalidate this thesis.",
         "entryPrice": 14.33,
-        "livePrice": 11.34,
-        "liveChangePct": -20.87,
-        "livePct": -14.6
+        "livePrice": 11.43,
+        "liveChangePct": -20.24,
+        "livePct": -15.25
       },
       {
         "id": "ondo-finance",
@@ -189,9 +189,9 @@
         "rationale": "The partnership with Mirae Asset Global Investments to bring all products on-chain and the integration of Ondo's Oasis Pro markets with DTCC's Fund/SERV network are significant milestones for institutional adoption of Real-World Assets (RWA) tokenization. These developments position ONDO as a leader in bridging traditional finance with DeFi, potentially leading to strong outperformance relative to BTC.",
         "risk": "A slowdown in RWA adoption or adverse regulatory changes impacting tokenized securities would invalidate this thesis.",
         "entryPrice": 0.496763,
-        "livePrice": 0.399102,
-        "liveChangePct": -19.66,
-        "livePct": -13.39
+        "livePrice": 0.406109,
+        "liveChangePct": -18.25,
+        "livePct": -13.26
       },
       {
         "id": "ethena",
@@ -202,9 +202,9 @@
         "rationale": "This accelerated and substantial cliff unlock, estimated to be around 1.41 billion ENA, represents a significant supply shock to the market. The sudden availability of a large number of tokens previously held by early investors is likely to create considerable selling pressure, causing ENA to underperform BTC.",
         "risk": "Strong demand absorbing the unlocked supply without significant price depreciation would invalidate this thesis.",
         "entryPrice": 0.250288,
-        "livePrice": 0.186217,
-        "liveChangePct": -25.6,
-        "livePct": 19.33
+        "livePrice": 0.203366,
+        "liveChangePct": -18.75,
+        "livePct": 13.76
       },
       {
         "id": "solana",
@@ -215,9 +215,9 @@
         "rationale": "The upcoming Alpenglow mainnet activation in October signifies continued network development and potential performance improvements for Solana. Coupled with significant institutional inflows into Solana funds, this upgrade could enhance network utility and investor confidence, supporting SOL's outperformance relative to BTC.",
         "risk": "Technical issues with the Alpenglow upgrade or a broader market downturn impacting institutional sentiment would invalidate this thesis.",
         "entryPrice": 118.42,
-        "livePrice": 99.23,
-        "liveChangePct": -16.21,
-        "livePct": -9.94
+        "livePrice": 101.53,
+        "liveChangePct": -14.26,
+        "livePct": -9.27
       },
       {
         "id": "ethereum",
@@ -228,18 +228,18 @@
         "rationale": "The rollout of the first public test network for the Glamsterdam upgrade on October 6 is a key development milestone for Ethereum. This progression in its upgrade roadmap could generate positive sentiment and anticipate future network enhancements, supporting ETH's potential to outperform BTC.",
         "risk": "Delays or unforeseen issues with the testnet launch, or a lack of positive market reaction to the upgrade, would invalidate this thesis.",
         "entryPrice": 2699.27,
-        "livePrice": 2295.61,
-        "liveChangePct": -14.95,
-        "livePct": -8.68
+        "livePrice": 2342.11,
+        "liveChangePct": -13.23,
+        "livePct": -8.24
       }
     ],
-    "liveAsOf": "2026-10-24",
-    "liveBenchmarkPct": -6.27,
+    "liveAsOf": "2026-10-25",
+    "liveBenchmarkPct": -4.99,
     "liveRecord": {
       "ahead": 1,
       "behind": 4,
-      "avgPct": -5.46,
-      "daysOpen": 23
+      "avgPct": -6.45,
+      "daysOpen": 24
     }
   }
 }

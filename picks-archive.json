@@ -4708,8 +4708,130 @@
         "losses": 5,
         "avgPct": -6.9
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-24",
+      "generatedAt": "2026-10-24T15:48:37.742Z",
+      "benchmarkEntry": 79476,
+      "picks": [
+        {
+          "id": "ethereum",
+          "symbol": "ETH",
+          "direction": "short",
+          "conviction": "high",
+          "catalyst": "Persistent and substantial net outflows from US spot Ethereum ETFs, coupled with a negative Coinbase Premium, indicate ongoing selling pressure.",
+          "rationale": "US spot Ethereum ETFs recorded a net outflow of $110.5 million on October 23, 2026, contributing to a significant $1.08 billion outflow for the month. The Coinbase Premium Index is at its lowest since June, suggesting weaker demand and active selling from US-based markets, which historically leads to underperformance relative to Bitcoin.",
+          "risk": "A sudden reversal in institutional sentiment leading to significant ETH ETF inflows or a strong rebound in broader market risk appetite would invalidate this thesis.",
+          "entryPrice": 2295.61,
+          "livePrice": 2295.61,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 2342.11,
+          "exitDate": "2026-10-25",
+          "changePct": 2.03,
+          "benchmarkPct": 1.36,
+          "resultPct": -0.67,
+          "result": "L"
+        },
+        {
+          "id": "avalanche-2",
+          "symbol": "AVAX",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "A scheduled token unlock of $14.93 million on October 24, 2026, adds new supply to the market.",
+          "rationale": "Avalanche (AVAX) has a token unlock valued at $14.93 million scheduled for today, October 24, 2026. In the current weak market conditions, such a release of new supply is likely to exert downward pressure on the token's price, causing it to underperform Bitcoin.",
+          "risk": "Strong buying interest absorbing the unlocked tokens or a significant positive development within the Avalanche ecosystem could mitigate the selling pressure.",
+          "entryPrice": 8.76,
+          "livePrice": 8.76,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 8.9,
+          "exitDate": "2026-10-25",
+          "changePct": 1.6,
+          "benchmarkPct": 1.36,
+          "resultPct": -0.24,
+          "result": "L"
+        },
+        {
+          "id": "arbitrum",
+          "symbol": "ARB",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "A significant token unlock of 139.15 million ARB occurred on October 23, 2026, introducing new supply.",
+          "rationale": "Arbitrum experienced a substantial token unlock of 139.15 million ARB, valued at $24.8 million and representing 2% of its market cap, on October 23, 2026. This recent influx of supply is likely to continue contributing to selling pressure, especially in a bearish market, leading to underperformance against BTC.",
+          "risk": "Increased demand for Arbitrum's Layer 2 solutions or unexpected positive news could absorb the new supply and support the price.",
+          "entryPrice": 0.164632,
+          "livePrice": 0.164632,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.167742,
+          "exitDate": "2026-10-25",
+          "changePct": 1.89,
+          "benchmarkPct": 1.36,
+          "resultPct": -0.53,
+          "result": "L"
+        },
+        {
+          "id": "sui",
+          "symbol": "SUI",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "Anticipation of a significant token unlock tranche between October 31 and November 3, 2026, could lead to pre-emptive selling.",
+          "rationale": "Sui has an upcoming token unlock of between 2.07 million and 22.6 million SUI scheduled for the window of October 31 to November 3, 2026. Traders often front-run such events, leading to selling pressure in anticipation of increased circulating supply, making SUI vulnerable to underperformance relative to BTC.",
+          "risk": "If the unlocked tokens are held rather than sold, or if significant positive news emerges for Sui, the anticipated selling pressure might not materialize.",
+          "entryPrice": 0.919714,
+          "livePrice": 0.919714,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.91758,
+          "exitDate": "2026-10-25",
+          "changePct": -0.23,
+          "benchmarkPct": 1.36,
+          "resultPct": 1.59,
+          "result": "W"
+        },
+        {
+          "id": "ripple",
+          "symbol": "XRP",
+          "direction": "short",
+          "conviction": "low",
+          "catalyst": "Lack of positive market reaction to Ripple's recent regulatory engagement with the SEC, despite the resolution of its lawsuit in 2025.",
+          "rationale": "Ripple submitted a comment letter to the SEC on October 20, 2026, supporting proposed crypto rules but requesting changes, yet XRP's price continues to decline. This suggests that regulatory clarity alone is not a sufficient catalyst to drive positive price action or outperformance relative to BTC in the current market, and historical trends show underperformance post-lawsuit resolution.",
+          "risk": "A definitive positive regulatory outcome for XRP or a broader market rally could reverse its current underperformance.",
+          "entryPrice": 1.26,
+          "livePrice": 1.26,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 1.3,
+          "exitDate": "2026-10-25",
+          "changePct": 3.17,
+          "benchmarkPct": 1.36,
+          "resultPct": -1.81,
+          "result": "L"
+        }
+      ],
+      "liveAsOf": "2026-10-24",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-10-25T15:59:13.044Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": 1.36
+      },
+      "record": {
+        "wins": 1,
+        "losses": 4,
+        "avgPct": -0.33
+      }
     }
   ],
-  "updatedAt": "2026-10-24T15:48:37.742Z",
+  "updatedAt": "2026-10-25T15:59:13.045Z",
   "attribution": "Powered by CoinGecko"
 }
