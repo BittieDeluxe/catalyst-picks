@@ -5074,8 +5074,130 @@
         "losses": 4,
         "avgPct": -2.41
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-26",
+      "generatedAt": "2026-10-26T18:39:16.949Z",
+      "benchmarkEntry": 80185,
+      "picks": [
+        {
+          "id": "filecoin",
+          "symbol": "FIL",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Filecoin completed its Solstice Upgrade on October 20, 2026, shifting block rewards to incentivize services that attract paying customers.",
+          "rationale": "The recent Solstice Upgrade fundamentally re-aligns Filecoin's tokenomics towards demand generation and revenue, rather than pure capacity expansion. This strategic pivot, combined with the ongoing 'Onchain Cloud & Paid Deal Focus' for 2026, is expected to drive increased utility and value capture for FIL.",
+          "risk": "Broader market downturns or slower-than-expected adoption of paid storage deals could invalidate this thesis.",
+          "entryPrice": 0.909006,
+          "livePrice": 0.909006,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.898681,
+          "exitDate": "2026-10-27",
+          "changePct": -1.14,
+          "benchmarkPct": 0.47,
+          "resultPct": -1.61,
+          "result": "L"
+        },
+        {
+          "id": "akash-network",
+          "symbol": "AKT",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Akash Network announced its strategic decision to migrate its marketplace to the Solana mainnet, with AKT becoming a native Solana token.",
+          "rationale": "The proposed migration to Solana represents a significant strategic enhancement for Akash Network, aiming to leverage Solana's lower fees, robust DePIN ecosystem, and increased liquidity. This move could attract new developers and users, positioning AKT for substantial growth and outperformance relative to BTC.",
+          "risk": "Delays in the migration process, technical challenges during integration, or negative market reaction to the chain migration could undermine this outlook.",
+          "entryPrice": 0.68538,
+          "livePrice": 0.68538,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.682368,
+          "exitDate": "2026-10-27",
+          "changePct": -0.44,
+          "benchmarkPct": 0.47,
+          "resultPct": -0.91,
+          "result": "L"
+        },
+        {
+          "id": "sui",
+          "symbol": "SUI",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "Sui has a recurring monthly token unlock of 13.15 million SUI scheduled for November 1, 2026.",
+          "rationale": "While not a massive cliff, this consistent monthly release of SUI tokens adds to the circulating supply. In a market exhibiting general weakness, this predictable increase in supply could exert downward pressure on SUI's price as recipients may choose to sell.",
+          "risk": "Strong buying interest or unexpected positive news for the Sui ecosystem could absorb the new supply and negate the selling pressure.",
+          "entryPrice": 0.913825,
+          "livePrice": 0.913825,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.923008,
+          "exitDate": "2026-10-27",
+          "changePct": 1,
+          "benchmarkPct": 0.47,
+          "resultPct": -0.53,
+          "result": "L"
+        },
+        {
+          "id": "pendle",
+          "symbol": "PENDLE",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "Pendle has a token unlock of 444,672 PENDLE scheduled for October 28, 2026.",
+          "rationale": "Even a relatively small token unlock can contribute to short-term selling pressure as previously illiquid tokens become available for trading. Given the current market sentiment, this supply increase, occurring within the next 24-48 hours, could lead to underperformance relative to BTC.",
+          "risk": "The small size of the unlock may have minimal market impact, or strong demand for Pendle's yield-trading primitives could offset the new supply.",
+          "entryPrice": 1.97,
+          "livePrice": 1.97,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 1.98,
+          "exitDate": "2026-10-27",
+          "changePct": 0.51,
+          "benchmarkPct": 0.47,
+          "resultPct": -0.04,
+          "result": "L"
+        },
+        {
+          "id": "ethena",
+          "symbol": "ENA",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "Ethena has a token unlock of 171.88 million ENA scheduled for November 2, 2026, allocated to Core Contributors.",
+          "rationale": "Although the significant investor unlocks occurred earlier in October, a substantial release of 171.88 million ENA to Core Contributors on November 2nd is a notable supply event. Anticipatory selling pressure could emerge in the immediate 24-hour window as the market prices in this upcoming supply increase.",
+          "risk": "The market may have already priced in this scheduled unlock, or strong fundamental developments for Ethena's USDe product could absorb the additional supply.",
+          "entryPrice": 0.20892,
+          "livePrice": 0.20892,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.208417,
+          "exitDate": "2026-10-27",
+          "changePct": -0.24,
+          "benchmarkPct": 0.47,
+          "resultPct": 0.71,
+          "result": "W"
+        }
+      ],
+      "liveAsOf": "2026-10-26",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-10-27T17:53:17.019Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": 0.47
+      },
+      "record": {
+        "wins": 1,
+        "losses": 4,
+        "avgPct": -0.48
+      }
     }
   ],
-  "updatedAt": "2026-10-26T18:40:39.602Z",
+  "updatedAt": "2026-10-27T17:53:17.019Z",
   "attribution": "Powered by CoinGecko"
 }
