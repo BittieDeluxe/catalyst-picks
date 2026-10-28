@@ -5196,8 +5196,130 @@
         "losses": 4,
         "avgPct": -0.48
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-27",
+      "generatedAt": "2026-10-27T17:53:17.019Z",
+      "benchmarkEntry": 80561,
+      "picks": [
+        {
+          "id": "solana",
+          "symbol": "SOL",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Solana's Alpenglow consensus upgrade went live on mainnet on October 21, significantly reducing transaction finality by approximately 99%.",
+          "rationale": "The successful and impactful Alpenglow upgrade dramatically improves Solana's core performance, making it more attractive for dApps and users. This fundamental improvement is a strong positive catalyst that could drive continued buying interest and outperformance relative to BTC.",
+          "risk": "A broader market downturn could overshadow the positive impact, or unexpected post-upgrade technical issues could emerge.",
+          "entryPrice": 100.96,
+          "livePrice": 100.96,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 101.4,
+          "exitDate": "2026-10-28",
+          "changePct": 0.44,
+          "benchmarkPct": 0.19,
+          "resultPct": 0.25,
+          "result": "W"
+        },
+        {
+          "id": "aptos",
+          "symbol": "APT",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Aptos completed its four-year initial token unlock for core contributors and investors on October 12, reducing future monthly unlocks by approximately 60% and removing a significant supply overhang.",
+          "rationale": "The removal of a major source of potential selling pressure from early investors and contributors, coupled with the Aptos Foundation's commitment to permanently lock 210 million APT, creates a more favorable supply-side dynamic. This could lead to a re-rating of the asset as the market digests the reduced inflation and potential for outperformance.",
+          "risk": "The market might have already fully priced in the reduction in unlocks, or other fundamental issues could negate the positive supply-side changes.",
+          "entryPrice": 0.686965,
+          "livePrice": 0.686965,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.681182,
+          "exitDate": "2026-10-28",
+          "changePct": -0.84,
+          "benchmarkPct": 0.19,
+          "resultPct": -1.03,
+          "result": "L"
+        },
+        {
+          "id": "sui",
+          "symbol": "SUI",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "A monthly token unlock of 13.15 million SUI, representing 0.32% of the released supply, is scheduled for November 1, 2026.",
+          "rationale": "Recurring token unlocks, especially when imminent, often introduce short-term selling pressure as recipients gain access to their tokens. Despite the percentage being small, the consistent nature of these unlocks can create an ongoing supply overhang, potentially leading to underperformance.",
+          "risk": "Strong underlying demand or positive news could absorb the unlocked tokens, mitigating expected selling pressure.",
+          "entryPrice": 0.923008,
+          "livePrice": 0.923008,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.92603,
+          "exitDate": "2026-10-28",
+          "changePct": 0.33,
+          "benchmarkPct": 0.19,
+          "resultPct": -0.14,
+          "result": "L"
+        },
+        {
+          "id": "immutable-x",
+          "symbol": "IMX",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "Immutable X is scheduled to unlock 24.52 million IMX tokens, approximately 1.24% of its circulating supply, on October 31, 2026.",
+          "rationale": "A token unlock of this size relative to circulating supply in the immediate future can create significant selling pressure, as recipients may choose to take profits. This influx of supply could lead to short-term underperformance for IMX.",
+          "risk": "The unlocked tokens might be held by long-term investors or absorbed by new demand, preventing a significant price drop.",
+          "entryPrice": 0.138171,
+          "livePrice": 0.138171,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.136781,
+          "exitDate": "2026-10-28",
+          "changePct": -1.01,
+          "benchmarkPct": 0.19,
+          "resultPct": 1.2,
+          "result": "W"
+        },
+        {
+          "id": "ethereum",
+          "symbol": "ETH",
+          "direction": "short",
+          "conviction": "high",
+          "catalyst": "The Glamsterdam upgrade on the Hoodi testnet, previously scheduled for October 26, 2026, was postponed due to ongoing investigation into smart contract compatibility issues with EIP-8037.",
+          "rationale": "The postponement of a significant testnet upgrade due to compatibility concerns introduces technical uncertainty and could negatively impact investor sentiment regarding Ethereum's development roadmap. This could lead to short-term underperformance relative to Bitcoin.",
+          "risk": "The delay is perceived as a prudent measure for network stability, or a quick resolution to the compatibility issues is announced, leading to a swift recovery in sentiment.",
+          "entryPrice": 2347.46,
+          "livePrice": 2347.46,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 2341.91,
+          "exitDate": "2026-10-28",
+          "changePct": -0.24,
+          "benchmarkPct": 0.19,
+          "resultPct": 0.43,
+          "result": "W"
+        }
+      ],
+      "liveAsOf": "2026-10-27",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-10-28T18:18:35.936Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": 0.19
+      },
+      "record": {
+        "wins": 3,
+        "losses": 2,
+        "avgPct": 0.14
+      }
     }
   ],
-  "updatedAt": "2026-10-27T17:53:17.019Z",
+  "updatedAt": "2026-10-28T18:18:35.936Z",
   "attribution": "Powered by CoinGecko"
 }
