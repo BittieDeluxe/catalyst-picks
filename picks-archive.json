@@ -5318,8 +5318,92 @@
         "losses": 2,
         "avgPct": 0.14
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-28",
+      "generatedAt": "2026-10-28T18:18:35.936Z",
+      "benchmarkEntry": 80716,
+      "picks": [
+        {
+          "id": "bonk",
+          "symbol": "BONK",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "An imminent 1 trillion BONK token burn, triggered by reaching 1 million unique holders, is expected to provide upward price pressure.",
+          "rationale": "The automatic burn of a significant portion of BONK's supply introduces a strong deflationary mechanism. This event was reportedly triggered in early October 2026 and its effects should be felt imminently, reducing circulating supply and potentially driving demand.",
+          "risk": "The primary risk is if the market has already fully priced in the token burn or if broader market sentiment turns significantly bearish, overriding the positive supply shock.",
+          "entryPrice": 0.00000307,
+          "livePrice": 0.00000307,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.00000314,
+          "exitDate": "2026-10-29",
+          "changePct": 2.28,
+          "benchmarkPct": 0.1,
+          "resultPct": 2.18,
+          "result": "W"
+        },
+        {
+          "id": "ripple",
+          "symbol": "XRP",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Ripple confirmed expanded partnerships and final trust bank charter approval on October 27, 2026, coinciding with positive regulatory discussions.",
+          "rationale": "Positive news regarding Ripple's business expansion and regulatory clarity, including a proposal for closer federal crypto regulatory cooperation by Treasury Secretary Scott Bessent on October 27, 2026, could provide continued bullish sentiment for XRP.",
+          "risk": "Ongoing regulatory uncertainties or a lack of sustained follow-through on new partnerships could temper positive sentiment.",
+          "entryPrice": 1.32,
+          "livePrice": 1.32,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 1.29,
+          "exitDate": "2026-10-29",
+          "changePct": -2.27,
+          "benchmarkPct": 0.1,
+          "resultPct": -2.37,
+          "result": "L"
+        },
+        {
+          "id": "arbitrum",
+          "symbol": "ARB",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "A governance vote to update Arbitrum One and Nova's L1-pricing parameters, in preparation for Ethereum's Glamsterdam upgrade, begins on October 29, 2026.",
+          "rationale": "This upcoming governance vote indicates proactive development and alignment with Ethereum's major upgrades, which is generally a positive signal for Arbitrum as a leading Layer 2 solution. Ensuring accurate L1 fees post-Glamsterdam enhances network efficiency and user experience.",
+          "risk": "The vote's outcome or any unexpected technical issues during the upgrade preparation could introduce volatility, or the market may not perceive the update as a significant catalyst.",
+          "entryPrice": 0.167581,
+          "livePrice": 0.167581,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.169255,
+          "exitDate": "2026-10-29",
+          "changePct": 1,
+          "benchmarkPct": 0.1,
+          "resultPct": 0.9,
+          "result": "W"
+        }
+      ],
+      "liveAsOf": "2026-10-28",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-10-29T18:23:53.368Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": 0.1
+      },
+      "record": {
+        "wins": 2,
+        "losses": 1,
+        "avgPct": 0.24
+      }
     }
   ],
-  "updatedAt": "2026-10-28T18:18:35.936Z",
+  "updatedAt": "2026-10-29T18:23:53.369Z",
   "attribution": "Powered by CoinGecko"
 }
