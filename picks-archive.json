@@ -5402,8 +5402,130 @@
         "losses": 1,
         "avgPct": 0.24
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-29",
+      "generatedAt": "2026-10-29T18:23:53.368Z",
+      "benchmarkEntry": 80797,
+      "picks": [
+        {
+          "id": "optimism",
+          "symbol": "OP",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Unichain mainnet migration to OP Enterprise is scheduled for today, October 29, 2026.",
+          "rationale": "Optimism is taking on a greater role as an infrastructure provider by managing Unichain's core operations, which strengthens the Superchain ecosystem. A successful and smooth migration could significantly boost confidence and adoption, leading to outperformance relative to BTC.",
+          "risk": "Technical issues during the migration or a lack of immediate positive market reaction could invalidate this thesis.",
+          "entryPrice": 0.110749,
+          "livePrice": 0.110749,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.11037,
+          "exitDate": "2026-10-30",
+          "changePct": -0.34,
+          "benchmarkPct": -4.62,
+          "resultPct": 4.28,
+          "result": "W"
+        },
+        {
+          "id": "aptos",
+          "symbol": "APT",
+          "direction": "long",
+          "conviction": "high",
+          "catalyst": "Circle CCTP V2 is live on Aptos as of today, October 29, 2026, enabling faster native USDC transfers.",
+          "rationale": "The integration of Circle's CCTP V2 significantly enhances Aptos's stablecoin utility by allowing faster and more efficient native USDC transfers with automated action hooks. This upgrade is crucial for attracting more DeFi activity and institutional interest, potentially driving APT's value relative to BTC.",
+          "risk": "Lower-than-expected adoption of CCTP V2 or broader stablecoin market headwinds could temper upside.",
+          "entryPrice": 0.676337,
+          "livePrice": 0.676337,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.62661,
+          "exitDate": "2026-10-30",
+          "changePct": -7.35,
+          "benchmarkPct": -4.62,
+          "resultPct": -2.73,
+          "result": "L"
+        },
+        {
+          "id": "arbitrum",
+          "symbol": "ARB",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Arbitrum DAO voting begins today, October 29, 2026, on a proposal to allocate 100 million ARB incentives for Global Dollar (USDG) adoption.",
+          "rationale": "The proposed allocation of 100 million ARB tokens to incentivize USDG adoption, coupled with recent surges in USDG supply and institutional fund expansion on Arbitrum, signals strong ecosystem growth and commitment to stablecoin liquidity. A positive vote outcome could be a significant bullish catalyst.",
+          "risk": "The DAO vote failing or a negative market reaction to the incentive program could invalidate this thesis.",
+          "entryPrice": 0.169255,
+          "livePrice": 0.169255,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.162482,
+          "exitDate": "2026-10-30",
+          "changePct": -4,
+          "benchmarkPct": -4.62,
+          "resultPct": 0.62,
+          "result": "W"
+        },
+        {
+          "id": "matic-network",
+          "symbol": "POL",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Polygon Labs launched its Open Money Stack on Solana today, October 29, 2026, expanding its payment services.",
+          "rationale": "By integrating its Open Money Stack with Solana, Polygon significantly broadens its reach in the payments sector, offering bank funding, embedded wallets, and global payouts. This expansion into another major blockchain ecosystem enhances Polygon's utility and potential for increased transaction volume.",
+          "risk": "Competition in the cross-chain payment space or slower-than-anticipated adoption on Solana could limit upside.",
+          "entryPrice": 0.126156,
+          "livePrice": 0.126156,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.126156,
+          "exitDate": "2026-10-30",
+          "changePct": 0,
+          "benchmarkPct": -4.62,
+          "resultPct": 4.62,
+          "result": "W"
+        },
+        {
+          "id": "injective-protocol",
+          "symbol": "INJ",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "Injective's modular options protocol went live on testnet on October 27, 2026, introducing fully collateralized calls and puts.",
+          "rationale": "The launch of a new options infrastructure on testnet, including support for an AI compute index, expands Injective's derivatives offerings and aligns with the growing interest in AI-related assets. This product expansion could attract new users and trading volume to the Injective ecosystem.",
+          "risk": "Delays in mainnet deployment, limited user adoption of the new options products, or a general downturn in the derivatives market could pose risks.",
+          "entryPrice": 8.03,
+          "livePrice": 8.03,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 7.06,
+          "exitDate": "2026-10-30",
+          "changePct": -12.08,
+          "benchmarkPct": -4.62,
+          "resultPct": -7.46,
+          "result": "L"
+        }
+      ],
+      "liveAsOf": "2026-10-29",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-10-30T17:57:39.545Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": -4.62
+      },
+      "record": {
+        "wins": 3,
+        "losses": 2,
+        "avgPct": -0.13
+      }
     }
   ],
-  "updatedAt": "2026-10-29T18:23:53.369Z",
+  "updatedAt": "2026-10-30T17:57:39.546Z",
   "attribution": "Powered by CoinGecko"
 }
