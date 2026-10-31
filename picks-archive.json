@@ -5524,8 +5524,130 @@
         "losses": 2,
         "avgPct": -0.13
       }
+    },
+    {
+      "horizon": "daily",
+      "date": "2026-10-30",
+      "generatedAt": "2026-10-30T17:57:39.545Z",
+      "benchmarkEntry": 77065,
+      "picks": [
+        {
+          "id": "binancecoin",
+          "symbol": "BNB",
+          "direction": "short",
+          "conviction": "high",
+          "catalyst": "Binance, the associated exchange, suffered a historic $6.36 billion security breach on October 29, 2026.",
+          "rationale": "The unprecedented scale of the Binance hack directly impacts investor confidence in the exchange and its native token, BNB, likely leading to further selling pressure as users may withdraw funds or reduce exposure. Despite Binance's pledge to cover losses, the reputational damage and operational disruption are significant, suggesting BNB will underperform BTC.",
+          "risk": "A swift and highly effective recovery and communication strategy from Binance, coupled with a rapid freezing of a substantial majority of the remaining stolen funds, could mitigate further downside.",
+          "entryPrice": 699.88,
+          "livePrice": 699.88,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 705.14,
+          "exitDate": "2026-10-31",
+          "changePct": 0.75,
+          "benchmarkPct": 0.56,
+          "resultPct": -0.19,
+          "result": "L"
+        },
+        {
+          "id": "arbitrum",
+          "symbol": "ARB",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "Arbitrum was one of the ten blockchains affected by the Binance hack, with its Security Council freezing a portion of the stolen funds.",
+          "rationale": "The direct involvement of Arbitrum in the largest crypto hack in history, even with some funds frozen, exposes the network to negative sentiment and potential contagion effects. This direct association is likely to cause ARB to underperform relative to BTC as market participants de-risk from affected ecosystems.",
+          "risk": "The successful freezing of a significant portion of ARB stolen and a strong, proactive response from the Arbitrum Foundation could help restore confidence faster than anticipated.",
+          "entryPrice": 0.162482,
+          "livePrice": 0.162482,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.164151,
+          "exitDate": "2026-10-31",
+          "changePct": 1.03,
+          "benchmarkPct": 0.56,
+          "resultPct": -0.47,
+          "result": "L"
+        },
+        {
+          "id": "ripple",
+          "symbol": "XRP",
+          "direction": "long",
+          "conviction": "medium",
+          "catalyst": "The XRP Ledger's proposed 'fixCleanup3_5_0' upgrade aims to tighten rules for permissioned tokens, a move designed to enhance institutional adoption.",
+          "rationale": "In a generally bearish market, this fundamental upgrade positions XRP for increased institutional interest and compliance, providing a strong positive differentiator that could lead to relative outperformance against BTC. The ongoing Swell 2026 conference also featured positive announcements for Ripple.",
+          "risk": "A broader market capitulation following the Binance hack could overshadow this positive fundamental development, or the upgrade might fail to gain sufficient validator consensus.",
+          "entryPrice": 1.24,
+          "livePrice": 1.24,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 1.25,
+          "exitDate": "2026-10-31",
+          "changePct": 0.81,
+          "benchmarkPct": 0.56,
+          "resultPct": 0.25,
+          "result": "W"
+        },
+        {
+          "id": "sui",
+          "symbol": "SUI",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "A scheduled token unlock of 13.15 million SUI (0.32% of released supply, ~$12.11 million) is set for November 1, 2026.",
+          "rationale": "The release of additional tokens into circulation, even if a small percentage, often creates selling pressure, especially in a weak market environment where recipients might be incentivized to take profits or reduce risk, causing SUI to underperform BTC.",
+          "risk": "The unlock amount could be absorbed by market demand without significant price impact, or positive news from the Sui ecosystem could emerge, offsetting the selling pressure.",
+          "entryPrice": 0.88569,
+          "livePrice": 0.88569,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 0.899945,
+          "exitDate": "2026-10-31",
+          "changePct": 1.61,
+          "benchmarkPct": 0.56,
+          "resultPct": -1.05,
+          "result": "L"
+        },
+        {
+          "id": "solana",
+          "symbol": "SOL",
+          "direction": "short",
+          "conviction": "medium",
+          "catalyst": "Solana was explicitly named as one of the ten blockchains impacted by the historic Binance hack on October 29, 2026.",
+          "rationale": "Despite its own ongoing 'Alpenglow' upgrade, the direct association with the largest crypto hack in history will likely weigh heavily on investor sentiment for Solana, potentially causing it to underperform BTC as market participants de-risk from affected ecosystems.",
+          "risk": "Strong network fundamentals and continued positive developments, coupled with a quick and effective response to any directly affected Solana-based protocols, could help Solana decouple from the negative sentiment.",
+          "entryPrice": 94.26,
+          "livePrice": 94.26,
+          "liveChangePct": 0,
+          "livePct": 0,
+          "exitPrice": 95.8,
+          "exitDate": "2026-10-31",
+          "changePct": 1.63,
+          "benchmarkPct": 0.56,
+          "resultPct": -1.07,
+          "result": "L"
+        }
+      ],
+      "liveAsOf": "2026-10-30",
+      "liveBenchmarkPct": 0,
+      "liveRecord": {
+        "ahead": 0,
+        "behind": 0,
+        "avgPct": 0,
+        "daysOpen": 0
+      },
+      "gradedAt": "2026-10-31T17:11:10.205Z",
+      "heldDays": 1,
+      "benchmark": {
+        "symbol": "BTC",
+        "pct": 0.56
+      },
+      "record": {
+        "wins": 1,
+        "losses": 4,
+        "avgPct": -0.51
+      }
     }
   ],
-  "updatedAt": "2026-10-30T17:57:39.546Z",
+  "updatedAt": "2026-10-31T17:11:10.206Z",
   "attribution": "Powered by CoinGecko"
 }
